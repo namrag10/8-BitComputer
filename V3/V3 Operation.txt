@@ -1,0 +1,136 @@
+
+Flags
+--------
+
+Flag 1 - Memory Mode	(10000000)
+	> Low  - Data
+	> High - Parameter
+
+Flag 2 -		(01000000)
+	> NOT SET
+
+Flag 3 -		(00100000)
+	> NOT SET
+
+Flag 4 -		(00010000)
+	> NOT SET
+
+Flag 5 -		(00001000)
+	> NOT SET
+
+Flag 6 -		(00000100)
+	> NOT SET
+
+Flag 7 -		(00000010)
+	> NOT SET
+
+Flag 8 -		(00000001)
+	> OVERFLOW FLAG
+
+
+Control Lines
+------------------
+
+
+Line 1 - Memory (Address Register) 	**IN**
+
+Line 2 - Memory Value		**OUT**
+
+Line 3 - 'A' Register (Address Register) 	**IN**
+v
+-->	both HIGH = Sub Counter Load
+^
+Line 4 - 'A' Register Value		**OUT**
+
+Line 5 - Program Counter Current Count 	**OUT**
+v
+-->	both HIGH = Program Counter Increment
+^
+Line 6 - Program Counter (take number)	**IN** 
+
+Line 7 - RAM			**WRITE** (HIGH = Write, LOW = Chip Output)
+
+Line 8 - RAM (Address Register) 	**IN**
+
+Line 9 - 'CALC' Register (Address Register)	**IN**
+v
+-->	both HIGH = END COMMAND
+^
+Line 10 - 'CALC' Register (Address Register)**OUT**
+
+Line 11 - ALU			**OUT**
+
+Line 12 - ALU Subtract Mode
+
+Line 13 - Flag Toggle 		**IN**
+
+Line 14 - RAM I/O (Opens RAM to the databus)
+
+Line 15 - Instruction Register		**IN**
+v
+-->	both HIGH = HLT
+^
+
+Line 16 - Instruction Register		**OUT**
+
+Line 17 - Flag Register 		**OUT**
+
+Line 18 - Logic Selector 1 (A) (See truth table)
+
+Line 19 - Logic Selector 2 (B) (See truth table)
+
+Line 20 - Logic		**OUT**
+
+Line 21 - Parameter Register 	**IN**
+
+Line 22 - Parameter Register		**OUT**
+
+Line 23 - Branch Selector B
+
+Line 24 - Branch Selector A
+
+
+RAM Write Procedure
+------------------------------
+(Assuming Address is already set)
+
+Requires 2 clock cycles!
+	> First Cycle = put data on the databus, set RAM Write (RAW - Line 7:ROM 1) && RAM IO (RIO - Line 14:ROM 2) HIGH
+	> Second Cycle = KEEP DATA ON DATABUS, KEEP RIO=HIGH, set RAW=LOW
+
+
+
+Logic Truth Table
+------------------------------
+
++---+---+---+
+| A | B | Q |
++---+---+---+--+
+| 0 | 0 | AND |
+| 0 | 1 | NOT |
+| 1 | 0 | OR   |
+| 1 | 1 | XOR |
++---+---+---+--+
+
+
+
+Branching Truth Table
+------------------------------
+
++---+---+---+
+| A | B | Q |
++---+---+---+--+
+| 0 | 0 | Unconditional
+| 0 | 1 | Branch when 0
+| 1 | 0 | Branch on carry
+| 1 | 1 | Branch if > 0
++---+---+---+--+
+
+
+
+
+Hard Reset Flag Register
+------------------------------
+
+Set FRT(13) && FRO(17) HIGH (Uses Databus)
+

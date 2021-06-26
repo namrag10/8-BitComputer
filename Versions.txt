@@ -1,0 +1,17 @@
+V1:
+
+Computer basis
+
+
+
+V2:
+
+External Memory
+Video Card
+Vector Table
+
+
+
+V3:
+
+IP Interfaces

@@ -1,0 +1,2 @@
+
+Incorrect DIL for SRAM Chip, used wide instead of short

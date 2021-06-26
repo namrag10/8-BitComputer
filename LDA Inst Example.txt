@@ -1,0 +1,13 @@
+LDA
+---
+
+ 
+CO	MI 		(COUNTER-OUT MEMORY-IN)
+
+MO	II		(INSTRUCTION-IN)
+
+&PM	IO	FI	(&PM = parameter flag on insruction reg)(Flag register in)
+
+MO	PI           	(PARAMETER-IN)
+
+CI			(COUNTER-INCREMENT)

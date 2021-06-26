@@ -1,0 +1,7 @@
+
+> Incorrect use of NAND Gate (74ls30N) for Zero Flag, 8 input NOR gate should be used instead
+
+	**PATCHED Ready for V2** now using 4078N (8 Input NOR Gate)
+
+
+> 
