@@ -1,0 +1,10 @@
+
+
+STO 256 ->
+
+0000 0001 | 0000 0000
+
+
+separate the number into smaller numbers, and upload individually.
+
+How to address the two addresses as one whole number, and how to iterate over each to get the result.

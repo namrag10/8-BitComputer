@@ -2657,7 +2657,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="72" x="195.58" y="88.9" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="42.672" y="284.48" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="CLOCK" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="60.96" y="289.56" smashed="yes">
+<element name="CLOCK" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="Yellow" x="60.96" y="289.56" smashed="yes">
 <attribute name="NAME" x="57.785" y="283.7434" size="1.27" layer="25" ratio="10"/>
 <attribute name="POPULARITY" value="93" x="99.06" y="53.34" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="64.1604" y="287.7566" size="1.27" layer="27" ratio="10"/>
@@ -3589,7 +3589,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="97" x="129.54" y="-193.04" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="13.335" y="52.959" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="RESET_PC" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="" x="170.18" y="300.99" smashed="yes">
+<element name="RESET_PC" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="NORM-OFF" x="170.18" y="300.99" smashed="yes">
 <attribute name="MF" value="" x="347.98" y="100.33" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="347.98" y="100.33" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="176432" x="347.98" y="100.33" size="1.778" layer="27" display="off"/>
@@ -3597,7 +3597,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="72" x="347.98" y="100.33" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="167.132" y="295.91" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="RESET_REGS" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="" x="105.41" y="190.5" smashed="yes">
+<element name="RESET_REGS" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="NORM-OFF" x="105.41" y="190.5" smashed="yes">
 <attribute name="MF" value="" x="270.51" y="-10.16" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="270.51" y="-10.16" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="176432" x="270.51" y="-10.16" size="1.778" layer="27" display="off"/>
@@ -3973,8 +3973,6 @@ design rules under a new name.</description>
 <via x="15.24" y="167.64" extent="1-16" drill="0.35"/>
 <wire x1="15.24" y1="167.64" x2="21.3106" y2="161.5694" width="0.1524" layer="1"/>
 <wire x1="21.3106" y1="161.5694" x2="21.3106" y2="160.9217625" width="0.1524" layer="1"/>
-<wire x1="22.86" y1="159.3723625" x2="22.86" y2="158.75" width="0.1524" layer="1"/>
-<wire x1="21.3106" y1="160.9217625" x2="22.86" y2="159.3723625" width="0.1524" layer="1"/>
 <via x="31.75" y="152.4" extent="1-16" drill="0.35"/>
 <wire x1="26.9113625" y1="151.511" x2="28.9686375" y2="151.511" width="0.1524" layer="1"/>
 <wire x1="22.86" y1="153.67" x2="24.7523625" y2="153.67" width="0.1524" layer="1"/>
@@ -3983,7 +3981,6 @@ design rules under a new name.</description>
 <wire x1="28.9686375" y1="151.511" x2="29.8576375" y2="152.4" width="0.1524" layer="1"/>
 <wire x1="31.75" y1="152.4" x2="31.75" y2="154.94" width="0.1524" layer="16"/>
 <via x="31.75" y="154.94" extent="1-16" drill="0.35"/>
-<wire x1="22.86" y1="158.1276375" x2="22.86" y2="158.75" width="0.1524" layer="1"/>
 <wire x1="35.56" y1="21.59" x2="38.1" y2="21.59" width="0.1524" layer="1"/>
 <via x="38.1" y="21.59" extent="1-16" drill="0.35"/>
 <wire x1="38.1" y1="21.59" x2="38.1" y2="27.94" width="0.1524" layer="16"/>
@@ -4083,6 +4080,14 @@ design rules under a new name.</description>
 <wire x1="165.1" y1="228.6" x2="165.1" y2="232.41" width="0.1524" layer="16"/>
 <wire x1="165.1" y1="232.41" x2="166.37" y2="233.68" width="0.1524" layer="16"/>
 <via x="166.37" y="233.68" extent="1-16" drill="0.35"/>
+<wire x1="21.3106" y1="166.7382375" x2="21.8313625" y2="167.259" width="0.1524" layer="1"/>
+<wire x1="21.8313625" y1="167.259" x2="23.8886375" y2="167.259" width="0.1524" layer="1"/>
+<wire x1="23.8886375" y1="167.259" x2="24.4094" y2="166.7382375" width="0.1524" layer="1"/>
+<wire x1="22.86" y1="158.75" x2="22.86" y2="159.3723625" width="0.1524" layer="1"/>
+<wire x1="22.86" y1="159.3723625" x2="21.3106" y2="160.9217625" width="0.1524" layer="1"/>
+<wire x1="24.4094" y1="166.7382375" x2="24.4094" y2="166.0906" width="0.1524" layer="1"/>
+<wire x1="24.4094" y1="166.0906" x2="27.94" y2="162.56" width="0.1524" layer="1"/>
+<wire x1="21.3106" y1="161.5694" x2="21.3106" y2="166.7382375" width="0.1524" layer="1"/>
 </signal>
 <signal name="VCC">
 <contactref element="OR_GATE_" pad="14"/>

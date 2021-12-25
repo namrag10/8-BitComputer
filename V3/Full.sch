@@ -22382,7 +22382,7 @@ Source: http://www.3M.com/ehpd</description>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="10k"/>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="1k"/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="~220"/>
-<part name="CLOCK" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2"/>
+<part name="CLOCK" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="Yellow"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2-5" package3d_urn="urn:adsk.eagle:package:23346/2" value="0.1uF"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -22715,8 +22715,8 @@ Source: http://www.3M.com/ehpd</description>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R80" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="~220"/>
 <part name="P+32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="RESET_PC" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
-<part name="RESET_REGS" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
+<part name="RESET_PC" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1" value="NORM-OFF"/>
+<part name="RESET_REGS" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1" value="NORM-OFF"/>
 <part name="R81" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/2" value="~220"/>
 <part name="GND44" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
@@ -29620,14 +29620,33 @@ Source: http://www.3M.com/ehpd</description>
 <approved hash="202,1,-2.54,358.14,STEPPER_CLOCK,CV,,,,"/>
 <approved hash="104,1,17.78,353.06,STEPPER_CLOCK,V+,VCC,,,"/>
 <approved hash="202,1,15.24,444.5,AUTO_CLOCK,CV,,,,"/>
+<approved hash="114,1,58.42,391.16,OR_GATE_,B,I0,,,"/>
+<approved hash="114,1,58.42,391.16,OR_GATE_,B,I1,,,"/>
+<approved hash="114,1,58.42,391.16,OR_GATE_,C,I0,,,"/>
+<approved hash="114,1,58.42,391.16,OR_GATE_,C,I1,,,"/>
+<approved hash="114,1,58.42,391.16,OR_GATE_,D,I0,,,"/>
+<approved hash="114,1,58.42,391.16,OR_GATE_,D,I1,,,"/>
+<approved hash="114,1,114.3,195.58,NOT_GATE3_,A,I,,,"/>
+<approved hash="114,1,114.3,195.58,NOT_GATE3_,E,I,,,"/>
+<approved hash="114,1,114.3,195.58,NOT_GATE3_,F,I,,,"/>
+<approved hash="114,1,403.86,170.18,AND_GATE1_,D,I0,,,"/>
+<approved hash="114,1,403.86,170.18,AND_GATE1_,D,I1,,,"/>
+<approved hash="114,1,134.62,-45.72,NOT_GATE_,C,I,,,"/>
+<approved hash="114,1,134.62,-45.72,NOT_GATE_,D,I,,,"/>
+<approved hash="114,1,134.62,-45.72,NOT_GATE_,F,I,,,"/>
+<approved hash="114,1,345.44,-12.7,4_INP_OR_GATE,B,I0,,,"/>
+<approved hash="114,1,345.44,-12.7,4_INP_OR_GATE,B,I1,,,"/>
+<approved hash="114,1,345.44,-12.7,4_INP_OR_GATE,B,I2,,,"/>
+<approved hash="114,1,345.44,-12.7,4_INP_OR_GATE,B,I3,,,"/>
 <approved hash="104,1,-261.62,-190.5,4_INP_OR_GATEP,VSS,GND,,,"/>
 <approved hash="104,1,-261.62,-175.26,4_INP_OR_GATEP,VDD,VCC,,,"/>
+<approved hash="114,1,213.36,-109.22,XOR_GATE_2,D,I0,,,"/>
+<approved hash="114,1,213.36,-109.22,XOR_GATE_2,D,I1,,,"/>
 <approved hash="111,1,-144.78,-66.04,MICRO_A8,,,,,"/>
 <approved hash="111,1,-144.78,-86.36,MICRO_A8,,,,,"/>
 <approved hash="111,1,-144.78,-81.28,MICRO_A8,,,,,"/>
 <approved hash="111,1,-10.16,-251.46,N$37,,,,,"/>
 <approved hash="113,1,-7.6962,363.22,CLK_TRIGGER,,,,,"/>
-<approved hash="113,1,76.0124,389.89,CLOCK,,,,,"/>
 <approved hash="113,1,204.013,6.35,FLAG_1,,,,,"/>
 <approved hash="113,1,270.51,-11.8872,ZERO_FLAG,,,,,"/>
 <approved hash="113,1,270.51,-16.9672,OVERFLOW_FLAG,,,,,"/>
