@@ -120,10 +120,10 @@ Branching Truth Table
 +---+---+---+
 | A | B | Q |
 +---+---+---+--+
-| 0 | 0 | Unconditional
-| 0 | 1 | Branch when 0
-| 1 | 0 | Branch on carry
-| 1 | 1 | Branch if > 0
+| 0 | 0 | Unconditional	BRA
+| 0 | 1 | Branch when 0	BRZ
+| 1 | 0 | Branch on carry	BRC
+| 1 | 1 | Branch if > 0	BRP
 +---+---+---+--+
 
 

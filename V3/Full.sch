@@ -23599,6 +23599,7 @@ Source: http://www.3M.com/ehpd</description>
 <instance part="NOT_GATE_" gate="E" x="373.38" y="12.7" smashed="yes" rot="R180"/>
 <instance part="NOT_GATE1" gate="A" x="302.26" y="-30.48" smashed="yes" rot="R270"/>
 <instance part="NOT_GATE5_" gate="A" x="619.76" y="218.44" smashed="yes" rot="R180"/>
+<instance part="XOR_GATE_2" gate="D" x="294.64" y="210.82" smashed="yes" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -24856,19 +24857,20 @@ Source: http://www.3M.com/ehpd</description>
 </net>
 <net name="OVERFLOW_FLAG" class="0">
 <segment>
-<pinref part="ADDER_UPPER" gate="A" pin="C4"/>
-<wire x1="289.56" y1="-17.78" x2="289.56" y2="246.38" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="246.38" x2="381" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="-17.78" x2="289.56" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="289.56" y1="-17.78" x2="322.58" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="322.58" y1="-17.78" x2="322.58" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="FLAG_REG_LOWER" gate="A" pin="D1"/>
 <wire x1="274.32" y1="-48.26" x2="231.14" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="OVERFLOW_FLAG" gate="G$1" pin="A"/>
-<wire x1="274.32" y1="-17.78" x2="289.56" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="-17.78" x2="274.32" y2="-48.26" width="0.1524" layer="91"/>
 <junction x="274.32" y="-17.78"/>
-<junction x="289.56" y="-17.78"/>
 <pinref part="AND_GATE3_" gate="D" pin="I1"/>
+<pinref part="XOR_GATE_2" gate="D" pin="O"/>
+<wire x1="294.64" y1="203.2" x2="294.64" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="195.58" x2="289.56" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="195.58" x2="289.56" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="289.56" y="-17.78"/>
 </segment>
 </net>
 <net name="N$58" class="0">
@@ -25209,10 +25211,14 @@ Source: http://www.3M.com/ehpd</description>
 <wire x1="287.02" y1="314.96" x2="287.02" y2="297.18" width="0.1524" layer="91"/>
 <junction x="287.02" y="314.96"/>
 <pinref part="ADDER_LOWER" gate="A" pin="C0"/>
-<wire x1="287.02" y1="297.18" x2="287.02" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="297.18" x2="287.02" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="218.44" x2="287.02" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="271.78" x2="416.56" y2="297.18" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="297.18" x2="287.02" y2="297.18" width="0.1524" layer="91"/>
 <junction x="287.02" y="297.18"/>
+<pinref part="XOR_GATE_2" gate="D" pin="I1"/>
+<wire x1="292.1" y1="218.44" x2="287.02" y2="218.44" width="0.1524" layer="91"/>
+<junction x="287.02" y="218.44"/>
 </segment>
 </net>
 <net name="MICRO_A8" class="0">
@@ -29609,6 +29615,14 @@ Source: http://www.3M.com/ehpd</description>
 <segment>
 <pinref part="AND_GATE4_" gate="B" pin="I0"/>
 <pinref part="NOT_GATE1" gate="A" pin="O"/>
+</segment>
+</net>
+<net name="N$232" class="0">
+<segment>
+<pinref part="ADDER_UPPER" gate="A" pin="C4"/>
+<pinref part="XOR_GATE_2" gate="D" pin="I0"/>
+<wire x1="297.18" y1="246.38" x2="381" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="218.44" x2="297.18" y2="246.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
