@@ -127,6 +127,7 @@ Branching Truth Table
 +---+---+---+--+
 
 
+PC_IN && Branching condition met will branch to the address on the databus
 
 
 Hard Reset Flag Register
