@@ -24,7 +24,7 @@ Flag 6 -		(00000100)
 Flag 7 -		(00000010)
 	> NOT SET
 
-Flag 8 -		(00000001)
+Flag 8 -		(00000001) ** CANNOT BE ALTERED MANUALLY **
 	> OVERFLOW FLAG
 
 
@@ -134,4 +134,40 @@ Hard Reset Flag Register
 ------------------------------
 
 Set FRT(13) && FRO(17) HIGH (Uses Databus)
+
+
+
+Function pseudo
+------------------------------
+
+take:
+
+$i = 0;
+if($i == 0){
+test;
+}
+out $i; // outputs 1
+
+function test{
+
+$i++;
+
+}
+
+
+=====
+Registers all functions 
+
+00: LDA &00
+00: STO 0x01
+00: ISP
+00: BRA 0x05
+00: 
+00: HLT
+00: LDA 0x01
+00: INC
+00: STO 0x01
+00: BRA 0x00
+
+
 
