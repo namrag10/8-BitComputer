@@ -15,12 +15,13 @@ void setup() {
     pinMode(i, OUTPUT);
   for(int i = 40; i <= 53; i++) // Address pins
     pinMode(i, OUTPUT);
-  for(int i = 30; i < 38; i++)
-    pinMode(i, INPUT);
+
 
   pinMode(22, OUTPUT);
   digitalWrite(22, HIGH);
 
+//int instruc = 0;
+//int micro = 0;
 
   setData("00000000");
   for(int micro = 0; micro < 16; micro++){
@@ -31,6 +32,7 @@ void setup() {
       setInstructionAddress(instruc);
       setMicroAddress(micro);
       writeEEPROM();
+      
     }
   }
 
@@ -85,8 +87,9 @@ void setData(String data){
 
 void writeEEPROM(){
   digitalWrite(22, LOW);
-  delay(10);
+  delay(2);
   digitalWrite(22, HIGH);
+  delay(2);
 }
 
 
