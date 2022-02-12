@@ -28,9 +28,9 @@
 #define DELAY_TIME    2   // I don't know why this delay is required, but without it, writes are missed frequently
 
 // Control pins
-#define CHIP_ENABLE   7
-#define OUTPUT_ENABLE 8
-#define WRITE_ENABLE  9
+#define CHIP_ENABLE   5
+#define OUTPUT_ENABLE 6
+#define WRITE_ENABLE  7
 
 // I/O pins
 const int I[] = {44, 45, 48, 49, 50, 51, 52, 53};

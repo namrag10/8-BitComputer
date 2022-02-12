@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 class app {
 
-    static ArrayList<String> asm = new ArrayList<String>();
+    static ArrayList < String > asm = new ArrayList < String > ();
     static codeMatrix matrix = new codeMatrix();
     public static void main(String args[]) throws IOException {
         File file = new File("assembly.asm"); //creates a new file instance  
@@ -17,7 +17,7 @@ class app {
         try {
             fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr); //creates a buffering character input stream  
-            
+
             String line;
             while ((line = br.readLine()) != null) {
                 asm.add(line);
@@ -28,20 +28,20 @@ class app {
         }
 
 
-        try {
-            FileWriter writer = new FileWriter("asmOutput.txt");
+
+        try (FileWriter writer = new FileWriter("asmOutput.txt")) {
             writer.write("[\n");
 
-            for (int i = 0; i < asm.size(); i++){
+            for (int i = 0; i < asm.size(); i++) {
                 String command = asm.get(i);
                 String param = "";
-                if(asm.get(i).indexOf(" ") > 0){
+                if (asm.get(i).indexOf(" ") > 0) {
                     command = asm.get(i).substring(0, asm.get(i).indexOf(" "));
-                    param = ", " + asm.get(i).substring(asm.get(i).indexOf(" ") +1);
+                    param = ", " + asm.get(i).substring(asm.get(i).indexOf(" ") + 1);
                 }
 
-                if(matrix.code(command) == -1){
-                    System.out.println("Syntax Error: " + command + "\nLine: " + (i +1));
+                if (matrix.code(command) == -1) {
+                    System.out.println("Syntax Error: " + command + "\nLine: " + (i + 1));
                     return;
                 }
 
@@ -52,12 +52,10 @@ class app {
             writer.write("]");
             System.out.println("Successfully wrote to the file.");
             writer.close();
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
         }
-        
-        
+
+
+
 
     }
 }
