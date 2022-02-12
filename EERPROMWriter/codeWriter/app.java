@@ -29,7 +29,7 @@ class app {
 
 
 
-        try (FileWriter writer = new FileWriter("asmOutput.txt")) {
+        try (FileWriter writer = new FileWriter("codeWriter/asmOutput.txt")) {
             writer.write("[\n");
 
             for (int i = 0; i < asm.size(); i++) {
@@ -46,7 +46,6 @@ class app {
                 }
 
                 writer.write("[" + matrix.code(command) + param + "],\n");
-                System.out.println(command);
             }
 
             writer.write("]");

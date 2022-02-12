@@ -28,11 +28,11 @@ for pAddress in range(256):
 # print(rawOutput)
 
 
-f = open("file.txt", "w")
+f = open("Program.bin", "w")
 f.write("")
 f.close()
 
-f = open("file.txt", "a")
+f = open("Program.bin", "a")
 
 
 for i in rawOutput:
@@ -40,4 +40,4 @@ for i in rawOutput:
 
 f.close()
 
-os.system("py programmer.py -d COM3 -w -f file.txt -l 8192 -o 0")
+os.system("py programmer.py -d COM3 -w -f Program.bin -l 8192 -o 0")

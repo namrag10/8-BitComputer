@@ -1,9 +1,0 @@
-
-// 20 = amount of cells to read
-python at28c_programmer.py -d COM3 -r -l 20
-
-
-python at28c_programmer.py -d COM3 -w -f file.bin
-
-
-python at28c_programmer.py -d COM3 -c -l 10 -o 0
