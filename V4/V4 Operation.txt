@@ -66,7 +66,7 @@ Line 12 - ALU Subtract Mode
 
 Line 13 - Flag Toggle 		**IN**
 
-Line 14 - RAM I/O (Opens RAM to the databus)
+Line 14 - RAM I/O (Opens RAM to the databus - Regardless of mode)
 
 Line 15 - Instruction Register		**IN**
 v
@@ -77,11 +77,13 @@ Line 16 - Instruction Register		**OUT**
 
 Line 17 - Flag Register 		**OUT**
 
-Line 18 - NOT ASSIGNED
+Line 18 - Stack Push
+v
+-->	both HIGH = RAM INPUT Mode
+^
+Line 19 - Stack Pop
 
-Line 19 - NOT ASSIGNED
-
-Line 20 - NOT ASSIGNED
+Line 20 - OUT Reg		**IN**
 
 Line 21 - Parameter Register 	**IN**
 
@@ -97,8 +99,8 @@ RAM Write Procedure
 (Assuming Address is already set)
 
 Requires 2 clock cycles!
-	> First Cycle = put data on the databus, set RAM Write (RAW - Line 7:ROM 1) && RAM IO (RIO - Line 14:ROM 2) HIGH
-	> Second Cycle = KEEP DATA ON DATABUS, KEEP RIO=HIGH, set RAW=LOW
+	> First Cycle = put data on the databus, set RAM Write (RAW - Line 7:ROM 1) && RAM IO (RIO - Line 14:ROM 2) HIGH && RAM OUTPUT Mode (Line 18 and 19:ROM 3)
+	> Second Cycle = KEEP DATA ON DATABUS, KEEP RIO=HIGH, KEEP RAM in OUTPUT Mode, set RAW=LOW
 
 
 

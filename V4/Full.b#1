@@ -3493,9 +3493,13 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="72" x="270.51" y="-10.16" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="102.362" y="185.42" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="SELECTOR_LOGIC_" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74HC139N" x="63.5" y="182.88" smashed="yes" rot="R270">
+<element name="SELECTOR_LOGIC2_" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74HC139N" x="63.5" y="182.88" smashed="yes" rot="R270">
 <attribute name="POPULARITY" value="2" x="-78.74" y="57.15" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="62.865" y="190.373" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="SELECTOR_LOGIC_" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74HC139N" x="223.52" y="250.19" smashed="yes">
+<attribute name="POPULARITY" value="2" x="247.65" y="83.82" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="216.027" y="249.555" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="STEPPER_CLOCK" library="linear" library_urn="urn:adsk.eagle:library:262" package="DIL08" package3d_urn="urn:adsk.eagle:package:16409/2" value="NE555N" x="66.04" y="304.8" smashed="yes">
 <attribute name="POPULARITY" value="16" x="153.67" y="139.7" size="1.778" layer="27" display="off"/>
@@ -3557,11 +3561,6 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="8" x="17.78" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="17.145" y="33.909" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="SELECTOR_RAM_" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS139N" x="12.7" y="-6.35" smashed="yes">
-<attribute name="NAME" x="2.159" y="-9.271" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="POPULARITY" value="0" x="12.7" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="5.207" y="-6.985" size="1.27" layer="27" ratio="10"/>
-</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -3574,6 +3573,7 @@ design rules under a new name.</description>
 <contactref element="FLAG_REG_UPPER" pad="8"/>
 <contactref element="INSTRUC_REGISTER_UPPER" pad="8"/>
 <contactref element="INSTRUC_REGISTER_LOWER" pad="8"/>
+<contactref element="SELECTOR_LOGIC_" pad="8"/>
 <contactref element="ADDR_MEM_REG_UPPER" pad="8"/>
 <contactref element="ADDR_MEM_REG_LOWER" pad="8"/>
 <contactref element="OUTPUT_BUFFER_MEMORY" pad="10"/>
@@ -3601,7 +3601,7 @@ design rules under a new name.</description>
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="10"/>
 <contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="8"/>
 <contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="8"/>
-<contactref element="SELECTOR_LOGIC_" pad="8"/>
+<contactref element="SELECTOR_LOGIC2_" pad="8"/>
 <contactref element="NOT_GATE4_" pad="7"/>
 <contactref element="BRANCH_SELECTOR" pad="8"/>
 <contactref element="XOR_GATE_1" pad="7"/>
@@ -3689,6 +3689,7 @@ design rules under a new name.</description>
 <contactref element="RAM_ADDR_UPPER" pad="2"/>
 <contactref element="RAM_ADDR_LOWER" pad="2"/>
 <contactref element="RAM_ADDR_LOWER" pad="1"/>
+<contactref element="SELECTOR_LOGIC_" pad="15"/>
 <contactref element="INSTRUCTION_MEMORY_2" pad="14"/>
 <contactref element="INSTRUCTIONS_EXTENSION" pad="15"/>
 <contactref element="INSTRUCTION_MEMORY_2" pad="20"/>
@@ -3728,8 +3729,8 @@ design rules under a new name.</description>
 <contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="2"/>
 <contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="15"/>
 <contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="15"/>
-<contactref element="SELECTOR_LOGIC_" pad="1"/>
-<contactref element="SELECTOR_LOGIC_" pad="15"/>
+<contactref element="SELECTOR_LOGIC2_" pad="1"/>
+<contactref element="SELECTOR_LOGIC2_" pad="15"/>
 <contactref element="INSTRUCTION_MEMORY_1" pad="22"/>
 <contactref element="INSTRUCTION_MEMORY_1" pad="20"/>
 <contactref element="BRANCH_SELECTOR" pad="1"/>
@@ -3923,9 +3924,6 @@ design rules under a new name.</description>
 <wire x1="24.4094" y1="166.7382375" x2="24.4094" y2="166.0906" width="0.1524" layer="1"/>
 <wire x1="24.4094" y1="166.0906" x2="27.94" y2="162.56" width="0.1524" layer="1"/>
 <wire x1="21.3106" y1="161.5694" x2="21.3106" y2="166.7382375" width="0.1524" layer="1"/>
-<contactref element="SELECTOR_RAM_" pad="8"/>
-<contactref element="SELECTOR_RAM_" pad="1"/>
-<contactref element="SELECTOR_RAM_" pad="15"/>
 <wire x1="204.47" y1="52.07" x2="201.93" y2="52.07" width="0" layer="19" extent="1-1"/>
 <wire x1="209.55" y1="52.07" x2="204.47" y2="52.07" width="0" layer="19" extent="1-1"/>
 <wire x1="186.69" y1="52.07" x2="201.93" y2="52.07" width="0" layer="19" extent="1-1"/>
@@ -4050,10 +4048,7 @@ design rules under a new name.</description>
 <wire x1="13.97" y1="39.37" x2="21.59" y2="36.83" width="0" layer="19" extent="1-1"/>
 <wire x1="13.97" y1="41.91" x2="13.97" y2="39.37" width="0" layer="19" extent="1-1"/>
 <wire x1="13.97" y1="8.89" x2="21.59" y2="21.59" width="0" layer="19" extent="1-1"/>
-<wire x1="6.35" y1="-2.54" x2="13.97" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="3.81" y1="-10.16" x2="6.35" y2="-2.54" width="0" layer="19" extent="1-1"/>
 <wire x1="35.56" y1="3.81" x2="35.56" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="21.59" y1="-10.16" x2="6.35" y2="-2.54" width="0" layer="19" extent="1-1"/>
 <wire x1="54.61" y1="13.97" x2="38.1" y2="21.59" width="0" layer="19" extent="1-1"/>
 <wire x1="39.37" y1="205.74" x2="62.23" y2="205.74" width="0" layer="19" extent="1-1"/>
 <wire x1="81.28" y1="127" x2="59.69" y2="119.38" width="0" layer="19" extent="1-1"/>
@@ -4069,17 +4064,19 @@ design rules under a new name.</description>
 <wire x1="208.28" y1="223.52" x2="208.28" y2="204.47" width="0" layer="19" extent="1-1"/>
 <wire x1="229.87" y1="204.47" x2="213.36" y2="193.04" width="0" layer="19" extent="1-1"/>
 <wire x1="232.41" y1="223.52" x2="229.87" y2="204.47" width="0" layer="19" extent="1-1"/>
-<wire x1="208.28" y1="246.38" x2="208.28" y2="223.52" width="0" layer="19" extent="1-1"/>
+<wire x1="232.41" y1="246.38" x2="232.41" y2="223.52" width="0" layer="19" extent="1-1"/>
+<wire x1="217.17" y1="254" x2="232.41" y2="246.38" width="0" layer="19" extent="1-1"/>
+<wire x1="208.28" y1="246.38" x2="217.17" y2="254" width="0" layer="19" extent="1-1"/>
 <wire x1="193.04" y1="254" x2="208.28" y2="246.38" width="0" layer="19" extent="1-1"/>
 <wire x1="186.69" y1="252.73" x2="193.04" y2="254" width="0" layer="19" extent="1-1"/>
 <wire x1="190.5" y1="246.38" x2="186.69" y2="246.38" width="0" layer="19" extent="1-1"/>
 <wire x1="180.34" y1="236.22" x2="180.34" y2="245.11" width="0" layer="19" extent="1-1"/>
 <wire x1="166.37" y1="233.68" x2="180.34" y2="236.22" width="0" layer="19" extent="1-1"/>
 <wire x1="167.64" y1="264.16" x2="180.34" y2="254" width="0" layer="19" extent="1-1"/>
-<wire x1="205.74" y1="271.78" x2="193.04" y2="254" width="0" layer="19" extent="1-1"/>
-<wire x1="228.6" y1="271.78" x2="205.74" y2="271.78" width="0" layer="19" extent="1-1"/>
+<wire x1="228.6" y1="271.78" x2="217.17" y2="254" width="0" layer="19" extent="1-1"/>
 <wire x1="233.68" y1="285.75" x2="228.6" y2="271.78" width="0" layer="19" extent="1-1"/>
 <wire x1="227.33" y1="286.766" x2="233.68" y2="285.75" width="0" layer="19" extent="1-1"/>
+<wire x1="205.74" y1="271.78" x2="217.17" y2="254" width="0" layer="19" extent="1-1"/>
 <wire x1="231.14" y1="309.88" x2="227.33" y2="286.766" width="0" layer="19" extent="1-1"/>
 <wire x1="238.76" y1="309.88" x2="231.14" y2="309.88" width="0" layer="19" extent="1-1"/>
 <wire x1="223.52" y1="309.88" x2="231.14" y2="309.88" width="0" layer="19" extent="1-1"/>
@@ -4128,6 +4125,7 @@ design rules under a new name.</description>
 <contactref element="FLAG_REG_UPPER" pad="16"/>
 <contactref element="INSTRUC_REGISTER_UPPER" pad="16"/>
 <contactref element="INSTRUC_REGISTER_LOWER" pad="16"/>
+<contactref element="SELECTOR_LOGIC_" pad="16"/>
 <contactref element="ADDR_MEM_REG_UPPER" pad="16"/>
 <contactref element="ADDR_MEM_REG_LOWER" pad="16"/>
 <contactref element="OUTPUT_BUFFER_MEMORY" pad="20"/>
@@ -4155,7 +4153,7 @@ design rules under a new name.</description>
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="20"/>
 <contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="16"/>
 <contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="16"/>
-<contactref element="SELECTOR_LOGIC_" pad="16"/>
+<contactref element="SELECTOR_LOGIC2_" pad="16"/>
 <contactref element="NOT_GATE4_" pad="14"/>
 <contactref element="BRANCH_SELECTOR" pad="16"/>
 <contactref element="XOR_GATE_1" pad="14"/>
@@ -4272,7 +4270,6 @@ design rules under a new name.</description>
 <via x="136.730925" y="149.019075" extent="1-16" drill="0.35"/>
 <wire x1="136.730925" y1="149.019075" x2="140.97" y2="144.78" width="0.1524" layer="16"/>
 <wire x1="140.97" y1="144.78" x2="140.97" y2="133.35" width="0.1524" layer="16"/>
-<contactref element="SELECTOR_RAM_" pad="16"/>
 <wire x1="227.33" y1="44.45" x2="204.47" y2="44.45" width="0" layer="19" extent="1-1"/>
 <wire x1="177.8" y1="57.15" x2="204.47" y2="44.45" width="0" layer="19" extent="1-1"/>
 <wire x1="170.18" y1="57.15" x2="177.8" y2="57.15" width="0" layer="19" extent="1-1"/>
@@ -4286,7 +4283,6 @@ design rules under a new name.</description>
 <wire x1="43.18" y1="45.72" x2="62.23" y2="36.83" width="0" layer="19" extent="1-1"/>
 <wire x1="21.59" y1="41.91" x2="43.18" y2="45.72" width="0" layer="19" extent="1-1"/>
 <wire x1="43.18" y1="21.59" x2="43.18" y2="45.72" width="0" layer="19" extent="1-1"/>
-<wire x1="3.81" y1="-2.54" x2="43.18" y2="21.59" width="0" layer="19" extent="1-1"/>
 <wire x1="31.75" y1="96.52" x2="43.18" y2="45.72" width="0" layer="19" extent="1-1"/>
 <wire x1="36.83" y1="113.03" x2="31.75" y2="96.52" width="0" layer="19" extent="1-1"/>
 <wire x1="13.97" y1="113.03" x2="36.83" y2="113.03" width="0" layer="19" extent="1-1"/>
@@ -4332,15 +4328,16 @@ design rules under a new name.</description>
 <wire x1="190.5" y1="231.14" x2="189.23" y2="219.71" width="0" layer="19" extent="1-1"/>
 <wire x1="214.63" y1="212.09" x2="193.04" y2="212.09" width="0" layer="19" extent="1-1"/>
 <wire x1="214.63" y1="231.14" x2="214.63" y2="212.09" width="0" layer="19" extent="1-1"/>
-<wire x1="190.5" y1="254" x2="190.5" y2="231.14" width="0" layer="19" extent="1-1"/>
-<wire x1="203.2" y1="271.78" x2="190.5" y2="254" width="0" layer="19" extent="1-1"/>
-<wire x1="210.82" y1="279.4" x2="203.2" y2="271.78" width="0" layer="19" extent="1-1"/>
-<wire x1="226.06" y1="271.78" x2="210.82" y2="279.4" width="0" layer="19" extent="1-1"/>
+<wire x1="214.63" y1="254" x2="214.63" y2="231.14" width="0" layer="19" extent="1-1"/>
+<wire x1="226.06" y1="271.78" x2="214.63" y2="254" width="0" layer="19" extent="1-1"/>
 <wire x1="227.33" y1="284.734" x2="226.06" y2="271.78" width="0" layer="19" extent="1-1"/>
 <wire x1="233.68" y1="288.29" x2="227.33" y2="284.734" width="0" layer="19" extent="1-1"/>
+<wire x1="210.82" y1="279.4" x2="226.06" y2="271.78" width="0" layer="19" extent="1-1"/>
+<wire x1="203.2" y1="271.78" x2="210.82" y2="279.4" width="0" layer="19" extent="1-1"/>
 <wire x1="187.96" y1="279.4" x2="203.2" y2="271.78" width="0" layer="19" extent="1-1"/>
 <wire x1="175.26" y1="287.02" x2="187.96" y2="279.4" width="0" layer="19" extent="1-1"/>
 <wire x1="167.64" y1="287.02" x2="175.26" y2="287.02" width="0" layer="19" extent="1-1"/>
+<wire x1="190.5" y1="254" x2="203.2" y2="271.78" width="0" layer="19" extent="1-1"/>
 <wire x1="162.56" y1="311.15" x2="167.64" y2="287.02" width="0" layer="19" extent="1-1"/>
 <wire x1="133.35" y1="308.61" x2="162.56" y2="311.15" width="0" layer="19" extent="1-1"/>
 <wire x1="45.72" y1="276.86" x2="76.2" y2="262.89" width="0" layer="19" extent="1-1"/>
@@ -5197,7 +5194,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="CTRL_SIG_9">
 <contactref element="INSTRUCTION_MEMORY_1" pad="11"/>
-<contactref element="SELECTOR_LOGIC_" pad="13"/>
+<contactref element="SELECTOR_LOGIC2_" pad="13"/>
 <wire x1="29.21" y1="133.35" x2="27.94" y2="132.08" width="0.1524" layer="1"/>
 <wire x1="37.465" y1="133.35" x2="29.21" y2="133.35" width="0.1524" layer="1"/>
 <wire x1="38.735" y1="134.62" x2="37.465" y2="133.35" width="0.1524" layer="16"/>
@@ -5238,7 +5235,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="CTRL_SIG_10">
 <contactref element="INSTRUCTION_MEMORY_1" pad="12"/>
-<contactref element="SELECTOR_LOGIC_" pad="14"/>
+<contactref element="SELECTOR_LOGIC2_" pad="14"/>
 <wire x1="33.02" y1="134.62" x2="27.94" y2="129.54" width="0.1524" layer="16"/>
 <wire x1="33.02" y1="175.26" x2="33.02" y2="134.62" width="0.1524" layer="16"/>
 <wire x1="41.91" y1="184.15" x2="33.02" y2="175.26" width="0.1524" layer="1"/>
@@ -5898,6 +5895,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="PC_INC">
 <contactref element="NOT_GATE2_" pad="11"/>
+<contactref element="SELECTOR_LOGIC_" pad="9"/>
 <wire x1="148.59" y1="212.09" x2="133.35" y2="212.09" width="0.1524" layer="1"/>
 <wire x1="159.385" y1="222.885" x2="148.59" y2="212.09" width="0.1524" layer="1"/>
 <wire x1="160.655" y1="224.155" x2="159.385" y2="222.885" width="0.1524" layer="16"/>
@@ -5907,10 +5905,9 @@ design rules under a new name.</description>
 <wire x1="209.55" y1="243.84" x2="201.93" y2="243.84" width="0.1524" layer="1"/>
 <wire x1="214.63" y1="248.92" x2="209.55" y2="243.84" width="0.1524" layer="1"/>
 <wire x1="227.33" y1="248.92" x2="214.63" y2="248.92" width="0.1524" layer="1"/>
+<wire x1="232.41" y1="254" x2="227.33" y2="248.92" width="0.1524" layer="1"/>
 <via x="159.385" y="222.885" extent="1-16" drill="0.35"/>
 <via x="160.655" y="241.935" extent="1-16" drill="0.35"/>
-<contactref element="SELECTOR_RAM_" pad="7"/>
-<wire x1="19.05" y1="-10.16" x2="133.35" y2="212.09" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$177">
 <contactref element="PC_1" pad="K"/>
@@ -6275,7 +6272,7 @@ design rules under a new name.</description>
 <contactref element="ADDR_REG_CALC_UPPER" pad="10"/>
 <contactref element="ADDR_REG_CALC_LOWER" pad="9"/>
 <contactref element="ADDR_REG_CALC_LOWER" pad="10"/>
-<contactref element="SELECTOR_LOGIC_" pad="10"/>
+<contactref element="SELECTOR_LOGIC2_" pad="10"/>
 <wire x1="212.09" y1="44.45" x2="209.55" y2="44.45" width="0.1524" layer="1"/>
 <wire x1="189.23" y1="44.45" x2="186.69" y2="44.45" width="0.1524" layer="1"/>
 <wire x1="71.755" y1="172.085" x2="67.31" y2="176.53" width="0.1524" layer="1"/>
@@ -6623,7 +6620,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="CALC_OUT">
 <contactref element="OUTPUT_BUFFER_CALC_REG" pad="19"/>
-<contactref element="SELECTOR_LOGIC_" pad="11"/>
+<contactref element="SELECTOR_LOGIC2_" pad="11"/>
 <wire x1="174.625" y1="57.785" x2="177.8" y2="54.61" width="0.1524" layer="16"/>
 <wire x1="174.625" y1="60.96" x2="174.625" y2="57.785" width="0.1524" layer="16"/>
 <wire x1="148.59" y1="86.995" x2="174.625" y2="60.96" width="0.1524" layer="1"/>
@@ -6677,25 +6674,25 @@ design rules under a new name.</description>
 <wire x1="97.79" y1="295.91" x2="97.79" y2="290.83" width="0.1524" layer="1"/>
 </signal>
 <signal name="PC_LOAD_SIGNAL">
+<contactref element="SELECTOR_LOGIC_" pad="11"/>
 <contactref element="NOT_GATE_" pad="11"/>
 <wire x1="177.165" y1="255.27" x2="133.35" y2="255.27" width="0.1524" layer="1"/>
 <wire x1="180.975" y1="251.46" x2="177.165" y2="255.27" width="0.1524" layer="1"/>
 <wire x1="213.995" y1="251.46" x2="180.975" y2="251.46" width="0.1524" layer="1"/>
 <wire x1="215.9" y1="249.555" x2="213.995" y2="251.46" width="0.1524" layer="1"/>
 <wire x1="222.885" y1="249.555" x2="215.9" y2="249.555" width="0.1524" layer="1"/>
-<contactref element="SELECTOR_RAM_" pad="5"/>
-<wire x1="13.97" y1="-10.16" x2="133.35" y2="255.27" width="0" layer="19" extent="1-1"/>
+<wire x1="227.33" y1="254" x2="222.885" y2="249.555" width="0.1524" layer="1"/>
 </signal>
 <signal name="PC_OUT">
 <contactref element="OUTPUT_BUFFER_PC" pad="19"/>
+<contactref element="SELECTOR_LOGIC_" pad="10"/>
 <wire x1="203.2" y1="284.48" x2="175.26" y2="284.48" width="0.1524" layer="1"/>
 <wire x1="214.63" y1="273.05" x2="203.2" y2="284.48" width="0.1524" layer="16"/>
 <wire x1="214.63" y1="266.7" x2="214.63" y2="273.05" width="0.1524" layer="16"/>
 <wire x1="225.425" y1="255.905" x2="214.63" y2="266.7" width="0.1524" layer="16"/>
 <wire x1="229.87" y1="255.905" x2="225.425" y2="255.905" width="0.1524" layer="16"/>
+<wire x1="229.87" y1="254" x2="229.87" y2="255.905" width="0.1524" layer="16"/>
 <via x="203.2" y="284.48" extent="1-16" drill="0.35"/>
-<contactref element="SELECTOR_RAM_" pad="6"/>
-<wire x1="16.51" y1="-10.16" x2="175.26" y2="284.48" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MEMORY_IN">
 <contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="12"/>
@@ -7806,6 +7803,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="CTRL_SIG_14">
 <contactref element="INSTRUCTION_MEMORY_1" pad="17"/>
+<contactref element="NOT_GATE4_" pad="11"/>
 <wire x1="39.37" y1="133.35" x2="43.18" y2="129.54" width="0.1524" layer="16"/>
 <wire x1="39.37" y1="191.77" x2="39.37" y2="133.35" width="0.1524" layer="16"/>
 <wire x1="41.91" y1="194.31" x2="39.37" y2="191.77" width="0.1524" layer="1"/>
@@ -7816,10 +7814,9 @@ design rules under a new name.</description>
 <wire x1="143.51" y1="210.185" x2="143.51" y2="198.12" width="0.1524" layer="16"/>
 <wire x1="146.685" y1="213.36" x2="143.51" y2="210.185" width="0.1524" layer="16"/>
 <wire x1="146.685" y1="220.345" x2="146.685" y2="213.36" width="0.1524" layer="16"/>
+<wire x1="148.59" y1="222.25" x2="146.685" y2="220.345" width="0.1524" layer="16"/>
 <via x="39.37" y="191.77" extent="1-16" drill="0.35"/>
 <via x="142.24" y="196.85" extent="1-16" drill="0.35"/>
-<contactref element="NOT_GATE4_" pad="11"/>
-<wire x1="146.685" y1="220.345" x2="148.59" y2="222.25" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$16">
 <contactref element="AUTO_CLOCK" pad="2"/>
@@ -8065,6 +8062,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="RAM_WRITE">
 <contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="7"/>
+<contactref element="NOT_GATE2_" pad="13"/>
 <contactref element="RAM" pad="22"/>
 <wire x1="15.24" y1="33.02" x2="21.59" y2="26.67" width="0.1524" layer="16"/>
 <wire x1="12.065" y1="33.02" x2="15.24" y2="33.02" width="0.1524" layer="16"/>
@@ -8072,6 +8070,7 @@ design rules under a new name.</description>
 <wire x1="13.97" y1="53.975" x2="12.065" y2="52.07" width="0.1524" layer="16"/>
 <wire x1="13.97" y1="88.9" x2="13.97" y2="53.975" width="0.1524" layer="16"/>
 <wire x1="29.21" y1="104.14" x2="13.97" y2="88.9" width="0.1524" layer="16"/>
+<wire x1="130.81" y1="214.63" x2="133.35" y2="217.17" width="0.1524" layer="16"/>
 <wire x1="130.81" y1="205.105" x2="130.81" y2="214.63" width="0.1524" layer="16"/>
 <wire x1="127.635" y1="201.93" x2="130.81" y2="205.105" width="0.1524" layer="1"/>
 <wire x1="118.745" y1="201.93" x2="127.635" y2="201.93" width="0.1524" layer="1"/>
@@ -8086,8 +8085,6 @@ design rules under a new name.</description>
 <via x="118.745" y="201.93" extent="1-16" drill="0.35"/>
 <via x="118.745" y="109.855" extent="1-16" drill="0.35"/>
 <via x="31.75" y="101.6" extent="1-16" drill="0.35"/>
-<contactref element="NOT_GATE2_" pad="13"/>
-<wire x1="130.81" y1="214.63" x2="133.35" y2="217.17" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="REG_A_OUT">
 <contactref element="OUTPUT_BUFFER_REG_A" pad="19"/>
@@ -8109,7 +8106,7 @@ design rules under a new name.</description>
 <via x="173.355" y="189.23" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="HLT_SIGNAL">
-<contactref element="SELECTOR_LOGIC_" pad="7"/>
+<contactref element="SELECTOR_LOGIC2_" pad="7"/>
 <contactref element="AND_GATE_" pad="9"/>
 <wire x1="62.23" y1="176.53" x2="59.69" y2="176.53" width="0.1524" layer="1"/>
 <wire x1="66.04" y1="180.34" x2="62.23" y2="176.53" width="0.1524" layer="1"/>
@@ -8274,6 +8271,7 @@ design rules under a new name.</description>
 <via x="69.215" y="102.235" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="N$212">
+<contactref element="SELECTOR_LOGIC_" pad="13"/>
 <contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="12"/>
 <wire x1="26.67" y1="115.57" x2="24.13" y2="113.03" width="0.1524" layer="1"/>
 <wire x1="31.75" y1="115.57" x2="26.67" y2="115.57" width="0.1524" layer="1"/>
@@ -8292,11 +8290,10 @@ design rules under a new name.</description>
 <wire x1="210.185" y1="222.25" x2="210.185" y2="203.835" width="0.1524" layer="16"/>
 <wire x1="215.9" y1="227.965" x2="210.185" y2="222.25" width="0.1524" layer="16"/>
 <wire x1="215.9" y1="247.65" x2="215.9" y2="227.965" width="0.1524" layer="16"/>
+<wire x1="222.25" y1="254" x2="215.9" y2="247.65" width="0.1524" layer="16"/>
 <via x="92.075" y="114.935" extent="1-16" drill="0.35"/>
 <via x="93.345" y="182.245" extent="1-16" drill="0.35"/>
 <via x="205.105" y="198.755" extent="1-16" drill="0.35"/>
-<contactref element="SELECTOR_RAM_" pad="3"/>
-<wire x1="8.89" y1="-10.16" x2="24.13" y2="113.03" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTRL_SIG_4">
 <contactref element="INSTRUCTION_MEMORY_0" pad="15"/>
@@ -8380,7 +8377,7 @@ design rules under a new name.</description>
 <signal name="INSTRUCTION_OUTPUT">
 <contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="1"/>
 <contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="1"/>
-<contactref element="SELECTOR_LOGIC_" pad="6"/>
+<contactref element="SELECTOR_LOGIC2_" pad="6"/>
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="19"/>
 <wire x1="16.51" y1="107.95" x2="13.97" y2="105.41" width="0.1524" layer="1"/>
 <wire x1="33.655" y1="107.95" x2="16.51" y2="107.95" width="0.1524" layer="1"/>
@@ -8407,7 +8404,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="CTRL_SIG_16">
 <contactref element="INSTRUCTION_MEMORY_1" pad="19"/>
-<contactref element="SELECTOR_LOGIC_" pad="3"/>
+<contactref element="SELECTOR_LOGIC2_" pad="3"/>
 <wire x1="45.72" y1="134.62" x2="43.18" y2="134.62" width="0.1524" layer="1"/>
 <wire x1="47.625" y1="136.525" x2="45.72" y2="134.62" width="0.1524" layer="16"/>
 <wire x1="47.625" y1="178.435" x2="47.625" y2="136.525" width="0.1524" layer="16"/>
@@ -8418,7 +8415,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="CTRL_SIG_15">
 <contactref element="INSTRUCTION_MEMORY_1" pad="18"/>
-<contactref element="SELECTOR_LOGIC_" pad="2"/>
+<contactref element="SELECTOR_LOGIC2_" pad="2"/>
 <wire x1="40.005" y1="135.255" x2="43.18" y2="132.08" width="0.1524" layer="16"/>
 <wire x1="40.005" y1="187.325" x2="40.005" y2="135.255" width="0.1524" layer="16"/>
 <wire x1="41.91" y1="189.23" x2="40.005" y2="187.325" width="0.1524" layer="1"/>
@@ -8497,10 +8494,12 @@ design rules under a new name.</description>
 <via x="46.99" y="46.99" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="N$37">
+<contactref element="OUTPUT_BUFFER_RAM" pad="1"/>
 <contactref element="NOT_GATE2_" pad="12"/>
 <contactref element="RAM" pad="27"/>
 <wire x1="50.8" y1="39.37" x2="21.59" y2="39.37" width="0.1524" layer="1"/>
 <wire x1="53.34" y1="36.83" x2="50.8" y2="39.37" width="0.1524" layer="1"/>
+<wire x1="54.61" y1="36.83" x2="53.34" y2="36.83" width="0.1524" layer="1"/>
 <wire x1="136.525" y1="214.63" x2="133.35" y2="214.63" width="0.1524" layer="1"/>
 <wire x1="137.16" y1="213.995" x2="136.525" y2="214.63" width="0.1524" layer="16"/>
 <wire x1="137.16" y1="180.975" x2="137.16" y2="213.995" width="0.1524" layer="16"/>
@@ -8513,14 +8512,15 @@ design rules under a new name.</description>
 <wire x1="90.805" y1="38.1" x2="97.79" y2="45.085" width="0.1524" layer="1"/>
 <wire x1="57.15" y1="38.1" x2="90.805" y2="38.1" width="0.1524" layer="1"/>
 <wire x1="55.88" y1="36.83" x2="57.15" y2="38.1" width="0.1524" layer="1"/>
+<wire x1="54.61" y1="36.83" x2="55.88" y2="36.83" width="0.1524" layer="1"/>
 <via x="136.525" y="214.63" extent="1-16" drill="0.35"/>
 <via x="137.16" y="180.975" extent="1-16" drill="0.35"/>
 <via x="99.06" y="169.545" extent="1-16" drill="0.35"/>
 <via x="97.79" y="45.085" extent="1-16" drill="0.35"/>
-<wire x1="55.88" y1="36.83" x2="53.34" y2="36.83" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$55">
 <contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="9"/>
+<contactref element="SELECTOR_LOGIC_" pad="14"/>
 <wire x1="38.1" y1="119.38" x2="31.75" y2="113.03" width="0.1524" layer="16"/>
 <wire x1="42.545" y1="119.38" x2="38.1" y2="119.38" width="0.1524" layer="16"/>
 <wire x1="42.545" y1="121.285" x2="42.545" y2="119.38" width="0.1524" layer="16"/>
@@ -8545,12 +8545,11 @@ design rules under a new name.</description>
 <wire x1="207.645" y1="220.345" x2="203.2" y2="215.9" width="0.1524" layer="1"/>
 <wire x1="212.725" y1="225.425" x2="207.645" y2="220.345" width="0.1524" layer="16"/>
 <wire x1="212.725" y1="247.015" x2="212.725" y2="225.425" width="0.1524" layer="16"/>
+<wire x1="219.71" y1="254" x2="212.725" y2="247.015" width="0.1524" layer="16"/>
 <via x="48.26" y="140.335" extent="1-16" drill="0.35"/>
 <via x="68.58" y="152.4" extent="1-16" drill="0.35"/>
 <via x="87.63" y="200.66" extent="1-16" drill="0.35"/>
 <via x="207.645" y="220.345" extent="1-16" drill="0.35"/>
-<contactref element="SELECTOR_RAM_" pad="2"/>
-<wire x1="6.35" y1="-10.16" x2="31.75" y2="113.03" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PC_LOAD">
 <contactref element="NOT_GATE4_" pad="5"/>
@@ -8651,7 +8650,7 @@ design rules under a new name.</description>
 <via x="179.705" y="247.65" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="INSTRUCTION_IN">
-<contactref element="SELECTOR_LOGIC_" pad="5"/>
+<contactref element="SELECTOR_LOGIC2_" pad="5"/>
 <contactref element="INSTRUC_REGISTER_UPPER" pad="9"/>
 <contactref element="INSTRUC_REGISTER_UPPER" pad="10"/>
 <contactref element="INSTRUC_REGISTER_LOWER" pad="10"/>
@@ -9301,7 +9300,7 @@ design rules under a new name.</description>
 <via x="170.815" y="216.535" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="END_CRNT_CMD">
-<contactref element="SELECTOR_LOGIC_" pad="9"/>
+<contactref element="SELECTOR_LOGIC2_" pad="9"/>
 <contactref element="AND_GATE4_" pad="9"/>
 <wire x1="69.215" y1="175.895" x2="67.31" y2="173.99" width="0.1524" layer="16"/>
 <wire x1="69.215" y1="200.66" x2="69.215" y2="175.895" width="0.1524" layer="16"/>
@@ -9432,21 +9431,6 @@ design rules under a new name.</description>
 <wire x1="119.38" y1="238.76" x2="119.38" y2="224.79" width="0.1524" layer="16"/>
 <wire x1="125.73" y1="238.76" x2="119.38" y2="238.76" width="0.1524" layer="1"/>
 <via x="119.38" y="238.76" extent="1-16" drill="0.35"/>
-</signal>
-<signal name="N$10">
-<contactref element="INSTRUCTION_MEMORY_2" pad="13"/>
-<contactref element="SELECTOR_RAM_" pad="14"/>
-<wire x1="8.89" y1="-2.54" x2="27.94" y2="165.1" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$26">
-<contactref element="INSTRUCTION_MEMORY_2" pad="12"/>
-<contactref element="SELECTOR_RAM_" pad="13"/>
-<wire x1="11.43" y1="-2.54" x2="27.94" y2="167.64" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$5">
-<contactref element="OUTPUT_BUFFER_RAM" pad="1"/>
-<contactref element="SELECTOR_RAM_" pad="9"/>
-<wire x1="21.59" y1="-2.54" x2="54.61" y2="36.83" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

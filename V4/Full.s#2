@@ -27216,13 +27216,12 @@ Source: http://www.3M.com/ehpd</description>
 <wire x1="76.2" y1="-137.16" x2="-53.34" y2="-137.16" width="0.1524" layer="91"/>
 <pinref part="INSRUCTION_REGISTER_SELECTOR_UPPER" gate="A" pin="2Y"/>
 <wire x1="-12.7" y1="-246.38" x2="-7.62" y2="-246.38" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="-246.38" x2="-7.62" y2="-251.46" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="-246.38" x2="-7.62" y2="-274.32" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="-274.32" x2="-53.34" y2="-274.32" width="0.1524" layer="91"/>
 <pinref part="RAM" gate="G$1" pin="22"/>
 <pinref part="NOT_GATE2_" gate="F" pin="I"/>
 <wire x1="-53.34" y1="-246.38" x2="-45.72" y2="-246.38" width="0.1524" layer="91"/>
 <junction x="-53.34" y="-246.38"/>
-<wire x1="-7.62" y1="-251.46" x2="-7.62" y2="-274.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="REG_A_OUT" class="0">
@@ -28389,15 +28388,13 @@ Source: http://www.3M.com/ehpd</description>
 <wire x1="-139.7" y1="-187.96" x2="-60.96" y2="-187.96" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="-187.96" x2="-60.96" y2="-208.28" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="-208.28" x2="-58.42" y2="-208.28" width="0.1524" layer="91"/>
-<wire x1="-58.42" y1="-208.28" x2="-58.42" y2="-279.4" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="-281.94" x2="-7.62" y2="-281.94" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="-208.28" x2="-58.42" y2="-281.94" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="-281.94" x2="-7.62" y2="-281.94" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="-281.94" x2="-7.62" y2="-279.4" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="-279.4" x2="0" y2="-279.4" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="-266.7" x2="2.54" y2="-269.24" width="0.1524" layer="91"/>
 <wire x1="0" y1="-279.4" x2="0" y2="-269.24" width="0.1524" layer="91"/>
 <wire x1="0" y1="-269.24" x2="2.54" y2="-269.24" width="0.1524" layer="91"/>
-<wire x1="-58.42" y1="-279.4" x2="-48.26" y2="-279.4" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="-279.4" x2="-48.26" y2="-281.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

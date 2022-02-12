@@ -2,7 +2,7 @@
 import os
 
 
-whichEEPROM = 0
+whichEEPROM = 1
 
 
 FetchCommand = [
