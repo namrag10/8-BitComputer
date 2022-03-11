@@ -4,10 +4,12 @@ import os
 rawOutput = []
 
 Instructions = [
-[2, 5],
-[10, 7],
+[2, 2],
+[3, 0],
+[2, 0],
+[4, 0],
 [15],
-[6, 1],
+[6, 3],
 ]
 
 for x in range(8192):
