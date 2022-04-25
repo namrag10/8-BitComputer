@@ -45,8 +45,8 @@ def main():
 
         for x in range(args.limit[0]):
             command = "RD" + hex(addr)[2:].zfill(4).upper() + '\n'
-            b = command.encode()
-            ser.write(b)
+            line = command.encode()
+            ser.write(line)
 
             # Wait for response
             response = ser.readline().decode().strip()
@@ -65,14 +65,15 @@ def main():
             print("Limiting to first " + str(args.limit[0]) + " bytes")
 
             if args.write:
-                for b in contents:
-
+                for line in contents:
+                    print(line)
+                    break
                     command = "WR" + \
                         hex(addr)[2:].zfill(4).upper() + \
-                        hex(int(b))[2:].zfill(2).upper() + '\n'
-                    b = command.encode()
+                        hex(int(line))[2:].zfill(2).upper() + '\n'
+                    line = command.encode()
 
-                    ser.write(b)
+                    ser.write(line)
                     addr += 1
 
                     # Wait for response
@@ -96,8 +97,8 @@ def main():
             command = "WR" + \
                 hex(addr)[2:].zfill(4).upper() + \
                 hex(0)[2:].zfill(2).upper() + '\n'
-            b = command.encode()
-            ser.write(b)
+            line = command.encode()
+            ser.write(line)
             addr += 1
 
             # Wait for response

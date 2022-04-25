@@ -5,11 +5,21 @@ rawOutput = []
 
 Instructions = [
 [2, 2],
-[3, 0],
+[3, 7],
+[2, 3],
+[5, 7],
+[8, 5],
+[7, 5],
+[2, 5],
+[3, 7],
+[1, 7],
 [2, 0],
-[4, 0],
-[15],
-[6, 3],
+[8, 6],
+[9, 6],
+[1, 7],
+[11, 1],
+[3, 7],
+[6, 6],
 ]
 
 for x in range(8192):
@@ -42,4 +52,4 @@ for i in rawOutput:
 
 f.close()
 
-os.system("py programmer.py -d COM3 -w -f Program.bin -l 8192 -o 0")
+# os.system("py programmer.py -d COM3 -w -f Program.bin -l 8192 -o 0")

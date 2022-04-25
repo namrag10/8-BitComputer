@@ -1,6 +1,0 @@
-&LDA 2
-STO 0
-&LDA 0
-ADD 0
-OUT
-BRA 3

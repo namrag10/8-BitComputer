@@ -1,5 +1,3 @@
-package codeWriter;
-
 import java.util.HashMap;
 
 public class codeMatrix {
