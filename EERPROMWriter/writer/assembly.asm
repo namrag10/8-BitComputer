@@ -1,17 +1,6 @@
-&LDA 2
-STO 7
-&LDA 3         
-SUB 7
-BRC 5 
-BRZ 5
-&LDA 5
-STO 7
-LDA 7
-&LDA 0
-BRC 6
-BRP 6
-LDA 7
-&SUB 1
-STO 7
-BRA 6
-HLT
+&LDA 45
+STO 0
+&LDA 3
+STO 1
+&LDA 90
+STO 2

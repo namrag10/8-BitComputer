@@ -58,7 +58,8 @@ def main():
 
         # Open binary file
         with open(args.file[0], mode='r') as file:
-            contents = file.readlines()
+            contents = file.readline()
+            contents = contents.split(" ")
 
             print("Input file size: " + str(len(contents)))
 
@@ -66,11 +67,10 @@ def main():
 
             if args.write:
                 for line in contents:
-                    print(line)
-                    break
+
                     command = "WR" + \
                         hex(addr)[2:].zfill(4).upper() + \
-                        hex(int(line))[2:].zfill(2).upper() + '\n'
+                        line[2:].zfill(2).upper() + '\n'
                     line = command.encode()
 
                     ser.write(line)

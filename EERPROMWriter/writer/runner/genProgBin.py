@@ -15,7 +15,7 @@ for line in asm:
 		param = int(line[index +1:-1].rstrip())
 
 	if(matrix.code(command) == None):
-		print("-------------------------------------Syntax Error!")
+		print("+ Syntax Error at: " + line + "====")
 		valid = False
 		break
 	Instructions.append([matrix.code(command), param])
@@ -24,10 +24,10 @@ asm.close()
 if(not valid):
 	exit()
 
-parameterPin = 13
+parameterPin = 9
 
 rawOutput = []
-for x in range(8192):
+for x in range(int(math.pow(2, parameterPin +1)) -1 ):
 	rawOutput.append("0")
 
 for pAddress in range(256):
@@ -45,7 +45,7 @@ for pAddress in range(256):
 
 
 fbin = open("asmOutput.bin", "w")
-f = open("Program.bin", "a")
+f = open("Program.bin", "w")
 
 
 count = 0
