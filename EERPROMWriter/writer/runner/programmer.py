@@ -67,12 +67,12 @@ def main():
 
             if args.write:
                 for line in contents:
-
+                    
                     command = "WR" + \
                         hex(addr)[2:].zfill(4).upper() + \
-                        line[2:].zfill(2).upper() + '\n'
+                        line.zfill(2).upper() + '\n'
                     line = command.encode()
-
+                   
                     ser.write(line)
                     addr += 1
 
