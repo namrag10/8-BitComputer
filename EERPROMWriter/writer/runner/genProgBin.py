@@ -7,12 +7,16 @@ asm = open("assembly.asm", "r")
 valid = True
 
 for line in asm:
-	command = line
+	command = line.rstrip()
 	param = 0
 	index = line.index(" ") if " " in line else -1
+
 	if(index > -1):
 		command = line[0:index]
-		param = int(line[index +1:-1].rstrip())
+		param = int(line[index +1:].rstrip())
+
+	print("|" + command + "|")
+	print(matrix.code(command))
 
 	if(matrix.code(command) == None):
 		print("+ Syntax Error at: " + line + "====")
