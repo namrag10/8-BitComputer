@@ -1,9 +1,10 @@
-&LDA 5
-&SUB 5
+&LDA 8
+&SUB 8
 BRZ 4
 BRA 7
 &LDA 9
 STO 0
 HLT
 &LDA 15
+STO 0
 HLT

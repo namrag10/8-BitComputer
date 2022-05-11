@@ -15,9 +15,6 @@ for line in asm:
 		command = line[0:index]
 		param = int(line[index +1:].rstrip())
 
-	print("|" + command + "|")
-	print(matrix.code(command))
-
 	if(matrix.code(command) == None):
 		print("+ Syntax Error at: " + line + "====")
 		valid = False
