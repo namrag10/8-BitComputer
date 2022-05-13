@@ -28,7 +28,7 @@ if(not valid):
 parameterPin = 9
 
 rawOutput = []
-for x in range(int(math.pow(2, parameterPin +1)) -1 ):
+for x in range(int(math.pow(2, parameterPin))):
 	rawOutput.append("0")
 
 for pAddress in range(256):
@@ -57,4 +57,4 @@ for i in rawOutput:
 f.close()
 fbin.close()
 
-os.system("py runner/programmer.py -d COM3 -w -f Program.bin -l 8192 -o 0")
+# os.system("py runner/programmer.py -d COM3 -w -f Program.bin -l 8192 -o 0")
