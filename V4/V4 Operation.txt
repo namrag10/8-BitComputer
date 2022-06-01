@@ -86,7 +86,9 @@ Line 19 - Stack Pop
 Line 20 - OUT Reg		**IN**
 
 Line 21 - Parameter Register 	**IN**
-
+v
+-->	both HIGH = Input Required
+^
 Line 22 - Parameter Register		**OUT**
 
 Line 23 - Branch Selector B
