@@ -28917,27 +28917,18 @@ Source: http://www.3M.com/ehpd</description>
 <segment>
 <pinref part="IC4" gate="G$1" pin="10"/>
 <wire x1="360.68" y1="175.26" x2="381" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="421.64" y1="220.98" x2="360.68" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="175.26" x2="360.68" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="220.98" x2="416.56" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$86" class="0">
 <segment>
-<pinref part="IC1" gate="A" pin="SCL"/>
-<wire x1="307.34" y1="208.28" x2="294.64" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="208.28" x2="294.64" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="A" pin="SCL"/>
-<wire x1="294.64" y1="170.18" x2="307.34" y2="170.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$97" class="0">
-<segment>
-<pinref part="IC2" gate="A" pin="RCK"/>
-<wire x1="307.34" y1="165.1" x2="304.8" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="165.1" x2="304.8" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="195.58" x2="307.34" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="RCK"/>
-<wire x1="307.34" y1="195.58" x2="307.34" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="203.2" x2="307.34" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="195.58" x2="304.8" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="195.58" x2="304.8" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="A" pin="SCL"/>
+<wire x1="304.8" y1="170.18" x2="307.34" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
