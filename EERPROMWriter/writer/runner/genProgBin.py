@@ -57,4 +57,4 @@ for i in rawOutput:
 f.close()
 fbin.close()
 
-# os.system("py runner/programmer.py -d COM3 -w -f Program.bin -l 8192 -o 0")
+os.system("py runner/programmer.py -d COM3 -w -f Program.bin -l 8192 -o 0")
