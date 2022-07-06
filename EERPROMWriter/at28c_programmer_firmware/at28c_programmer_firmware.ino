@@ -33,10 +33,12 @@
 #define WRITE_ENABLE  7
 
 // I/O pins
-const int I[] = {44, 45, 48, 49, 50, 51, 52, 53};
+//const int I[] = {44, 45, 48, 49, 50, 51, 52, 53};
+const int I[] = {53, 52, 51, 50, 49, 48, 45, 44};
 
 // Address pins
-const int A[] = {26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40};
+//const int A[] = {26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40}; -> needed to reverse this for pinout
+const int A[] = {40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26};
 
 // Input buffers
 char readAddr[5];

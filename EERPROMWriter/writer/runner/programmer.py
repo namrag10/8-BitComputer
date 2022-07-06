@@ -76,6 +76,7 @@ def main():
                     ser.write(line)
                     addr += 1
 
+
                     # Wait for response
                     response = ser.readline().decode().strip()
 

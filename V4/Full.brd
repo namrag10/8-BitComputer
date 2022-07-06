@@ -3621,6 +3621,11 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="11P9384" x="6.35" y="-69.85" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="13.335" y="-71.12" size="1.27" layer="27" rot="R90"/>
 </element>
+<element name="OUTPUT_BUFFER_ALU1" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL20" package3d_urn="urn:adsk.eagle:package:16429/2" value="74LS245N" x="13.97" y="-80.01" smashed="yes">
+<attribute name="NAME" x="0.889" y="-83.058" size="1.27" layer="25" rot="R90"/>
+<attribute name="POPULARITY" value="0" x="13.97" y="-80.01" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="4.191" y="-80.391" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -3833,13 +3838,12 @@ design rules under a new name.</description>
 <contactref element="INP_SELECTOR" pad="1"/>
 <contactref element="IC1" pad="8"/>
 <contactref element="IC2" pad="8"/>
-<contactref element="IC1" pad="13"/>
-<contactref element="IC2" pad="13"/>
 <contactref element="INSTRUCTION_MEMORY_3" pad="14"/>
 <contactref element="KEYBOARD" pad="4"/>
 <contactref element="INSTRUCTION_MEMORY_3" pad="2"/>
 <contactref element="IC1" pad="10"/>
 <contactref element="IC2" pad="10"/>
+<contactref element="OUTPUT_BUFFER_ALU1" pad="10"/>
 <wire x1="204.47" y1="52.07" x2="201.93" y2="52.07" width="0" layer="19" extent="1-1"/>
 <wire x1="209.55" y1="52.07" x2="204.47" y2="52.07" width="0" layer="19" extent="1-1"/>
 <wire x1="186.69" y1="52.07" x2="201.93" y2="52.07" width="0" layer="19" extent="1-1"/>
@@ -4032,14 +4036,13 @@ design rules under a new name.</description>
 <wire x1="185.42" y1="82.55" x2="193.04" y2="82.55" width="0" layer="19" extent="1-1"/>
 <wire x1="177.8" y1="82.55" x2="185.42" y2="82.55" width="0" layer="19" extent="1-1"/>
 <wire x1="17.78" y1="-24.13" x2="35.56" y2="3.81" width="0" layer="19" extent="1-1"/>
-<wire x1="10.16" y1="-24.13" x2="17.78" y2="-24.13" width="0" layer="19" extent="1-1"/>
 <wire x1="20.32" y1="-31.75" x2="17.78" y2="-24.13" width="0" layer="19" extent="1-1"/>
 <wire x1="17.78" y1="-35.56" x2="20.32" y2="-31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="10.16" y1="-35.56" x2="17.78" y2="-35.56" width="0" layer="19" extent="1-1"/>
 <wire x1="20.32" y1="-43.18" x2="17.78" y2="-35.56" width="0" layer="19" extent="1-1"/>
 <wire x1="5.08" y1="-62.23" x2="20.32" y2="-43.18" width="0" layer="19" extent="1-1"/>
 <wire x1="10.16" y1="-69.85" x2="5.08" y2="-62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="35.56" y1="-62.23" x2="20.32" y2="-43.18" width="0" layer="19" extent="1-1"/>
+<wire x1="25.4" y1="-83.82" x2="10.16" y2="-69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="35.56" y1="-62.23" x2="25.4" y2="-83.82" width="0" layer="19" extent="1-1"/>
 <wire x1="196.85" y1="158.75" x2="198.12" y2="193.04" width="0" layer="19" extent="1-1"/>
 <wire x1="208.28" y1="154.94" x2="196.85" y2="158.75" width="0" layer="19" extent="1-1"/>
 <wire x1="181.61" y1="158.75" x2="196.85" y2="158.75" width="0" layer="19" extent="1-1"/>
@@ -4145,6 +4148,7 @@ design rules under a new name.</description>
 <contactref element="INSTRUCTION_MEMORY_3" pad="28"/>
 <contactref element="INSTRUCTION_MEMORY_3" pad="27"/>
 <contactref element="KEYBOARD" pad="1"/>
+<contactref element="OUTPUT_BUFFER_ALU1" pad="20"/>
 <wire x1="227.33" y1="44.45" x2="204.47" y2="44.45" width="0" layer="19" extent="1-1"/>
 <wire x1="177.8" y1="57.15" x2="204.47" y2="44.45" width="0" layer="19" extent="1-1"/>
 <wire x1="170.18" y1="57.15" x2="177.8" y2="57.15" width="0" layer="19" extent="1-1"/>
@@ -4232,6 +4236,7 @@ design rules under a new name.</description>
 <wire x1="2.54" y1="-46.99" x2="2.54" y2="-35.56" width="0" layer="19" extent="1-1"/>
 <wire x1="5.08" y1="-46.99" x2="2.54" y2="-46.99" width="0" layer="19" extent="1-1"/>
 <wire x1="2.54" y1="-69.85" x2="2.54" y2="-46.99" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="-76.2" x2="2.54" y2="-69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="STEPPER_CLOCK" pad="6"/>
@@ -6347,7 +6352,7 @@ design rules under a new name.</description>
 <contactref element="INP_SELECTOR" pad="2"/>
 <wire x1="43.18" y1="167.64" x2="105.41" y2="113.03" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$61">
+<signal name="INPUT_CTRL">
 <contactref element="INP_SELECTOR" pad="7"/>
 </signal>
 <signal name="N$63">
@@ -6367,74 +6372,15 @@ design rules under a new name.</description>
 <wire x1="15.24" y1="-35.56" x2="7.62" y2="-69.85" width="0" layer="19" extent="1-1"/>
 <wire x1="15.24" y1="-24.13" x2="15.24" y2="-35.56" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$80">
-<contactref element="IC1" pad="1"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="11"/>
-<wire x1="2.54" y1="-31.75" x2="27.94" y2="-62.23" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$81">
-<contactref element="IC1" pad="2"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="12"/>
-<wire x1="5.08" y1="-31.75" x2="30.48" y2="-62.23" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$82">
-<contactref element="IC1" pad="3"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="13"/>
-<wire x1="7.62" y1="-31.75" x2="33.02" y2="-62.23" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$85">
-<contactref element="IC1" pad="5"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="16"/>
-<wire x1="33.02" y1="-46.99" x2="12.7" y2="-31.75" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$95">
-<contactref element="IC1" pad="7"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="18"/>
-<wire x1="17.78" y1="-31.75" x2="27.94" y2="-46.99" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$98">
-<contactref element="IC1" pad="4"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="15"/>
-<wire x1="35.56" y1="-46.99" x2="10.16" y2="-31.75" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$100">
 <contactref element="IC1" pad="12"/>
 <contactref element="IC2" pad="12"/>
 <wire x1="12.7" y1="-24.13" x2="12.7" y2="-35.56" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$102">
-<contactref element="INSTRUCTION_MEMORY_3" pad="3"/>
-</signal>
-<signal name="N$103">
-<contactref element="INSTRUCTION_MEMORY_3" pad="4"/>
-</signal>
-<signal name="N$104">
-<contactref element="INSTRUCTION_MEMORY_3" pad="5"/>
-</signal>
-<signal name="N$105">
-<contactref element="INSTRUCTION_MEMORY_3" pad="6"/>
-</signal>
-<signal name="N$106">
-<contactref element="INSTRUCTION_MEMORY_3" pad="7"/>
-</signal>
-<signal name="N$108">
-<contactref element="INSTRUCTION_MEMORY_3" pad="8"/>
-</signal>
-<signal name="N$109">
-<contactref element="INSTRUCTION_MEMORY_3" pad="9"/>
-</signal>
-<signal name="N$86">
-<contactref element="INSTRUCTION_MEMORY_3" pad="10"/>
-</signal>
-<signal name="N$101">
-<contactref element="INSTRUCTION_MEMORY_3" pad="17"/>
-<contactref element="IC1" pad="6"/>
-<wire x1="15.24" y1="-31.75" x2="30.48" y2="-46.99" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$113">
-<contactref element="INSTRUCTION_MEMORY_3" pad="19"/>
-<contactref element="IC2" pad="15"/>
-<wire x1="25.4" y1="-46.99" x2="5.08" y2="-35.56" width="0" layer="19" extent="1-1"/>
+<signal name="N$61">
+<contactref element="IC1" pad="13"/>
+<contactref element="IC2" pad="13"/>
+<wire x1="10.16" y1="-24.13" x2="10.16" y2="-35.56" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
