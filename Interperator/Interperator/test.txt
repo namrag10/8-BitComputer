@@ -1,7 +1,0 @@
-DAT i 00
-
-&LDA 4
-//STO i
-//&LDA 5
-//ADD i
-//HLT
