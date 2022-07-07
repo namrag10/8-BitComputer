@@ -76,7 +76,9 @@ v
 Line 16 - Instruction Register		**OUT**
 
 Line 17 - Flag Register 		**OUT**
-
+v
+-->	both HIGH = INP	**OUT**
+^
 Line 18 - Stack Push
 v
 -->	both HIGH = RAM INPUT Mode
