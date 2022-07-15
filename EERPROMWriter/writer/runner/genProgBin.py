@@ -1,6 +1,8 @@
 import math
 import os
 import matrix
+import serial
+import time
 
 Instructions = []
 asm = open("assembly.asm", "r")
@@ -57,5 +59,92 @@ for i in rawOutput:
 f.close()
 fbin.close()
 
-os.system("py runner/programmer.py -d COM3 -w -f Program.bin -l 8192 -o 0")
-os.system("py runner/programmer.py -d COM3 -r -o 0 -l 20")
+
+
+
+
+
+#os.system("py runner/programmer.py -d COM3 -w -f Program.bin -l 8192 -o 0")
+#os.system("py runner/programmer.py -d COM3 -r -o 0 -l 20")
+
+
+def write():
+	ret = []
+
+	ser = serial.Serial("COM3", 115200)
+	time.sleep(1)
+	print("Writing file " + "Program.bin" + " to EEPROM")
+	addr = 0
+	# Open binary file
+	with open("Program.bin", mode='r') as file:
+		contents = file.readline()
+		contents = contents.split(" ")
+
+		print("Input file size: " + str(len(contents)))
+
+		print("Limiting to first " + str(8192) + " bytes")
+
+		for line in contents:
+			
+			ret.append(str(line.zfill(2).upper()))
+					
+			command = "WR" + \
+				hex(addr)[2:].zfill(4).upper() + \
+				line.zfill(2).upper() + '\n'
+			line = command.encode()
+				   
+			ser.write(line)
+			addr += 1
+
+
+			# Wait for response
+			response = ser.readline().decode().strip()
+
+			if response != "DONE":
+				print(response)
+				ser.close()
+				print("Closed " + ser.name)
+				exit(1)
+			else:
+				print(
+					str(addr - 0) + " / " + str(len(contents)))
+
+			if 8192 is not None and addr >= 8192 + 0:
+				break
+		return ret
+
+def Read(lim):
+	values = []
+	ser = serial.Serial("COM3", 115200)
+	time.sleep(1)
+	print("Validating Write...")
+	addr = 0
+	for x in range(lim):
+		command = "RD" + hex(addr)[2:].zfill(4).upper() + '\n'
+		line = command.encode()
+		ser.write(line)
+
+		# Wait for response
+		response = ser.readline().decode().strip()
+		#print(hex(addr)[2:].zfill(4).upper() + " : " + response.zfill(2))
+		values.append(str(response.zfill(2).upper()))
+
+		addr += 1
+	return values
+
+amount = 512
+
+pres = write()
+vals = Read(amount)
+
+valid = True
+for i in range(amount):
+	if(vals[i] != pres[i]):
+		valid = False
+		print(vals[i] + " : " + pres[i] + " - " + str(i))
+		break
+
+if(valid):
+	print("Validation successful!")
+else:
+	print("Transcription Error!")
