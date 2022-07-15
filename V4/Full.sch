@@ -70,6 +70,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -22762,6 +22763,95 @@ Source: http://www.3M.com/ehpd</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="diode" urn="urn:adsk.eagle:library:210">
+<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Motorola : www.onsemi.com
+&lt;li&gt;Fairchild : www.fairchildsemi.com
+&lt;li&gt;Philips : www.semiconductors.com
+&lt;li&gt;Vishay : www.vishay.de
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DO41Z10" urn="urn:adsk.eagle:footprint:43100/1" library_version="8">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 2.54 mm, horizontal, grid 10.16 mm</description>
+<wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="0" x2="3.937" y2="0" width="0.762" layer="51"/>
+<wire x1="-5.08" y1="0" x2="-4.064" y2="0" width="0.762" layer="51"/>
+<wire x1="-0.635" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.635" x2="1.016" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.016" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<pad name="C" x="-5.08" y="0" drill="1.1176"/>
+<pad name="A" x="5.08" y="0" drill="1.1176"/>
+<text x="-1.905" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.905" y="-2.794" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
+<rectangle x1="2.032" y1="-0.381" x2="3.937" y2="0.381" layer="21"/>
+<rectangle x1="-3.937" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="DO41Z10" urn="urn:adsk.eagle:package:43341/1" type="box" library_version="8">
+<description>DIODE
+diameter 2.54 mm, horizontal, grid 10.16 mm</description>
+<packageinstances>
+<packageinstance name="DO41Z10"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="ZD" urn="urn:adsk.eagle:symbol:43096/2" library_version="8">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<text x="-1.778" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.778" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1N4728" urn="urn:adsk.eagle:component:43493/3" prefix="D" library_version="8">
+<description>&lt;b&gt;Z DIODE&lt;/b&gt;&lt;p&gt;
+3.3 V, 1W, 5 percent</description>
+<gates>
+<gate name="1" symbol="ZD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO41Z10">
+<connects>
+<connect gate="1" pin="A" pad="A"/>
+<connect gate="1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43341/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="6" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -23109,6 +23199,7 @@ Source: http://www.3M.com/ehpd</description>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2-5" package3d_urn="urn:adsk.eagle:package:23346/2" value="0.1uF"/>
 <part name="IC4" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" deviceset="74*02" device="N" package3d_urn="urn:adsk.eagle:package:16407/2" technology="LS"/>
 <part name="IC5" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" deviceset="74*86" device="N" package3d_urn="urn:adsk.eagle:package:16407/2" technology="S"/>
+<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4728" device="" package3d_urn="urn:adsk.eagle:package:43341/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -23159,7 +23250,6 @@ Source: http://www.3M.com/ehpd</description>
 <text x="322.58" y="182.88" size="1.778" layer="91">CLK</text>
 <text x="309.88" y="172.72" size="1.778" layer="91">Data</text>
 <text x="-17.78" y="-180.34" size="1.778" layer="91">RAM</text>
-<text x="297.18" y="109.22" size="1.778" layer="91" rot="R90">DIODE</text>
 </plain>
 <instances>
 <instance part="STEPPER_CLOCK" gate="A" x="7.62" y="360.68" smashed="yes">
@@ -23918,9 +24008,7 @@ Source: http://www.3M.com/ehpd</description>
 <instance part="NOT_GATE3_" gate="C" x="299.72" y="167.64" smashed="yes" rot="R270"/>
 <instance part="P+25" gate="VCC" x="304.8" y="127" smashed="yes" rot="R90"/>
 <instance part="GND62" gate="1" x="309.88" y="147.32" smashed="yes" rot="R180"/>
-<instance part="R6" gate="G$1" x="302.26" y="114.3" smashed="yes" rot="R270">
-<attribute name="VALUE" x="298.958" y="118.11" size="1.778" layer="96" rot="R270"/>
-</instance>
+<instance part="R6" gate="G$1" x="302.26" y="114.3" smashed="yes" rot="R270"/>
 <instance part="C4" gate="G$1" x="304.8" y="104.14" smashed="yes" rot="R90"/>
 <instance part="NOT_GATE3_" gate="D" x="256.54" y="91.44" smashed="yes" rot="R180"/>
 <instance part="NOT_GATE3_" gate="E" x="236.22" y="91.44" smashed="yes" rot="R180"/>
@@ -23931,6 +24019,7 @@ Source: http://www.3M.com/ehpd</description>
 <instance part="AND_GATE_" gate="D" x="157.48" y="93.98" smashed="yes" rot="R180"/>
 <instance part="NOT_GATE_" gate="B" x="302.26" y="91.44" smashed="yes" rot="R180"/>
 <instance part="NOT_GATE_" gate="C" x="195.58" y="91.44" smashed="yes" rot="R180"/>
+<instance part="D1" gate="1" x="297.18" y="116.84" smashed="yes" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -29047,6 +29136,7 @@ Source: http://www.3M.com/ehpd</description>
 <junction x="304.8" y="129.54"/>
 <wire x1="297.18" y1="119.38" x2="302.26" y2="119.38" width="0.1524" layer="91"/>
 <junction x="302.26" y="119.38"/>
+<pinref part="D1" gate="1" pin="A"/>
 </segment>
 </net>
 <net name="N$81" class="0">
@@ -29143,7 +29233,6 @@ Source: http://www.3M.com/ehpd</description>
 <wire x1="302.26" y1="104.14" x2="302.26" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="104.14" x2="297.18" y2="104.14" width="0.1524" layer="91"/>
 <junction x="302.26" y="104.14"/>
-<wire x1="297.18" y1="104.14" x2="297.18" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="302.26" y1="104.14" x2="302.26" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="99.06" x2="292.1" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="292.1" y1="99.06" x2="292.1" y2="101.6" width="0.1524" layer="91"/>
@@ -29154,6 +29243,8 @@ Source: http://www.3M.com/ehpd</description>
 <junction x="302.26" y="101.6"/>
 <pinref part="IC4" gate="A" pin="I1"/>
 <wire x1="180.34" y1="96.52" x2="180.34" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="D1" gate="1" pin="C"/>
+<wire x1="297.18" y1="104.14" x2="297.18" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$108" class="0">
