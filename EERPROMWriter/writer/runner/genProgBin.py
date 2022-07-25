@@ -79,6 +79,7 @@ def write():
 	with open("Program.bin", mode='r') as file:
 		contents = file.readline()
 		contents = contents.split(" ")
+		contents[len(contents) -1] = "FF"
 
 		print("Input file size: " + str(len(contents)))
 
@@ -94,7 +95,6 @@ def write():
 			line = command.encode()
 				   
 			ser.write(line)
-			addr += 1
 
 
 			# Wait for response
@@ -108,6 +108,7 @@ def write():
 			else:
 				print(
 					str(addr - 0) + " / " + str(len(contents)))
+			addr += 1
 
 			if 8192 is not None and addr >= 8192 + 0:
 				break
@@ -141,7 +142,7 @@ valid = True
 for i in range(amount):
 	if(vals[i] != pres[i]):
 		valid = False
-		print(vals[i] + " : " + pres[i] + " - " + str(i))
+		print(vals[i] + " should be " + pres[i] + " at addr: " + str(i))
 		break
 
 if(valid):

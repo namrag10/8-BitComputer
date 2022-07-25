@@ -19,7 +19,8 @@ matrix = {
 "JMP": 16,
 "INC": 17,
 "DEC": 18,
-"JPF": 19
+"JPF": 19,
+"INP": 20
 }
 def code(command):
     return matrix.get(command)

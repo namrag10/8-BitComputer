@@ -1,7 +1,9 @@
 
 import os
+import serial
+import time
 
-
+# 0 = 1 etc.
 whichEEPROM = 1
 
 
@@ -36,6 +38,7 @@ Instructions = [
 					[ 0, 0, 4, 128, 0 ],		# INC	17
 					[ 0, 0, 4, 128, 0 ],		# DEC	18
 					[ 128, 0 ],					# JPF	19
+					[ 0, 7, 128, 0 ],			# INP	20
 
 				],
 				
@@ -60,6 +63,7 @@ Instructions = [
 					[ 1, 16, 4, 144, 3 ],		# INC	17
 					[ 1, 24, 12, 144, 3 ],		# DEC	18
 					[ 144, 3],					# JPF	19
+					[ 0, 0, 144, 3 ],			# INP 	20
 
 				],
 
@@ -84,6 +88,7 @@ Instructions = [
 					[ 32, 0, 0, 0, 0],			# INC	17
 					[ 32, 0, 0, 0, 0],			# DEC	18
 					[ 0, 0 ],					# JPF	19
+					[ 48, 0, 0, 0 ],			# INP 	20
 
 				]
 			]
@@ -91,10 +96,10 @@ Instructions = [
 if(len(Instructions[0]) == len(Instructions[1]) and len(Instructions[1]) == len(Instructions[2])):
 	Instructions = Instructions[whichEEPROM]
 else:
-	print("Instruction size are not the same!")
+	print("Instruction sizes are not the same!")
 	exit()
 
-for x in range(8192):
+for x in range(4096):
 	rawOutput.append("0")
 
 for pAddress in range(256):
@@ -107,22 +112,107 @@ for pAddress in range(256):
 				rawOutput[res] = Instructions[pAddress][subInstruction - len(FetchCommand)]
 			else:
 				rawOutput[res] = 0
-			
-
-# print(rawOutput)
 
 
-f = open("file.txt", "w")
-f.write("")
-f.close()
-
-f = open("file.txt", "a")
 
 
+fbin = open("asmOutput.bin", "w")
+f = open("Program.bin", "w")
+
+
+count = 0
 for i in rawOutput:
-    f.write(str(i) + "\n")
+	f.write(format(int(i), "x").zfill(2) + " ")
+	fbin.write(format(int(i), "b").zfill(8))
+
 
 f.close()
+fbin.close()
 
 
-os.system("py programmer.py -d COM3 -w -f file.txt -l 8192 -o 0")
+# os.system("py programmer.py -d COM3 -w -f file.txt -l 8192 -o 0")
+
+
+
+
+def write():
+	ret = []
+
+	ser = serial.Serial("COM3", 115200)
+	time.sleep(1)
+	print("Writing file " + "Program.bin" + " to EEPROM")
+	addr = 0
+	# Open binary file
+	with open("Program.bin", mode='r') as file:
+		contents = file.readline()
+		contents = contents.split(" ")
+		contents[len(contents) -1] = "FF"
+
+
+		print("Input file size: " + str(len(contents)))
+
+		print("Limiting to first " + str(8192) + " bytes")
+
+		for line in contents:
+			
+			ret.append(str(line.zfill(2).upper()))
+					
+			command = "WR" + \
+				hex(addr)[2:].zfill(4).upper() + \
+				line.zfill(2).upper() + '\n'
+			line = command.encode()
+				   
+			ser.write(line)
+
+
+			# Wait for response
+			response = ser.readline().decode().strip()
+
+			if response != "DONE":
+				print(response)
+				ser.close()
+				print("Closed " + ser.name)
+				exit(1)
+			else:
+				print(str(addr) + " / " + str(len(contents)))
+
+			addr += 1
+
+			if 8192 is not None and addr >= 8192 + 0:
+				break
+		return ret
+
+def Read(lim):
+	values = []
+	ser = serial.Serial("COM3", 115200)
+	time.sleep(1)
+	print("Validating Write...")
+	addr = 0
+	for x in range(lim):
+		command = "RD" + hex(addr)[2:].zfill(4).upper() + '\n'
+		line = command.encode()
+		ser.write(line)
+
+		# Wait for response
+		response = ser.readline().decode().strip()
+		values.append(str(response.zfill(2).upper()))
+
+		addr += 1
+	return values
+
+amount = 4096
+
+pres = write()
+vals = Read(amount)
+
+valid = True
+for i in range(amount):
+	if(vals[i] != pres[i]):
+		valid = False
+		print(vals[i] + " should be " + pres[i] + " at addr: " + str(i))
+		break
+
+if(valid):
+	print("Validation successful!")
+else:
+	print("Transcription Error!")
