@@ -35,7 +35,9 @@ Control Lines
 
 
 Line 1 - Memory (Address Register) 	**IN**
-
+v
+-->	both HIGH = INP Out	**OUT**
+^
 Line 2 - Memory Value		**OUT**
 
 Line 3 - 'A' Register (Address Register) 	**IN**
@@ -76,9 +78,7 @@ v
 Line 16 - Instruction Register		**OUT**
 
 Line 17 - Flag Register 		**OUT**
-v
--->	both HIGH = INP	**OUT**
-^
+
 Line 18 - Stack Push
 v
 -->	both HIGH = RAM INPUT Mode
@@ -88,8 +88,8 @@ Line 19 - Stack Pop
 Line 20 - OUT Reg		**IN**
 
 Line 21 - Parameter Register 	**IN**
-v
--->	both HIGH = Input Required
+
+-->	both HIGH = INP	**TEMP HLT**
 ^
 Line 22 - Parameter Register		**OUT**
 
