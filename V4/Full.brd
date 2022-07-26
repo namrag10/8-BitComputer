@@ -26,7 +26,7 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -1507,12 +1507,98 @@ type 0204, grid 7.5 mm</description>
 <rectangle x1="-0.508" y1="-1.016" x2="0.508" y2="-0.635" layer="21"/>
 <rectangle x1="-0.508" y1="-1.651" x2="0.508" y2="-1.27" layer="21"/>
 </package>
+<package name="7SEG-13" urn="urn:adsk.eagle:footprint:26588/1" library_version="3">
+<description>7-segment &lt;B&gt;DISPLAY&lt;/B&gt;&lt;p&gt;
+13 mm</description>
+<wire x1="6.096" y1="-8.636" x2="6.096" y2="8.636" width="0.1524" layer="21"/>
+<wire x1="-6.096" y1="8.636" x2="6.096" y2="8.636" width="0.1524" layer="21"/>
+<wire x1="-6.096" y1="8.636" x2="-6.096" y2="-8.636" width="0.1524" layer="21"/>
+<wire x1="6.096" y1="-8.636" x2="-6.096" y2="-8.636" width="0.1524" layer="21"/>
+<wire x1="3.5306" y1="4.7498" x2="4.4196" y2="5.461" width="0.254" layer="21"/>
+<wire x1="4.4196" y1="5.461" x2="4.8768" y2="5.1308" width="0.254" layer="21"/>
+<wire x1="2.8448" y1="1.0414" x2="3.9878" y2="0.4064" width="0.254" layer="21"/>
+<wire x1="3.9878" y1="0.4064" x2="4.8768" y2="5.1308" width="0.254" layer="21"/>
+<wire x1="3.5306" y1="4.7498" x2="2.8448" y2="1.0414" width="0.254" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="3.683" y2="0" width="0.254" layer="21"/>
+<wire x1="3.175" y1="5.08" x2="4.0386" y2="5.7658" width="0.254" layer="21"/>
+<wire x1="4.0386" y1="5.7658" x2="3.2766" y2="6.35" width="0.254" layer="21"/>
+<wire x1="2.413" y1="-0.635" x2="3.683" y2="0" width="0.254" layer="21"/>
+<wire x1="2.4638" y1="-1.1938" x2="3.81" y2="-0.508" width="0.254" layer="21"/>
+<wire x1="3.81" y1="-0.508" x2="2.921" y2="-5.4102" width="0.254" layer="21"/>
+<wire x1="2.4638" y1="-1.1938" x2="1.8034" y2="-4.7498" width="0.254" layer="21"/>
+<wire x1="1.4732" y1="-5.08" x2="2.2352" y2="-5.9944" width="0.254" layer="21"/>
+<wire x1="2.2352" y1="-5.9944" x2="1.8288" y2="-6.35" width="0.254" layer="21"/>
+<wire x1="1.8034" y1="-4.7498" x2="2.5908" y2="-5.6896" width="0.254" layer="21"/>
+<wire x1="2.5908" y1="-5.6896" x2="2.921" y2="-5.4102" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-3.683" y2="0" width="0.254" layer="21"/>
+<wire x1="-3.175" y1="-5.08" x2="-4.0386" y2="-5.7658" width="0.254" layer="21"/>
+<wire x1="-4.0386" y1="-5.7658" x2="-3.2766" y2="-6.35" width="0.254" layer="21"/>
+<wire x1="-3.2766" y1="-6.35" x2="1.8288" y2="-6.35" width="0.254" layer="21"/>
+<wire x1="-3.175" y1="-5.08" x2="1.4732" y2="-5.08" width="0.254" layer="21"/>
+<wire x1="2.413" y1="-0.635" x2="-2.54" y2="-0.635" width="0.254" layer="21"/>
+<wire x1="-2.413" y1="0.635" x2="-3.683" y2="0" width="0.254" layer="21"/>
+<wire x1="-2.413" y1="0.635" x2="2.54" y2="0.635" width="0.254" layer="21"/>
+<wire x1="-1.4732" y1="5.08" x2="-2.2352" y2="5.9944" width="0.254" layer="21"/>
+<wire x1="-2.2352" y1="5.9944" x2="-1.8288" y2="6.35" width="0.254" layer="21"/>
+<wire x1="-1.8288" y1="6.35" x2="3.2766" y2="6.35" width="0.254" layer="21"/>
+<wire x1="-1.4732" y1="5.08" x2="3.175" y2="5.08" width="0.254" layer="21"/>
+<wire x1="-3.302" y1="-5.715" x2="1.397" y2="-5.715" width="1.016" layer="21"/>
+<wire x1="2.413" y1="-4.699" x2="3.048" y2="-1.524" width="1.016" layer="21"/>
+<wire x1="-2.667" y1="0" x2="2.667" y2="0" width="1.016" layer="21"/>
+<wire x1="2.54" y1="-5.207" x2="2.667" y2="-5.08" width="0.762" layer="21"/>
+<wire x1="3.556" y1="1.397" x2="4.191" y2="4.699" width="1.016" layer="21"/>
+<wire x1="4.445" y1="5.08" x2="4.572" y2="4.953" width="0.508" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.889" width="0.6604" layer="21"/>
+<wire x1="3.302" y1="5.715" x2="-1.397" y2="5.715" width="1.016" layer="21"/>
+<wire x1="-2.032" y1="5.842" x2="-1.651" y2="6.223" width="0.4064" layer="21"/>
+<wire x1="-3.5306" y1="-4.7498" x2="-4.4196" y2="-5.461" width="0.254" layer="21"/>
+<wire x1="-4.4196" y1="-5.461" x2="-4.8768" y2="-5.1308" width="0.254" layer="21"/>
+<wire x1="-2.8448" y1="-1.0414" x2="-3.9878" y2="-0.4064" width="0.254" layer="21"/>
+<wire x1="-3.9878" y1="-0.4064" x2="-4.8768" y2="-5.1308" width="0.254" layer="21"/>
+<wire x1="-3.5306" y1="-4.7498" x2="-2.8448" y2="-1.0414" width="0.254" layer="21"/>
+<wire x1="-2.4638" y1="1.1938" x2="-3.81" y2="0.508" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="0.508" x2="-2.921" y2="5.4102" width="0.254" layer="21"/>
+<wire x1="-2.4638" y1="1.1938" x2="-1.8034" y2="4.7498" width="0.254" layer="21"/>
+<wire x1="-1.8034" y1="4.7498" x2="-2.5908" y2="5.6896" width="0.254" layer="21"/>
+<wire x1="-2.5908" y1="5.6896" x2="-2.921" y2="5.4102" width="0.254" layer="21"/>
+<wire x1="-2.413" y1="4.699" x2="-3.048" y2="1.524" width="1.016" layer="21"/>
+<wire x1="-2.54" y1="5.207" x2="-2.667" y2="5.08" width="0.762" layer="21"/>
+<wire x1="-3.556" y1="-1.397" x2="-4.191" y2="-4.699" width="1.016" layer="21"/>
+<wire x1="-4.445" y1="-5.08" x2="-4.572" y2="-4.953" width="0.508" layer="21"/>
+<wire x1="-3.175" y1="-1.27" x2="-3.81" y2="-0.889" width="0.6604" layer="21"/>
+<circle x="4.572" y="-5.715" radius="0.381" width="0.762" layer="21"/>
+<pad name="1" x="-5.08" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-2.54" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="0" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="2.54" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="5.08" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="5.08" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="2.54" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="0" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="-2.54" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="-5.08" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<text x="-6.096" y="9.144" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+<text x="-6.096" y="-10.922" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="1.524" y1="-6.223" x2="2.159" y2="-5.715" layer="21"/>
+<rectangle x1="3.175" y1="-1.27" x2="3.683" y2="-0.762" layer="21"/>
+<rectangle x1="3.048" y1="-0.254" x2="3.429" y2="0.254" layer="21"/>
+<rectangle x1="-3.429" y1="-0.127" x2="-3.048" y2="0.127" layer="21"/>
+<rectangle x1="-3.683" y1="0.762" x2="-3.175" y2="1.27" layer="21"/>
+<rectangle x1="4.318" y1="-5.842" x2="4.826" y2="-5.588" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="EDG-01" urn="urn:adsk.eagle:package:26661/1" type="box" library_version="3">
 <description>DIP SWITCH</description>
 <packageinstances>
 <packageinstance name="EDG-01"/>
+</packageinstances>
+</package3d>
+<package3d name="7SEG-13" urn="urn:adsk.eagle:package:26668/2" type="model" library_version="3">
+<description>7-segment DISPLAY
+13 mm</description>
+<packageinstances>
+<packageinstance name="7SEG-13"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2646,27 +2732,27 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="0" x="168.91" y="157.48" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="22.987" y="272.415" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="ADDR_REG_A_LOWER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS173N" x="187.96" y="162.56" smashed="yes">
+<element name="REG_A_LOWER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS173N" x="187.96" y="162.56" smashed="yes">
 <attribute name="POPULARITY" value="0" x="240.03" y="20.32" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="180.467" y="161.925" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="ADDR_REG_A_UPPER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS173N" x="165.1" y="162.56" smashed="yes">
+<element name="REG_A_UPPER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS173N" x="165.1" y="162.56" smashed="yes">
 <attribute name="POPULARITY" value="0" x="240.03" y="20.32" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="157.607" y="161.925" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="ADDR_REG_CALC_LOWER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS173N" x="195.58" y="48.26" smashed="yes" rot="R180">
+<element name="REG_CALC_LOWER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS173N" x="195.58" y="48.26" smashed="yes" rot="R180">
 <attribute name="POPULARITY" value="0" x="8.89" y="134.62" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="203.073" y="48.895" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="ADDR_REG_CALC_UPPER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS173N" x="218.44" y="48.26" smashed="yes" rot="R180">
+<element name="REG_CALC_UPPER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS173N" x="218.44" y="48.26" smashed="yes" rot="R180">
 <attribute name="POPULARITY" value="0" x="-13.97" y="134.62" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="225.933" y="48.895" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="ADDR_REG_PARAM_LOWER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS173N" x="64.77" y="92.71" smashed="yes">
+<element name="REG_PARAM_LOWER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS173N" x="64.77" y="92.71" smashed="yes">
 <attribute name="POPULARITY" value="0" x="111.76" y="6.35" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="57.277" y="92.075" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="ADDR_REG_PARAM_UPPER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS173N" x="40.64" y="92.71" smashed="yes">
+<element name="REG_PARAM_UPPER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS173N" x="40.64" y="92.71" smashed="yes">
 <attribute name="POPULARITY" value="0" x="181.61" y="6.35" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="33.147" y="92.075" size="1.27" layer="27" ratio="10"/>
 </element>
@@ -2689,7 +2775,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="16" x="208.28" y="118.11" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="23.114" y="304.165" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="BRANCH_SELECTOR" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74HC139N" x="199.39" y="250.19" smashed="yes">
+<element name="SELECTOR_BRANCH_" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74HC139N" x="199.39" y="250.19" smashed="yes">
 <attribute name="POPULARITY" value="2" x="347.98" y="107.95" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="191.897" y="249.555" size="1.27" layer="27" ratio="10"/>
 </element>
@@ -2711,11 +2797,11 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="462.28" y="459.74" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="229.489" y="288.29" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="CLK_MODE" library="special" library_urn="urn:adsk.eagle:library:367" package="EDG-01" package3d_urn="urn:adsk.eagle:package:26661/1" value="" x="81.28" y="304.8" smashed="yes">
+<element name="CLK_MODE" library="special" library_urn="urn:adsk.eagle:library:367" package="EDG-01" package3d_urn="urn:adsk.eagle:package:26661/1" value="SWITCH" x="81.28" y="304.8" smashed="yes">
 <attribute name="POPULARITY" value="3" x="163.83" y="102.87" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="79.375" y="298.196" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="CLK_TRIGGER" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="" x="45.72" y="289.56" smashed="yes">
+<element name="CLK_TRIGGER" library="switch-omron" library_urn="urn:adsk.eagle:library:377" package="B3F-10XX" package3d_urn="urn:adsk.eagle:package:27496/1" value="SWITCH" x="45.72" y="289.56" smashed="yes">
 <attribute name="MF" value="" x="195.58" y="88.9" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="195.58" y="88.9" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="176432" x="195.58" y="88.9" size="1.778" layer="27" display="off"/>
@@ -2731,31 +2817,31 @@ design rules under a new name.</description>
 <element name="DATABUS_1" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="149.86" y="295.91" smashed="yes">
 <attribute name="POPULARITY" value="93" x="316.23" y="74.93" size="1.778" layer="27" display="off"/>
 </element>
-<element name="DATABUS_2" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="142.24" y="295.91" smashed="yes">
+<element name="DATABUS_2" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="142.24" y="295.91" smashed="yes">
 <attribute name="POPULARITY" value="93" x="326.39" y="74.93" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="145.4404" y="294.1066" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="DATABUS_3" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="134.62" y="295.91" smashed="yes">
+<element name="DATABUS_3" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="134.62" y="295.91" smashed="yes">
 <attribute name="POPULARITY" value="93" x="336.55" y="74.93" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="137.8204" y="294.1066" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="DATABUS_4" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="127" y="295.91" smashed="yes">
+<element name="DATABUS_4" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="127" y="295.91" smashed="yes">
 <attribute name="POPULARITY" value="93" x="346.71" y="74.93" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="130.2004" y="294.1066" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="DATABUS_5" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="119.38" y="295.91" smashed="yes">
+<element name="DATABUS_5" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="119.38" y="295.91" smashed="yes">
 <attribute name="POPULARITY" value="93" x="356.87" y="74.93" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="122.5804" y="294.1066" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="DATABUS_6" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="111.76" y="295.91" smashed="yes">
+<element name="DATABUS_6" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="111.76" y="295.91" smashed="yes">
 <attribute name="POPULARITY" value="93" x="138.43" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="114.9604" y="294.1066" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="DATABUS_7" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="104.14" y="295.91" smashed="yes">
+<element name="DATABUS_7" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="104.14" y="295.91" smashed="yes">
 <attribute name="POPULARITY" value="93" x="148.59" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="107.3404" y="294.1066" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="DATABUS_8" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="96.52" y="295.91" smashed="yes">
+<element name="DATABUS_8" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="96.52" y="295.91" smashed="yes">
 <attribute name="POPULARITY" value="93" x="158.75" y="67.31" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="99.7204" y="294.1066" size="1.27" layer="27" ratio="10"/>
 </element>
@@ -2765,35 +2851,35 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="290.83" y="144.78" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="11P9498" x="290.83" y="144.78" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FLAG_1" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="156.21" y="44.45" smashed="yes">
+<element name="FLAG_1" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="156.21" y="44.45" smashed="yes">
 <attribute name="POPULARITY" value="93" x="308.61" y="-184.15" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="159.4104" y="42.6466" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="FLAG_2" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="148.59" y="44.45" smashed="yes">
+<element name="FLAG_2" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="148.59" y="44.45" smashed="yes">
 <attribute name="POPULARITY" value="93" x="314.96" y="-184.15" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="151.7904" y="42.6466" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="FLAG_3" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="140.97" y="44.45" smashed="yes">
+<element name="FLAG_3" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="140.97" y="44.45" smashed="yes">
 <attribute name="POPULARITY" value="93" x="321.31" y="-184.15" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="144.1704" y="42.6466" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="FLAG_4" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="133.35" y="44.45" smashed="yes">
+<element name="FLAG_4" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="133.35" y="44.45" smashed="yes">
 <attribute name="POPULARITY" value="93" x="327.66" y="-184.15" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="136.5504" y="42.6466" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="FLAG_5" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="125.73" y="44.45" smashed="yes">
+<element name="FLAG_5" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="125.73" y="44.45" smashed="yes">
 <attribute name="POPULARITY" value="93" x="334.01" y="-184.15" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="128.9304" y="42.6466" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="FLAG_6" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="118.11" y="44.45" smashed="yes">
+<element name="FLAG_6" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="118.11" y="44.45" smashed="yes">
 <attribute name="POPULARITY" value="93" x="340.36" y="-184.15" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="121.3104" y="42.6466" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="FLAG_7" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="110.49" y="44.45" smashed="yes">
+<element name="FLAG_7" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="110.49" y="44.45" smashed="yes">
 <attribute name="POPULARITY" value="93" x="346.71" y="-184.15" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="113.6904" y="42.6466" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="FLAG_8" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="102.87" y="44.45" smashed="yes">
+<element name="FLAG_8" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="102.87" y="44.45" smashed="yes">
 <attribute name="POPULARITY" value="93" x="127" y="-191.77" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="106.0704" y="42.6466" size="1.27" layer="27" ratio="10"/>
 </element>
@@ -2810,11 +2896,11 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="2" x="208.28" y="438.15" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="10.414" y="300.228" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="INSRUCTION_REGISTER_SELECTOR_LOWER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS157N" x="45.72" y="109.22" smashed="yes">
+<element name="SELECTOR_INSRUCTION_LOWER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS157N" x="45.72" y="109.22" smashed="yes">
 <attribute name="POPULARITY" value="1" x="184.15" y="102.87" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="38.227" y="108.585" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="INSRUCTION_REGISTER_SELECTOR_UPPER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS157N" x="22.86" y="109.22" smashed="yes">
+<element name="SELECTOR_INSRUCTION_UPPER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS157N" x="22.86" y="109.22" smashed="yes">
 <attribute name="POPULARITY" value="1" x="184.15" y="102.87" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="15.367" y="108.585" size="1.27" layer="27" ratio="10"/>
 </element>
@@ -2844,70 +2930,70 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="0" x="-22.86" y="128.27" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="62.865" y="159.893" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="INVERTED_CLK_LED" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="White" x="13.97" y="223.52" smashed="yes">
+<element name="INVERTED_CLK_LED" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="13.97" y="223.52" smashed="yes">
 <attribute name="POPULARITY" value="93" x="219.71" y="22.86" size="1.778" layer="27" display="off"/>
 </element>
-<element name="LED_A_REG_1" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="212.09" y="180.34" smashed="yes">
+<element name="LED_A_REG_1" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="212.09" y="180.34" smashed="yes">
 <attribute name="POPULARITY" value="93" x="262.89" y="-33.02" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="215.2904" y="178.5366" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="LED_A_REG_2" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="204.47" y="180.34" smashed="yes">
+<element name="LED_A_REG_2" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="204.47" y="180.34" smashed="yes">
 <attribute name="POPULARITY" value="93" x="275.59" y="-33.02" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="207.6704" y="178.5366" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="LED_A_REG_3" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="196.85" y="180.34" smashed="yes">
+<element name="LED_A_REG_3" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="196.85" y="180.34" smashed="yes">
 <attribute name="POPULARITY" value="93" x="288.29" y="-33.02" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="200.0504" y="178.5366" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="LED_A_REG_4" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="189.23" y="180.34" smashed="yes">
+<element name="LED_A_REG_4" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="189.23" y="180.34" smashed="yes">
 <attribute name="POPULARITY" value="93" x="300.99" y="-33.02" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="192.4304" y="178.5366" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="LED_A_REG_5" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="181.61" y="180.34" smashed="yes">
+<element name="LED_A_REG_5" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="181.61" y="180.34" smashed="yes">
 <attribute name="POPULARITY" value="93" x="313.69" y="-33.02" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="184.8104" y="178.5366" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="LED_A_REG_6" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="173.99" y="180.34" smashed="yes">
+<element name="LED_A_REG_6" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="173.99" y="180.34" smashed="yes">
 <attribute name="POPULARITY" value="93" x="326.39" y="-33.02" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="177.1904" y="178.5366" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="LED_A_REG_7" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="166.37" y="180.34" smashed="yes">
+<element name="LED_A_REG_7" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="166.37" y="180.34" smashed="yes">
 <attribute name="POPULARITY" value="93" x="339.09" y="-33.02" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="169.5704" y="178.5366" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="LED_A_REG_8" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="158.75" y="180.34" smashed="yes">
+<element name="LED_A_REG_8" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="158.75" y="180.34" smashed="yes">
 <attribute name="POPULARITY" value="93" x="351.79" y="-33.02" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="161.9504" y="178.5366" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="LED_B_REG_1" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="229.87" y="69.85" smashed="yes">
+<element name="LED_B_REG_1" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="229.87" y="69.85" smashed="yes">
 <attribute name="POPULARITY" value="93" x="443.23" y="-143.51" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="233.0704" y="68.0466" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="LED_B_REG_2" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="222.25" y="69.85" smashed="yes">
+<element name="LED_B_REG_2" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="222.25" y="69.85" smashed="yes">
 <attribute name="POPULARITY" value="93" x="455.93" y="-143.51" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="225.4504" y="68.0466" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="LED_B_REG_3" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="214.63" y="69.85" smashed="yes">
+<element name="LED_B_REG_3" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="214.63" y="69.85" smashed="yes">
 <attribute name="POPULARITY" value="93" x="243.84" y="-151.13" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="217.8304" y="68.0466" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="LED_B_REG_4" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="207.01" y="69.85" smashed="yes">
+<element name="LED_B_REG_4" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="207.01" y="69.85" smashed="yes">
 <attribute name="POPULARITY" value="93" x="256.54" y="-151.13" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="210.2104" y="68.0466" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="LED_B_REG_5" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="199.39" y="69.85" smashed="yes">
+<element name="LED_B_REG_5" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="199.39" y="69.85" smashed="yes">
 <attribute name="POPULARITY" value="93" x="269.24" y="-151.13" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="202.5904" y="68.0466" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="LED_B_REG_6" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="191.77" y="69.85" smashed="yes">
+<element name="LED_B_REG_6" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="191.77" y="69.85" smashed="yes">
 <attribute name="POPULARITY" value="93" x="281.94" y="-151.13" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="194.9704" y="68.0466" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="LED_B_REG_7" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="184.15" y="69.85" smashed="yes">
+<element name="LED_B_REG_7" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="184.15" y="69.85" smashed="yes">
 <attribute name="POPULARITY" value="93" x="294.64" y="-151.13" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="187.3504" y="68.0466" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="LED_B_REG_8" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="176.53" y="69.85" smashed="yes">
+<element name="LED_B_REG_8" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="176.53" y="69.85" smashed="yes">
 <attribute name="POPULARITY" value="93" x="307.34" y="-151.13" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="179.7304" y="68.0466" size="1.27" layer="27" ratio="10"/>
 </element>
@@ -2926,7 +3012,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="2" x="240.03" y="123.19" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="22.987" y="208.915" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="NOT_GATE1" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="74LS04N" x="129.54" y="233.68" smashed="yes" rot="R270">
+<element name="NOT_GATE1_" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="74LS04N" x="129.54" y="233.68" smashed="yes" rot="R270">
 <attribute name="NAME" x="126.492" y="242.951" size="1.27" layer="25" ratio="10"/>
 <attribute name="POPULARITY" value="0" x="-57.15" y="35.56" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="128.905" y="240.411" size="1.27" layer="27" ratio="10" rot="R270"/>
@@ -2993,7 +3079,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="0" x="25.4" y="49.53" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="140.589" y="172.339" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="OVERFLOW_FLAG" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="167.64" y="236.22" smashed="yes">
+<element name="OVERFLOW_FLAG" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="167.64" y="236.22" smashed="yes">
 <attribute name="POPULARITY" value="93" x="397.51" y="35.56" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="170.8404" y="234.4166" size="1.27" layer="27" ratio="10"/>
 </element>
@@ -3061,7 +3147,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="93" x="323.85" y="60.96" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="187.3504" y="295.3766" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="POSITIVE_FLAG" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="167.64" y="254" smashed="yes">
+<element name="POSITIVE_FLAG" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="167.64" y="254" smashed="yes">
 <attribute name="POPULARITY" value="93" x="198.12" y="40.64" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="170.8404" y="252.1966" size="1.27" layer="27" ratio="10"/>
 </element>
@@ -3583,23 +3669,23 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="0" x="439.42" y="156.21" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="193.929" y="207.645" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="USTEP_1" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="58.42" y="223.52" smashed="yes">
+<element name="USTEP_1" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="58.42" y="223.52" smashed="yes">
 <attribute name="POPULARITY" value="93" x="135.89" y="-5.08" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="61.6204" y="221.7166" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="USTEP_2" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="50.8" y="223.52" smashed="yes">
+<element name="USTEP_2" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="50.8" y="223.52" smashed="yes">
 <attribute name="POPULARITY" value="93" x="143.51" y="-5.08" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="54.0004" y="221.7166" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="USTEP_3" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="43.18" y="223.52" smashed="yes">
+<element name="USTEP_3" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="43.18" y="223.52" smashed="yes">
 <attribute name="POPULARITY" value="93" x="151.13" y="-5.08" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="46.3804" y="221.7166" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="USTEP_4" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="35.56" y="223.52" smashed="yes">
+<element name="USTEP_4" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="35.56" y="223.52" smashed="yes">
 <attribute name="POPULARITY" value="93" x="158.75" y="-5.08" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="38.7604" y="221.7166" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="USTEP_5" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="27.94" y="223.52" smashed="yes">
+<element name="USTEP_5" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="LED" x="27.94" y="223.52" smashed="yes">
 <attribute name="POPULARITY" value="93" x="166.37" y="-5.08" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="31.1404" y="221.7166" size="1.27" layer="27" ratio="10"/>
 </element>
@@ -3618,7 +3704,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="0" x="355.6" y="-151.13" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="112.649" y="14.605" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="ZERO_FLAG" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="" x="167.64" y="245.11" smashed="yes">
+<element name="ZERO_FLAG" library="led" library_urn="urn:adsk.eagle:library:259" package="LED5MM" package3d_urn="urn:adsk.eagle:package:15799/2" value="220" x="167.64" y="245.11" smashed="yes">
 <attribute name="POPULARITY" value="93" x="316.23" y="24.13" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="170.8404" y="243.3066" size="1.27" layer="27" ratio="10"/>
 </element>
@@ -3631,32 +3717,22 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="8" x="17.78" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="17.145" y="33.909" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="SELECTOR_RAM_" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS139N" x="73.66" y="53.34" smashed="yes" rot="R270">
+<element name="SELECTOR_STACK_" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS139N" x="73.66" y="53.34" smashed="yes" rot="R270">
 <attribute name="NAME" x="70.739" y="63.881" size="1.27" layer="25" ratio="10"/>
 <attribute name="POPULARITY" value="0" x="73.66" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="73.025" y="60.833" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="INP_SELECTOR" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74AC139N" x="109.22" y="106.68" smashed="yes" rot="R270">
-<attribute name="NAME" x="106.299" y="117.221" size="1.27" layer="25" ratio="10"/>
-<attribute name="POPULARITY" value="0" x="109.22" y="106.68" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="108.585" y="114.173" size="1.27" layer="27" ratio="10" rot="R270"/>
-</element>
-<element name="IC3" library="ic-package" library_urn="urn:adsk.eagle:library:239" package="DIL28-6" package3d_urn="urn:adsk.eagle:package:826/2" value="" x="19.05" y="-12.7" smashed="yes">
-<attribute name="NAME" x="1.27" y="-19.05" size="1.778" layer="25" ratio="10" rot="R90"/>
-<attribute name="POPULARITY" value="0" x="19.05" y="-12.7" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="4.445" y="-13.6398" size="1.778" layer="27" ratio="10"/>
-</element>
-<element name="IC1" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS595N" x="11.43" y="-27.94" smashed="yes">
+<element name="KEYBOARD_SHIFT_UPPER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS595N" x="11.43" y="-27.94" smashed="yes">
 <attribute name="NAME" x="0.889" y="-30.861" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="POPULARITY" value="0" x="11.43" y="-27.94" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="3.937" y="-28.575" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="IC2" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS595N" x="11.43" y="-39.37" smashed="yes">
+<element name="KEYBOARD_SHIFT_LOWER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS595N" x="11.43" y="-39.37" smashed="yes">
 <attribute name="NAME" x="0.889" y="-42.291" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="POPULARITY" value="0" x="11.43" y="-39.37" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="3.937" y="-40.005" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="INSTRUCTION_MEMORY_3" library="ic-package" library_urn="urn:adsk.eagle:library:239" package="DIL28-6" package3d_urn="urn:adsk.eagle:package:826/2" value="AT28C64B" x="19.05" y="-54.61" smashed="yes">
+<element name="KEYBOARD_ASCII_TABLE" library="ic-package" library_urn="urn:adsk.eagle:library:239" package="DIL28-6" package3d_urn="urn:adsk.eagle:package:826/2" value="AT28C64B" x="19.05" y="-54.61" smashed="yes">
 <attribute name="NAME" x="1.27" y="-60.96" size="1.778" layer="25" ratio="10" rot="R90"/>
 <attribute name="POPULARITY" value="0" x="19.05" y="-54.61" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="4.445" y="-55.5498" size="1.778" layer="27" ratio="10"/>
@@ -3681,29 +3757,69 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="C" x="2.54" y="-93.98" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="5.08" y="-96.139" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="IC4" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="74LS02N" x="10.16" y="-102.87" smashed="yes">
+<element name="NOR_GATE_" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="74LS02N" x="10.16" y="-102.87" smashed="yes">
 <attribute name="NAME" x="0.889" y="-105.918" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="POPULARITY" value="0" x="10.16" y="-102.87" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="3.429" y="-103.505" size="1.27" layer="27" ratio="10"/>
-</element>
-<element name="IC5" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL14" package3d_urn="urn:adsk.eagle:package:16407/2" value="74S86N" x="10.16" y="-114.3" smashed="yes">
-<attribute name="NAME" x="0.889" y="-117.348" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="POPULARITY" value="0" x="10.16" y="-114.3" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="3.429" y="-114.935" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" package="DO41Z10" package3d_urn="urn:adsk.eagle:package:43341/1" value="1N4728" x="5.08" y="-123.19" smashed="yes">
 <attribute name="NAME" x="3.175" y="-121.539" size="1.27" layer="25" ratio="10"/>
 <attribute name="POPULARITY" value="6" x="5.08" y="-123.19" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="3.175" y="-125.984" size="1.27" layer="27" ratio="10"/>
 </element>
+<element name="FIFO_STACK" library="ic-package" library_urn="urn:adsk.eagle:library:239" package="DIL28-3" package3d_urn="urn:adsk.eagle:package:827/2" value="71256SA15TPG" x="19.05" y="-132.08" smashed="yes">
+<attribute name="NAME" x="1.016" y="-135.001" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="POPULARITY" value="8" x="19.05" y="-132.08" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="10.541" y="-132.715" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="SELECTOR_PARAM_" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS139N" x="11.43" y="-143.51" smashed="yes">
+<attribute name="NAME" x="0.889" y="-146.431" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="POPULARITY" value="0" x="11.43" y="-143.51" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="3.937" y="-144.145" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="OUTPUT_BUFFER_KEYBOARD" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL20" package3d_urn="urn:adsk.eagle:package:16429/2" value="74LS245N" x="13.97" y="-154.94" smashed="yes">
+<attribute name="NAME" x="0.889" y="-157.988" size="1.27" layer="25" rot="R90"/>
+<attribute name="POPULARITY" value="0" x="13.97" y="-154.94" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="4.191" y="-155.321" size="1.27" layer="27"/>
+</element>
+<element name="OUT_REG_UPPER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS173N" x="11.43" y="-207.01" smashed="yes">
+<attribute name="NAME" x="0.889" y="-209.931" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="POPULARITY" value="0" x="11.43" y="-166.37" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="3.937" y="-207.645" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="OUT_REG_LOWER" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL16" package3d_urn="urn:adsk.eagle:package:922/2" value="74LS173N" x="39.37" y="-179.07" smashed="yes">
+<attribute name="NAME" x="28.829" y="-181.991" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="POPULARITY" value="0" x="11.43" y="-189.23" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="31.877" y="-179.705" size="1.27" layer="27" ratio="10"/>
+</element>
+<element name="OUT_ROM_UPPER" library="ic-package" library_urn="urn:adsk.eagle:library:239" package="DIL28-6" package3d_urn="urn:adsk.eagle:package:826/2" value="AT28C64B" x="19.05" y="-240.03" smashed="yes">
+<attribute name="NAME" x="1.27" y="-246.38" size="1.778" layer="25" ratio="10" rot="R90"/>
+<attribute name="POPULARITY" value="0" x="19.05" y="-222.25" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="4.445" y="-240.9698" size="1.778" layer="27" ratio="10"/>
+</element>
+<element name="OUT_SEGMENT_UPPER" library="special" library_urn="urn:adsk.eagle:library:367" package="7SEG-13" package3d_urn="urn:adsk.eagle:package:26668/2" value="LED" x="-7.62" y="-237.49" smashed="yes">
+<attribute name="NAME" x="-13.716" y="-228.346" size="1.778" layer="25" ratio="10"/>
+<attribute name="POPULARITY" value="3" x="-7.62" y="-237.49" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-13.716" y="-248.412" size="1.778" layer="27" ratio="10"/>
+</element>
+<element name="OUT_SEGMENT_LOWER" library="special" library_urn="urn:adsk.eagle:library:367" package="7SEG-13" package3d_urn="urn:adsk.eagle:package:26668/2" value="LED" x="-21.59" y="-237.49" smashed="yes">
+<attribute name="NAME" x="-27.686" y="-228.346" size="1.778" layer="25" ratio="10"/>
+<attribute name="POPULARITY" value="3" x="-21.59" y="-237.49" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-27.686" y="-248.412" size="1.778" layer="27" ratio="10"/>
+</element>
+<element name="OUT_ROM_LOWER" library="ic-package" library_urn="urn:adsk.eagle:library:239" package="DIL28-6" package3d_urn="urn:adsk.eagle:package:826/2" value="AT28C64B" x="-7.62" y="-276.86" smashed="yes">
+<attribute name="NAME" x="-25.4" y="-283.21" size="1.778" layer="25" ratio="10" rot="R90"/>
+<attribute name="POPULARITY" value="0" x="-7.62" y="-259.08" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-22.225" y="-277.7998" size="1.778" layer="27" ratio="10"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
 <contactref element="OR_GATE_" pad="7"/>
 <contactref element="AND_GATE_" pad="7"/>
-<contactref element="ADDR_REG_A_UPPER" pad="8"/>
+<contactref element="REG_A_UPPER" pad="8"/>
 <contactref element="OUTPUT_BUFFER_REG_A" pad="10"/>
-<contactref element="ADDR_REG_A_LOWER" pad="8"/>
+<contactref element="REG_A_LOWER" pad="8"/>
 <contactref element="FLAG_REG_LOWER" pad="8"/>
 <contactref element="FLAG_REG_UPPER" pad="8"/>
 <contactref element="INSTRUC_REGISTER_UPPER" pad="8"/>
@@ -3712,10 +3828,10 @@ design rules under a new name.</description>
 <contactref element="ADDR_MEM_REG_LOWER" pad="8"/>
 <contactref element="OUTPUT_BUFFER_MEMORY" pad="10"/>
 <contactref element="OUTPUT_BUFFER_PC" pad="10"/>
-<contactref element="ADDR_REG_CALC_UPPER" pad="8"/>
+<contactref element="REG_CALC_UPPER" pad="8"/>
 <contactref element="OUTPUT_BUFFER_CALC_REG" pad="10"/>
-<contactref element="ADDR_REG_CALC_LOWER" pad="8"/>
-<contactref element="NOT_GATE1" pad="7"/>
+<contactref element="REG_CALC_LOWER" pad="8"/>
+<contactref element="NOT_GATE1_" pad="7"/>
 <contactref element="NOT_GATE2_" pad="7"/>
 <contactref element="ADDER_LOWER" pad="8"/>
 <contactref element="ADDER_UPPER" pad="8"/>
@@ -3729,15 +3845,15 @@ design rules under a new name.</description>
 <contactref element="NOT_GATE_" pad="7"/>
 <contactref element="OUTPUT_BUFFER_FLAGS" pad="10"/>
 <contactref element="AND_GATE3_" pad="7"/>
-<contactref element="ADDR_REG_PARAM_UPPER" pad="8"/>
+<contactref element="REG_PARAM_UPPER" pad="8"/>
 <contactref element="OUTPUT_BUFFER_PARAM_REG" pad="10"/>
-<contactref element="ADDR_REG_PARAM_LOWER" pad="8"/>
+<contactref element="REG_PARAM_LOWER" pad="8"/>
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="10"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="8"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="8"/>
+<contactref element="SELECTOR_INSRUCTION_UPPER" pad="8"/>
+<contactref element="SELECTOR_INSRUCTION_LOWER" pad="8"/>
 <contactref element="SELECTOR_LOGIC_" pad="8"/>
 <contactref element="NOT_GATE4_" pad="7"/>
-<contactref element="BRANCH_SELECTOR" pad="8"/>
+<contactref element="SELECTOR_BRANCH_" pad="8"/>
 <contactref element="XOR_GATE_1" pad="7"/>
 <contactref element="XOR_GATE_2" pad="7"/>
 <contactref element="AND_GATE4_" pad="7"/>
@@ -3748,10 +3864,10 @@ design rules under a new name.</description>
 <contactref element="C1" pad="-"/>
 <contactref element="R4" pad="1"/>
 <contactref element="CLK_TRIGGER" pad="3"/>
-<contactref element="ADDR_REG_A_UPPER" pad="1"/>
-<contactref element="ADDR_REG_A_UPPER" pad="2"/>
-<contactref element="ADDR_REG_A_LOWER" pad="2"/>
-<contactref element="ADDR_REG_A_LOWER" pad="1"/>
+<contactref element="REG_A_UPPER" pad="1"/>
+<contactref element="REG_A_UPPER" pad="2"/>
+<contactref element="REG_A_LOWER" pad="2"/>
+<contactref element="REG_A_LOWER" pad="1"/>
 <contactref element="FLAG_REG_LOWER" pad="1"/>
 <contactref element="FLAG_REG_LOWER" pad="2"/>
 <contactref element="FLAG_REG_UPPER" pad="2"/>
@@ -3798,10 +3914,10 @@ design rules under a new name.</description>
 <contactref element="MEMORY" pad="20"/>
 <contactref element="MEMORY" pad="21"/>
 <contactref element="MEMORY" pad="22"/>
-<contactref element="ADDR_REG_CALC_UPPER" pad="1"/>
-<contactref element="ADDR_REG_CALC_UPPER" pad="2"/>
-<contactref element="ADDR_REG_CALC_LOWER" pad="2"/>
-<contactref element="ADDR_REG_CALC_LOWER" pad="1"/>
+<contactref element="REG_CALC_UPPER" pad="1"/>
+<contactref element="REG_CALC_UPPER" pad="2"/>
+<contactref element="REG_CALC_LOWER" pad="2"/>
+<contactref element="REG_CALC_LOWER" pad="1"/>
 <contactref element="R24" pad="2"/>
 <contactref element="R31" pad="2"/>
 <contactref element="R25" pad="2"/>
@@ -3823,15 +3939,13 @@ design rules under a new name.</description>
 <contactref element="RAM_ADDR_UPPER" pad="2"/>
 <contactref element="RAM_ADDR_LOWER" pad="2"/>
 <contactref element="RAM_ADDR_LOWER" pad="1"/>
-<contactref element="INSTRUCTION_MEMORY_2" pad="14"/>
-<contactref element="INSTRUCTIONS_EXTENSION" pad="15"/>
 <contactref element="INSTRUCTION_MEMORY_2" pad="20"/>
 <contactref element="INSTRUCTION_MEMORY_2" pad="22"/>
 <contactref element="OUTPUT_BUFFER_FLAGS" pad="1"/>
-<contactref element="ADDR_REG_PARAM_UPPER" pad="1"/>
-<contactref element="ADDR_REG_PARAM_UPPER" pad="2"/>
-<contactref element="ADDR_REG_PARAM_LOWER" pad="2"/>
-<contactref element="ADDR_REG_PARAM_LOWER" pad="1"/>
+<contactref element="REG_PARAM_UPPER" pad="1"/>
+<contactref element="REG_PARAM_UPPER" pad="2"/>
+<contactref element="REG_PARAM_LOWER" pad="2"/>
+<contactref element="REG_PARAM_LOWER" pad="1"/>
 <contactref element="R53" pad="2"/>
 <contactref element="R54" pad="2"/>
 <contactref element="R55" pad="2"/>
@@ -3852,22 +3966,22 @@ design rules under a new name.</description>
 <contactref element="R69" pad="2"/>
 <contactref element="R70" pad="2"/>
 <contactref element="R71" pad="2"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="14"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="11"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="5"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="2"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="14"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="11"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="5"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="2"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="15"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="15"/>
+<contactref element="SELECTOR_INSRUCTION_LOWER" pad="14"/>
+<contactref element="SELECTOR_INSRUCTION_LOWER" pad="11"/>
+<contactref element="SELECTOR_INSRUCTION_LOWER" pad="5"/>
+<contactref element="SELECTOR_INSRUCTION_LOWER" pad="2"/>
+<contactref element="SELECTOR_INSRUCTION_UPPER" pad="14"/>
+<contactref element="SELECTOR_INSRUCTION_UPPER" pad="11"/>
+<contactref element="SELECTOR_INSRUCTION_UPPER" pad="5"/>
+<contactref element="SELECTOR_INSRUCTION_UPPER" pad="2"/>
+<contactref element="SELECTOR_INSRUCTION_UPPER" pad="15"/>
+<contactref element="SELECTOR_INSRUCTION_LOWER" pad="15"/>
 <contactref element="SELECTOR_LOGIC_" pad="1"/>
 <contactref element="SELECTOR_LOGIC_" pad="15"/>
 <contactref element="INSTRUCTION_MEMORY_1" pad="22"/>
 <contactref element="INSTRUCTION_MEMORY_1" pad="20"/>
-<contactref element="BRANCH_SELECTOR" pad="1"/>
-<contactref element="BRANCH_SELECTOR" pad="15"/>
+<contactref element="SELECTOR_BRANCH_" pad="1"/>
+<contactref element="SELECTOR_BRANCH_" pad="15"/>
 <contactref element="C3" pad="-"/>
 <contactref element="X1" pad="1"/>
 <contactref element="4_INP_OR_GATE" pad="7"/>
@@ -3901,21 +4015,68 @@ design rules under a new name.</description>
 <vertex x="246.38" y="3.81"/>
 <vertex x="246.38" y="317.5"/>
 </polygon>
-<contactref element="SELECTOR_RAM_" pad="8"/>
-<contactref element="SELECTOR_RAM_" pad="1"/>
-<contactref element="SELECTOR_RAM_" pad="15"/>
-<contactref element="INP_SELECTOR" pad="8"/>
-<contactref element="INP_SELECTOR" pad="1"/>
-<contactref element="IC1" pad="8"/>
-<contactref element="IC2" pad="8"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="14"/>
+<contactref element="SELECTOR_STACK_" pad="8"/>
+<contactref element="SELECTOR_STACK_" pad="1"/>
+<contactref element="SELECTOR_STACK_" pad="15"/>
+<contactref element="KEYBOARD_SHIFT_UPPER" pad="8"/>
+<contactref element="KEYBOARD_SHIFT_LOWER" pad="8"/>
+<contactref element="KEYBOARD_ASCII_TABLE" pad="14"/>
 <contactref element="KEYBOARD" pad="4"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="2"/>
-<contactref element="IC1" pad="13"/>
-<contactref element="IC2" pad="13"/>
+<contactref element="KEYBOARD_ASCII_TABLE" pad="2"/>
+<contactref element="KEYBOARD_SHIFT_UPPER" pad="13"/>
+<contactref element="KEYBOARD_SHIFT_LOWER" pad="13"/>
 <contactref element="C4" pad="-"/>
-<contactref element="IC4" pad="7"/>
-<contactref element="IC5" pad="7"/>
+<contactref element="NOR_GATE_" pad="7"/>
+<contactref element="INSTRUCTION_MEMORY_2" pad="14"/>
+<contactref element="INSTRUCTIONS_EXTENSION" pad="15"/>
+<contactref element="FIFO_STACK" pad="2"/>
+<contactref element="FIFO_STACK" pad="14"/>
+<contactref element="FIFO_STACK" pad="7"/>
+<contactref element="SELECTOR_PARAM_" pad="8"/>
+<contactref element="SELECTOR_PARAM_" pad="1"/>
+<contactref element="SELECTOR_PARAM_" pad="15"/>
+<contactref element="KEYBOARD_ASCII_TABLE" pad="25"/>
+<contactref element="KEYBOARD_ASCII_TABLE" pad="20"/>
+<contactref element="KEYBOARD_ASCII_TABLE" pad="21"/>
+<contactref element="KEYBOARD_ASCII_TABLE" pad="22"/>
+<contactref element="KEYBOARD_ASCII_TABLE" pad="23"/>
+<contactref element="KEYBOARD_ASCII_TABLE" pad="24"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="10"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="1"/>
+<contactref element="OUT_REG_UPPER" pad="8"/>
+<contactref element="OUT_REG_LOWER" pad="8"/>
+<contactref element="OUT_REG_UPPER" pad="1"/>
+<contactref element="OUT_REG_UPPER" pad="2"/>
+<contactref element="OUT_REG_LOWER" pad="2"/>
+<contactref element="OUT_REG_LOWER" pad="1"/>
+<contactref element="OUT_ROM_UPPER" pad="14"/>
+<contactref element="OUT_ROM_UPPER" pad="2"/>
+<contactref element="OUT_ROM_UPPER" pad="25"/>
+<contactref element="OUT_ROM_UPPER" pad="20"/>
+<contactref element="OUT_ROM_UPPER" pad="21"/>
+<contactref element="OUT_ROM_UPPER" pad="22"/>
+<contactref element="OUT_ROM_UPPER" pad="23"/>
+<contactref element="OUT_ROM_UPPER" pad="24"/>
+<contactref element="OUT_ROM_LOWER" pad="14"/>
+<contactref element="OUT_ROM_LOWER" pad="2"/>
+<contactref element="OUT_ROM_LOWER" pad="6"/>
+<contactref element="OUT_ROM_LOWER" pad="3"/>
+<contactref element="OUT_ROM_LOWER" pad="4"/>
+<contactref element="OUT_ROM_LOWER" pad="5"/>
+<contactref element="OUT_ROM_LOWER" pad="25"/>
+<contactref element="OUT_ROM_LOWER" pad="20"/>
+<contactref element="OUT_ROM_LOWER" pad="21"/>
+<contactref element="OUT_ROM_LOWER" pad="22"/>
+<contactref element="OUT_ROM_LOWER" pad="23"/>
+<contactref element="OUT_ROM_LOWER" pad="24"/>
+<contactref element="OUT_SEGMENT_LOWER" pad="8"/>
+<contactref element="OUT_SEGMENT_LOWER" pad="3"/>
+<contactref element="OUT_SEGMENT_UPPER" pad="8"/>
+<contactref element="OUT_SEGMENT_UPPER" pad="3"/>
+<contactref element="OUT_ROM_UPPER" pad="6"/>
+<contactref element="OUT_ROM_UPPER" pad="3"/>
+<contactref element="OUT_ROM_UPPER" pad="4"/>
+<contactref element="OUT_ROM_UPPER" pad="5"/>
 <wire x1="204.47" y1="52.07" x2="201.93" y2="52.07" width="0" layer="19" extent="1-1"/>
 <wire x1="209.55" y1="52.07" x2="204.47" y2="52.07" width="0" layer="19" extent="1-1"/>
 <wire x1="186.69" y1="52.07" x2="201.93" y2="52.07" width="0" layer="19" extent="1-1"/>
@@ -4017,8 +4178,6 @@ design rules under a new name.</description>
 <wire x1="39.37" y1="205.74" x2="62.23" y2="205.74" width="0" layer="19" extent="1-1"/>
 <wire x1="81.28" y1="127" x2="59.69" y2="119.38" width="0" layer="19" extent="1-1"/>
 <wire x1="15.24" y1="210.82" x2="39.37" y2="205.74" width="0" layer="19" extent="1-1"/>
-<wire x1="105.41" y1="115.57" x2="81.28" y2="127" width="0" layer="19" extent="1-1"/>
-<wire x1="105.41" y1="97.79" x2="105.41" y2="115.57" width="0" layer="19" extent="1-1"/>
 <wire x1="29.21" y1="236.22" x2="15.24" y2="210.82" width="0" layer="19" extent="1-1"/>
 <wire x1="36.83" y1="236.22" x2="29.21" y2="236.22" width="0" layer="19" extent="1-1"/>
 <wire x1="44.45" y1="236.22" x2="36.83" y2="236.22" width="0" layer="19" extent="1-1"/>
@@ -4110,13 +4269,60 @@ design rules under a new name.</description>
 <wire x1="10.16" y1="-24.13" x2="13.97" y2="8.89" width="0" layer="19" extent="1-1"/>
 <wire x1="10.16" y1="-35.56" x2="10.16" y2="-24.13" width="0" layer="19" extent="1-1"/>
 <wire x1="20.32" y1="-31.75" x2="10.16" y2="-35.56" width="0" layer="19" extent="1-1"/>
-<wire x1="20.32" y1="-43.18" x2="20.32" y2="-31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="5.08" y1="-62.23" x2="20.32" y2="-43.18" width="0" layer="19" extent="1-1"/>
+<wire x1="10.16" y1="-46.99" x2="10.16" y2="-35.56" width="0" layer="19" extent="1-1"/>
+<wire x1="12.7" y1="-46.99" x2="10.16" y2="-46.99" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="-46.99" x2="12.7" y2="-46.99" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="-46.99" x2="15.24" y2="-46.99" width="0" layer="19" extent="1-1"/>
+<wire x1="20.32" y1="-46.99" x2="17.78" y2="-46.99" width="0" layer="19" extent="1-1"/>
+<wire x1="22.86" y1="-46.99" x2="20.32" y2="-46.99" width="0" layer="19" extent="1-1"/>
+<wire x1="20.32" y1="-43.18" x2="20.32" y2="-46.99" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="-62.23" x2="10.16" y2="-46.99" width="0" layer="19" extent="1-1"/>
 <wire x1="10.16" y1="-69.85" x2="5.08" y2="-62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="35.56" y1="-62.23" x2="20.32" y2="-43.18" width="0" layer="19" extent="1-1"/>
+<wire x1="35.56" y1="-62.23" x2="22.86" y2="-46.99" width="0" layer="19" extent="1-1"/>
 <wire x1="3.556" y1="-93.98" x2="10.16" y2="-69.85" width="0" layer="19" extent="1-1"/>
 <wire x1="17.78" y1="-106.68" x2="3.556" y2="-93.98" width="0" layer="19" extent="1-1"/>
-<wire x1="17.78" y1="-118.11" x2="17.78" y2="-106.68" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="-135.89" x2="17.78" y2="-106.68" width="0" layer="19" extent="1-1"/>
+<wire x1="20.32" y1="-147.32" x2="17.78" y2="-135.89" width="0" layer="19" extent="1-1"/>
+<wire x1="25.4" y1="-158.75" x2="20.32" y2="-147.32" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="-135.89" x2="17.78" y2="-135.89" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="-139.7" x2="5.08" y2="-135.89" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="-147.32" x2="5.08" y2="-139.7" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="-158.75" x2="2.54" y2="-147.32" width="0" layer="19" extent="1-1"/>
+<wire x1="35.56" y1="-135.89" x2="17.78" y2="-135.89" width="0" layer="19" extent="1-1"/>
+<wire x1="30.48" y1="-182.88" x2="25.4" y2="-158.75" width="0" layer="19" extent="1-1"/>
+<wire x1="33.02" y1="-182.88" x2="30.48" y2="-182.88" width="0" layer="19" extent="1-1"/>
+<wire x1="48.26" y1="-182.88" x2="33.02" y2="-182.88" width="0" layer="19" extent="1-1"/>
+<wire x1="20.32" y1="-210.82" x2="30.48" y2="-182.88" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="-210.82" x2="20.32" y2="-210.82" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="-210.82" x2="5.08" y2="-210.82" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.62" y1="-229.87" x2="2.54" y2="-210.82" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.59" y1="-229.87" x2="-7.62" y2="-229.87" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.62" y1="-245.11" x2="-7.62" y2="-229.87" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="-247.65" x2="-7.62" y2="-245.11" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="-247.65" x2="5.08" y2="-247.65" width="0" layer="19" extent="1-1"/>
+<wire x1="10.16" y1="-247.65" x2="7.62" y2="-247.65" width="0" layer="19" extent="1-1"/>
+<wire x1="12.7" y1="-247.65" x2="10.16" y2="-247.65" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="-247.65" x2="12.7" y2="-247.65" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.59" y1="-245.11" x2="-7.62" y2="-245.11" width="0" layer="19" extent="1-1"/>
+<wire x1="10.16" y1="-232.41" x2="10.16" y2="-247.65" width="0" layer="19" extent="1-1"/>
+<wire x1="12.7" y1="-232.41" x2="10.16" y2="-232.41" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="-232.41" x2="12.7" y2="-232.41" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="-232.41" x2="15.24" y2="-232.41" width="0" layer="19" extent="1-1"/>
+<wire x1="20.32" y1="-232.41" x2="17.78" y2="-232.41" width="0" layer="19" extent="1-1"/>
+<wire x1="22.86" y1="-232.41" x2="20.32" y2="-232.41" width="0" layer="19" extent="1-1"/>
+<wire x1="35.56" y1="-247.65" x2="22.86" y2="-232.41" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.81" y1="-269.24" x2="5.08" y2="-247.65" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.35" y1="-269.24" x2="-3.81" y2="-269.24" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.89" y1="-269.24" x2="-6.35" y2="-269.24" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.43" y1="-269.24" x2="-8.89" y2="-269.24" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.97" y1="-269.24" x2="-11.43" y2="-269.24" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.51" y1="-269.24" x2="-13.97" y2="-269.24" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.51" y1="-284.48" x2="-16.51" y2="-269.24" width="0" layer="19" extent="1-1"/>
+<wire x1="-19.05" y1="-284.48" x2="-16.51" y2="-284.48" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.59" y1="-284.48" x2="-19.05" y2="-284.48" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.97" y1="-284.48" x2="-16.51" y2="-284.48" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.43" y1="-284.48" x2="-13.97" y2="-284.48" width="0" layer="19" extent="1-1"/>
+<wire x1="8.89" y1="-284.48" x2="-3.81" y2="-269.24" width="0" layer="19" extent="1-1"/>
 <wire x1="196.85" y1="158.75" x2="198.12" y2="193.04" width="0" layer="19" extent="1-1"/>
 <wire x1="208.28" y1="154.94" x2="196.85" y2="158.75" width="0" layer="19" extent="1-1"/>
 <wire x1="181.61" y1="158.75" x2="196.85" y2="158.75" width="0" layer="19" extent="1-1"/>
@@ -4129,9 +4335,9 @@ design rules under a new name.</description>
 <signal name="VCC">
 <contactref element="OR_GATE_" pad="14"/>
 <contactref element="AND_GATE_" pad="14"/>
-<contactref element="ADDR_REG_A_UPPER" pad="16"/>
+<contactref element="REG_A_UPPER" pad="16"/>
 <contactref element="OUTPUT_BUFFER_REG_A" pad="20"/>
-<contactref element="ADDR_REG_A_LOWER" pad="16"/>
+<contactref element="REG_A_LOWER" pad="16"/>
 <contactref element="FLAG_REG_LOWER" pad="16"/>
 <contactref element="FLAG_REG_UPPER" pad="16"/>
 <contactref element="INSTRUC_REGISTER_UPPER" pad="16"/>
@@ -4140,10 +4346,10 @@ design rules under a new name.</description>
 <contactref element="ADDR_MEM_REG_LOWER" pad="16"/>
 <contactref element="OUTPUT_BUFFER_MEMORY" pad="20"/>
 <contactref element="OUTPUT_BUFFER_PC" pad="20"/>
-<contactref element="ADDR_REG_CALC_UPPER" pad="16"/>
+<contactref element="REG_CALC_UPPER" pad="16"/>
 <contactref element="OUTPUT_BUFFER_CALC_REG" pad="20"/>
-<contactref element="ADDR_REG_CALC_LOWER" pad="16"/>
-<contactref element="NOT_GATE1" pad="14"/>
+<contactref element="REG_CALC_LOWER" pad="16"/>
+<contactref element="NOT_GATE1_" pad="14"/>
 <contactref element="NOT_GATE2_" pad="14"/>
 <contactref element="ADDER_LOWER" pad="16"/>
 <contactref element="ADDER_UPPER" pad="16"/>
@@ -4157,15 +4363,15 @@ design rules under a new name.</description>
 <contactref element="NOT_GATE_" pad="14"/>
 <contactref element="OUTPUT_BUFFER_FLAGS" pad="20"/>
 <contactref element="AND_GATE3_" pad="14"/>
-<contactref element="ADDR_REG_PARAM_UPPER" pad="16"/>
+<contactref element="REG_PARAM_UPPER" pad="16"/>
 <contactref element="OUTPUT_BUFFER_PARAM_REG" pad="20"/>
-<contactref element="ADDR_REG_PARAM_LOWER" pad="16"/>
+<contactref element="REG_PARAM_LOWER" pad="16"/>
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="20"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="16"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="16"/>
+<contactref element="SELECTOR_INSRUCTION_UPPER" pad="16"/>
+<contactref element="SELECTOR_INSRUCTION_LOWER" pad="16"/>
 <contactref element="SELECTOR_LOGIC_" pad="16"/>
 <contactref element="NOT_GATE4_" pad="14"/>
-<contactref element="BRANCH_SELECTOR" pad="16"/>
+<contactref element="SELECTOR_BRANCH_" pad="16"/>
 <contactref element="XOR_GATE_1" pad="14"/>
 <contactref element="XOR_GATE_2" pad="14"/>
 <contactref element="AND_GATE4_" pad="14"/>
@@ -4215,17 +4421,24 @@ design rules under a new name.</description>
 <vertex x="242.57" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
-<contactref element="SELECTOR_RAM_" pad="16"/>
-<contactref element="INP_SELECTOR" pad="16"/>
-<contactref element="IC1" pad="16"/>
-<contactref element="IC2" pad="16"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="28"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="27"/>
+<contactref element="SELECTOR_STACK_" pad="16"/>
+<contactref element="KEYBOARD_SHIFT_UPPER" pad="16"/>
+<contactref element="KEYBOARD_SHIFT_LOWER" pad="16"/>
+<contactref element="KEYBOARD_ASCII_TABLE" pad="28"/>
+<contactref element="KEYBOARD_ASCII_TABLE" pad="27"/>
 <contactref element="KEYBOARD" pad="1"/>
-<contactref element="IC1" pad="10"/>
-<contactref element="IC2" pad="10"/>
-<contactref element="IC4" pad="14"/>
-<contactref element="IC5" pad="14"/>
+<contactref element="KEYBOARD_SHIFT_UPPER" pad="10"/>
+<contactref element="KEYBOARD_SHIFT_LOWER" pad="10"/>
+<contactref element="NOR_GATE_" pad="14"/>
+<contactref element="FIFO_STACK" pad="28"/>
+<contactref element="SELECTOR_PARAM_" pad="16"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="20"/>
+<contactref element="OUT_REG_UPPER" pad="16"/>
+<contactref element="OUT_REG_LOWER" pad="16"/>
+<contactref element="OUT_ROM_UPPER" pad="28"/>
+<contactref element="OUT_ROM_UPPER" pad="27"/>
+<contactref element="OUT_ROM_LOWER" pad="28"/>
+<contactref element="OUT_ROM_LOWER" pad="27"/>
 <wire x1="227.33" y1="44.45" x2="204.47" y2="44.45" width="0" layer="19" extent="1-1"/>
 <wire x1="177.8" y1="57.15" x2="204.47" y2="44.45" width="0" layer="19" extent="1-1"/>
 <wire x1="170.18" y1="57.15" x2="177.8" y2="57.15" width="0" layer="19" extent="1-1"/>
@@ -4245,7 +4458,6 @@ design rules under a new name.</description>
 <wire x1="31.75" y1="96.52" x2="55.88" y2="96.52" width="0" layer="19" extent="1-1"/>
 <wire x1="36.83" y1="113.03" x2="31.75" y2="96.52" width="0" layer="19" extent="1-1"/>
 <wire x1="13.97" y1="113.03" x2="36.83" y2="113.03" width="0" layer="19" extent="1-1"/>
-<wire x1="113.03" y1="115.57" x2="91.44" y2="95.25" width="0" layer="19" extent="1-1"/>
 <wire x1="52.07" y1="142.24" x2="36.83" y2="113.03" width="0" layer="19" extent="1-1"/>
 <wire x1="43.18" y1="154.94" x2="52.07" y2="142.24" width="0" layer="19" extent="1-1"/>
 <wire x1="43.18" y1="157.48" x2="43.18" y2="154.94" width="0" layer="19" extent="1-1"/>
@@ -4316,7 +4528,15 @@ design rules under a new name.</description>
 <wire x1="2.54" y1="-24.13" x2="2.54" y2="-35.56" width="0" layer="19" extent="1-1"/>
 <wire x1="2.54" y1="-69.85" x2="2.54" y2="-46.99" width="0" layer="19" extent="1-1"/>
 <wire x1="2.54" y1="-99.06" x2="2.54" y2="-69.85" width="0" layer="19" extent="1-1"/>
-<wire x1="2.54" y1="-110.49" x2="2.54" y2="-99.06" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="-128.27" x2="2.54" y2="-99.06" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="-139.7" x2="2.54" y2="-128.27" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="-151.13" x2="2.54" y2="-139.7" width="0" layer="19" extent="1-1"/>
+<wire x1="30.48" y1="-175.26" x2="2.54" y2="-151.13" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="-203.2" x2="30.48" y2="-175.26" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="-232.41" x2="2.54" y2="-203.2" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="-232.41" x2="2.54" y2="-232.41" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.59" y1="-269.24" x2="2.54" y2="-232.41" width="0" layer="19" extent="1-1"/>
+<wire x1="-24.13" y1="-269.24" x2="-21.59" y2="-269.24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="STEPPER_CLOCK" pad="6"/>
@@ -4351,13 +4571,13 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$9">
 <contactref element="AND_GATE_" pad="2"/>
-<contactref element="NOT_GATE1" pad="4"/>
+<contactref element="NOT_GATE1_" pad="4"/>
 <wire x1="125.73" y1="233.68" x2="109.22" y2="260.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MODE_SIGNAL">
 <contactref element="R4" pad="2"/>
 <contactref element="AND_GATE_" pad="4"/>
-<contactref element="NOT_GATE1" pad="3"/>
+<contactref element="NOT_GATE1_" pad="3"/>
 <contactref element="CLK_MODE" pad="1"/>
 <wire x1="41.91" y1="307.34" x2="81.28" y2="300.99" width="0" layer="19" extent="1-1"/>
 <wire x1="109.22" y1="255.27" x2="81.28" y2="300.99" width="0" layer="19" extent="1-1"/>
@@ -4380,7 +4600,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="REG_A_128PLACE">
 <contactref element="OUTPUT_BUFFER_REG_A" pad="2"/>
-<contactref element="ADDR_REG_A_UPPER" pad="3"/>
+<contactref element="REG_A_UPPER" pad="3"/>
 <contactref element="ADDER_UPPER" pad="12"/>
 <contactref element="LED_A_REG_8" pad="A"/>
 <contactref element="ZERO_POS_FLAG_IDENTIFIER" pad="12"/>
@@ -4390,7 +4610,7 @@ design rules under a new name.</description>
 <wire x1="215.9" y1="165.1" x2="161.29" y2="158.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_A_64PLACE">
-<contactref element="ADDR_REG_A_UPPER" pad="4"/>
+<contactref element="REG_A_UPPER" pad="4"/>
 <contactref element="OUTPUT_BUFFER_REG_A" pad="3"/>
 <contactref element="ADDER_UPPER" pad="14"/>
 <contactref element="LED_A_REG_7" pad="A"/>
@@ -4401,7 +4621,7 @@ design rules under a new name.</description>
 <wire x1="215.9" y1="162.56" x2="163.83" y2="158.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_A_32PLACE">
-<contactref element="ADDR_REG_A_UPPER" pad="5"/>
+<contactref element="REG_A_UPPER" pad="5"/>
 <contactref element="OUTPUT_BUFFER_REG_A" pad="4"/>
 <contactref element="ADDER_UPPER" pad="3"/>
 <contactref element="LED_A_REG_6" pad="A"/>
@@ -4412,7 +4632,7 @@ design rules under a new name.</description>
 <wire x1="215.9" y1="160.02" x2="172.72" y2="180.34" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_A_8PLACE">
-<contactref element="ADDR_REG_A_LOWER" pad="3"/>
+<contactref element="REG_A_LOWER" pad="3"/>
 <contactref element="OUTPUT_BUFFER_REG_A" pad="6"/>
 <contactref element="ADDER_LOWER" pad="12"/>
 <contactref element="LED_A_REG_4" pad="A"/>
@@ -4423,7 +4643,7 @@ design rules under a new name.</description>
 <wire x1="137.16" y1="161.29" x2="184.15" y2="158.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_A_4PLACE">
-<contactref element="ADDR_REG_A_LOWER" pad="4"/>
+<contactref element="REG_A_LOWER" pad="4"/>
 <contactref element="OUTPUT_BUFFER_REG_A" pad="7"/>
 <contactref element="ADDER_LOWER" pad="14"/>
 <contactref element="LED_A_REG_3" pad="A"/>
@@ -4434,7 +4654,7 @@ design rules under a new name.</description>
 <wire x1="137.16" y1="158.75" x2="186.69" y2="158.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_A_2PLACE">
-<contactref element="ADDR_REG_A_LOWER" pad="5"/>
+<contactref element="REG_A_LOWER" pad="5"/>
 <contactref element="OUTPUT_BUFFER_REG_A" pad="8"/>
 <contactref element="ADDER_LOWER" pad="3"/>
 <contactref element="LED_A_REG_2" pad="A"/>
@@ -4445,7 +4665,7 @@ design rules under a new name.</description>
 <wire x1="137.16" y1="156.21" x2="189.23" y2="158.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_A_1PLACE">
-<contactref element="ADDR_REG_A_LOWER" pad="6"/>
+<contactref element="REG_A_LOWER" pad="6"/>
 <contactref element="OUTPUT_BUFFER_REG_A" pad="9"/>
 <contactref element="ADDER_LOWER" pad="5"/>
 <contactref element="LED_A_REG_1" pad="A"/>
@@ -4632,14 +4852,14 @@ design rules under a new name.</description>
 <signal name="CTRL_SIG_5">
 <contactref element="INSTRUCTION_MEMORY_0" pad="16"/>
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="6"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="13"/>
+<contactref element="SELECTOR_INSRUCTION_UPPER" pad="13"/>
 <wire x1="22.86" y1="143.51" x2="81.28" y2="137.16" width="0" layer="19" extent="1-1"/>
 <wire x1="21.59" y1="113.03" x2="22.86" y2="143.51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTRL_SIG_6">
 <contactref element="INSTRUCTION_MEMORY_0" pad="17"/>
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="7"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="10"/>
+<contactref element="SELECTOR_INSRUCTION_UPPER" pad="10"/>
 <wire x1="29.21" y1="113.03" x2="81.28" y2="134.62" width="0" layer="19" extent="1-1"/>
 <wire x1="22.86" y1="146.05" x2="29.21" y2="113.03" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -4772,7 +4992,7 @@ design rules under a new name.</description>
 <signal name="INVERTED_CLOCK">
 <contactref element="MICRO_COUNTER_LOWER" pad="2"/>
 <contactref element="MICRO_COUNTER_UPPER" pad="2"/>
-<contactref element="NOT_GATE1" pad="10"/>
+<contactref element="NOT_GATE1_" pad="10"/>
 <contactref element="INVERTED_CLK_LED" pad="A"/>
 <wire x1="24.13" y1="205.74" x2="46.99" y2="205.74" width="0" layer="19" extent="1-1"/>
 <wire x1="12.7" y1="223.52" x2="24.13" y2="205.74" width="0" layer="19" extent="1-1"/>
@@ -4788,7 +5008,7 @@ design rules under a new name.</description>
 <contactref element="ADDR_MEM_REG_UPPER" pad="10"/>
 <contactref element="ADDR_MEM_REG_LOWER" pad="9"/>
 <contactref element="ADDR_MEM_REG_LOWER" pad="10"/>
-<contactref element="NOT_GATE1" pad="6"/>
+<contactref element="NOT_GATE1_" pad="6"/>
 <wire x1="63.5" y1="276.86" x2="125.73" y2="228.6" width="0" layer="19" extent="1-1"/>
 <wire x1="60.96" y1="276.86" x2="63.5" y2="276.86" width="0" layer="19" extent="1-1"/>
 <wire x1="39.37" y1="276.86" x2="60.96" y2="276.86" width="0" layer="19" extent="1-1"/>
@@ -4875,13 +5095,13 @@ design rules under a new name.</description>
 <wire x1="49.53" y1="259.08" x2="76.2" y2="260.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MEMORY_OUT">
-<contactref element="NOT_GATE1" pad="9"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="9"/>
+<contactref element="NOT_GATE1_" pad="9"/>
+<contactref element="SELECTOR_INSRUCTION_LOWER" pad="9"/>
 <wire x1="133.35" y1="228.6" x2="54.61" y2="113.03" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="~MEMORY_OUT">
 <contactref element="OUTPUT_BUFFER_MEMORY" pad="19"/>
-<contactref element="NOT_GATE1" pad="8"/>
+<contactref element="NOT_GATE1_" pad="8"/>
 <wire x1="83.82" y1="260.35" x2="133.35" y2="226.06" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CLOCK">
@@ -4889,22 +5109,24 @@ design rules under a new name.</description>
 <contactref element="FLAG_REG_UPPER" pad="7"/>
 <contactref element="RAM_ADDR_LOWER" pad="7"/>
 <contactref element="RAM_ADDR_UPPER" pad="7"/>
-<contactref element="ADDR_REG_PARAM_LOWER" pad="7"/>
-<contactref element="ADDR_REG_PARAM_UPPER" pad="7"/>
+<contactref element="REG_PARAM_LOWER" pad="7"/>
+<contactref element="REG_PARAM_UPPER" pad="7"/>
 <contactref element="PROGRAM_COUNTER_LOWER" pad="2"/>
 <contactref element="PROGRAM_COUNTER_UPPER" pad="2"/>
 <contactref element="CLOCK" pad="A"/>
 <contactref element="AND_GATE_" pad="8"/>
-<contactref element="NOT_GATE1" pad="11"/>
-<contactref element="ADDR_REG_CALC_LOWER" pad="7"/>
-<contactref element="ADDR_REG_CALC_UPPER" pad="7"/>
+<contactref element="NOT_GATE1_" pad="11"/>
+<contactref element="REG_CALC_LOWER" pad="7"/>
+<contactref element="REG_CALC_UPPER" pad="7"/>
 <contactref element="INSTRUC_REGISTER_UPPER" pad="7"/>
 <contactref element="EXTENSION" pad="9"/>
 <contactref element="INSTRUC_REGISTER_LOWER" pad="7"/>
-<contactref element="ADDR_REG_A_LOWER" pad="7"/>
-<contactref element="ADDR_REG_A_UPPER" pad="7"/>
+<contactref element="REG_A_LOWER" pad="7"/>
+<contactref element="REG_A_UPPER" pad="7"/>
 <contactref element="ADDR_MEM_REG_LOWER" pad="7"/>
 <contactref element="ADDR_MEM_REG_UPPER" pad="7"/>
+<contactref element="OUT_REG_LOWER" pad="7"/>
+<contactref element="OUT_REG_UPPER" pad="7"/>
 <wire x1="212.09" y1="52.07" x2="189.23" y2="52.07" width="0" layer="19" extent="1-1"/>
 <wire x1="134.62" y1="34.29" x2="189.23" y2="52.07" width="0" layer="19" extent="1-1"/>
 <wire x1="111.76" y1="34.29" x2="134.62" y2="34.29" width="0" layer="19" extent="1-1"/>
@@ -4924,6 +5146,8 @@ design rules under a new name.</description>
 <wire x1="130.81" y1="308.61" x2="116.84" y2="247.65" width="0" layer="19" extent="1-1"/>
 <wire x1="190.5" y1="271.78" x2="133.35" y2="233.68" width="0" layer="19" extent="1-1"/>
 <wire x1="213.36" y1="271.78" x2="190.5" y2="271.78" width="0" layer="19" extent="1-1"/>
+<wire x1="45.72" y1="-182.88" x2="35.56" y2="6.35" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="-210.82" x2="45.72" y2="-182.88" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$170">
 <contactref element="PROGRAM_COUNTER_LOWER" pad="15"/>
@@ -4967,7 +5191,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="PC_INC">
 <contactref element="NOT_GATE2_" pad="11"/>
-<contactref element="SELECTOR_RAM_" pad="7"/>
+<contactref element="SELECTOR_STACK_" pad="7"/>
 <wire x1="133.35" y1="212.09" x2="69.85" y2="46.99" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$177">
@@ -5032,7 +5256,7 @@ design rules under a new name.</description>
 <wire x1="167.64" y1="284.48" x2="182.88" y2="297.18" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_B_128PLACE">
-<contactref element="ADDR_REG_CALC_UPPER" pad="3"/>
+<contactref element="REG_CALC_UPPER" pad="3"/>
 <contactref element="OUTPUT_BUFFER_CALC_REG" pad="2"/>
 <contactref element="SUBTRACT_INVRTR_UPPER_" pad="2"/>
 <contactref element="LED_B_REG_8" pad="A"/>
@@ -5041,7 +5265,7 @@ design rules under a new name.</description>
 <wire x1="195.58" y1="204.47" x2="175.26" y2="69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_B_64PLACE">
-<contactref element="ADDR_REG_CALC_UPPER" pad="4"/>
+<contactref element="REG_CALC_UPPER" pad="4"/>
 <contactref element="OUTPUT_BUFFER_CALC_REG" pad="3"/>
 <contactref element="SUBTRACT_INVRTR_UPPER_" pad="5"/>
 <contactref element="LED_B_REG_7" pad="A"/>
@@ -5050,7 +5274,7 @@ design rules under a new name.</description>
 <wire x1="203.2" y1="204.47" x2="182.88" y2="69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_B_32PLACE">
-<contactref element="ADDR_REG_CALC_UPPER" pad="5"/>
+<contactref element="REG_CALC_UPPER" pad="5"/>
 <contactref element="OUTPUT_BUFFER_CALC_REG" pad="4"/>
 <contactref element="SUBTRACT_INVRTR_UPPER_" pad="10"/>
 <contactref element="LED_B_REG_6" pad="A"/>
@@ -5059,7 +5283,7 @@ design rules under a new name.</description>
 <wire x1="203.2" y1="212.09" x2="190.5" y2="69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_B_16PLACE">
-<contactref element="ADDR_REG_CALC_UPPER" pad="6"/>
+<contactref element="REG_CALC_UPPER" pad="6"/>
 <contactref element="OUTPUT_BUFFER_CALC_REG" pad="5"/>
 <contactref element="SUBTRACT_INVRTR_UPPER_" pad="13"/>
 <contactref element="LED_B_REG_5" pad="A"/>
@@ -5068,7 +5292,7 @@ design rules under a new name.</description>
 <wire x1="195.58" y1="212.09" x2="198.12" y2="69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_B_8PLACE">
-<contactref element="ADDR_REG_CALC_LOWER" pad="3"/>
+<contactref element="REG_CALC_LOWER" pad="3"/>
 <contactref element="OUTPUT_BUFFER_CALC_REG" pad="6"/>
 <contactref element="SUBTRACT_INVRTR_LOWER_" pad="2"/>
 <contactref element="LED_B_REG_4" pad="A"/>
@@ -5077,7 +5301,7 @@ design rules under a new name.</description>
 <wire x1="217.17" y1="204.47" x2="205.74" y2="69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_B_4PLACE">
-<contactref element="ADDR_REG_CALC_LOWER" pad="4"/>
+<contactref element="REG_CALC_LOWER" pad="4"/>
 <contactref element="OUTPUT_BUFFER_CALC_REG" pad="7"/>
 <contactref element="SUBTRACT_INVRTR_LOWER_" pad="5"/>
 <contactref element="LED_B_REG_3" pad="A"/>
@@ -5086,7 +5310,7 @@ design rules under a new name.</description>
 <wire x1="224.79" y1="204.47" x2="213.36" y2="69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_B_2PLACE">
-<contactref element="ADDR_REG_CALC_LOWER" pad="5"/>
+<contactref element="REG_CALC_LOWER" pad="5"/>
 <contactref element="OUTPUT_BUFFER_CALC_REG" pad="8"/>
 <contactref element="SUBTRACT_INVRTR_LOWER_" pad="10"/>
 <contactref element="LED_B_REG_2" pad="A"/>
@@ -5095,7 +5319,7 @@ design rules under a new name.</description>
 <wire x1="224.79" y1="212.09" x2="220.98" y2="69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_B_1PLACE">
-<contactref element="ADDR_REG_CALC_LOWER" pad="6"/>
+<contactref element="REG_CALC_LOWER" pad="6"/>
 <contactref element="OUTPUT_BUFFER_CALC_REG" pad="9"/>
 <contactref element="SUBTRACT_INVRTR_LOWER_" pad="13"/>
 <contactref element="LED_B_REG_1" pad="A"/>
@@ -5104,10 +5328,10 @@ design rules under a new name.</description>
 <wire x1="217.17" y1="212.09" x2="228.6" y2="69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CALC_IN">
-<contactref element="ADDR_REG_CALC_UPPER" pad="9"/>
-<contactref element="ADDR_REG_CALC_UPPER" pad="10"/>
-<contactref element="ADDR_REG_CALC_LOWER" pad="9"/>
-<contactref element="ADDR_REG_CALC_LOWER" pad="10"/>
+<contactref element="REG_CALC_UPPER" pad="9"/>
+<contactref element="REG_CALC_UPPER" pad="10"/>
+<contactref element="REG_CALC_LOWER" pad="9"/>
+<contactref element="REG_CALC_LOWER" pad="10"/>
 <contactref element="SELECTOR_LOGIC_" pad="10"/>
 <wire x1="212.09" y1="44.45" x2="209.55" y2="44.45" width="0" layer="19" extent="1-1"/>
 <wire x1="189.23" y1="44.45" x2="209.55" y2="44.45" width="0" layer="19" extent="1-1"/>
@@ -5120,13 +5344,13 @@ design rules under a new name.</description>
 <contactref element="ADDR_MEM_REG_UPPER" pad="12"/>
 <contactref element="OUTPUT_BUFFER_MEMORY" pad="16"/>
 <contactref element="DATABUS_6" pad="A"/>
-<contactref element="ADDR_REG_CALC_UPPER" pad="12"/>
+<contactref element="REG_CALC_UPPER" pad="12"/>
 <contactref element="OUTPUT_BUFFER_CALC_REG" pad="16"/>
-<contactref element="ADDR_REG_A_UPPER" pad="12"/>
+<contactref element="REG_A_UPPER" pad="12"/>
 <contactref element="OUTPUT_BUFFER_REG_A" pad="16"/>
 <contactref element="OUTPUT_BUFFER_ALU" pad="7"/>
 <contactref element="OUTPUT_BUFFER_FLAGS" pad="7"/>
-<contactref element="ADDR_REG_PARAM_UPPER" pad="12"/>
+<contactref element="REG_PARAM_UPPER" pad="12"/>
 <contactref element="OUTPUT_BUFFER_PARAM_REG" pad="16"/>
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="16"/>
 <contactref element="INSTRUC_REGISTER_UPPER" pad="12"/>
@@ -5134,7 +5358,10 @@ design rules under a new name.</description>
 <contactref element="RAM_ADDR_UPPER" pad="13"/>
 <contactref element="EXTENSION" pad="6"/>
 <contactref element="XOR_GATE_2" pad="5"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="17"/>
+<contactref element="FIFO_STACK" pad="17"/>
+<contactref element="FIFO_STACK" pad="26"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="7"/>
+<contactref element="OUT_REG_UPPER" pad="12"/>
 <wire x1="67.31" y1="151.13" x2="88.9" y2="139.7" width="0" layer="19" extent="1-1"/>
 <wire x1="91.44" y1="85.09" x2="88.9" y2="139.7" width="0" layer="19" extent="1-1"/>
 <wire x1="41.91" y1="96.52" x2="91.44" y2="85.09" width="0" layer="19" extent="1-1"/>
@@ -5153,7 +5380,10 @@ design rules under a new name.</description>
 <wire x1="110.49" y1="295.91" x2="123.19" y2="308.61" width="0" layer="19" extent="1-1"/>
 <wire x1="83.82" y1="252.73" x2="110.49" y2="295.91" width="0" layer="19" extent="1-1"/>
 <wire x1="31.75" y1="276.86" x2="83.82" y2="252.73" width="0" layer="19" extent="1-1"/>
-<wire x1="30.48" y1="-46.99" x2="62.23" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="30.48" y1="-128.27" x2="62.23" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="-128.27" x2="30.48" y2="-128.27" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="-158.75" x2="7.62" y2="-128.27" width="0" layer="19" extent="1-1"/>
+<wire x1="12.7" y1="-203.2" x2="17.78" y2="-158.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="128_PLACE" class="1">
 <contactref element="ADDR_MEM_REG_UPPER" pad="14"/>
@@ -5161,20 +5391,23 @@ design rules under a new name.</description>
 <contactref element="OUTPUT_BUFFER_PC" pad="18"/>
 <contactref element="PROGRAM_COUNTER_UPPER" pad="6"/>
 <contactref element="DATABUS_8" pad="A"/>
-<contactref element="ADDR_REG_CALC_UPPER" pad="14"/>
+<contactref element="REG_CALC_UPPER" pad="14"/>
 <contactref element="OUTPUT_BUFFER_CALC_REG" pad="18"/>
-<contactref element="ADDR_REG_A_UPPER" pad="14"/>
+<contactref element="REG_A_UPPER" pad="14"/>
 <contactref element="OUTPUT_BUFFER_REG_A" pad="18"/>
 <contactref element="OUTPUT_BUFFER_ALU" pad="9"/>
 <contactref element="OUTPUT_BUFFER_FLAGS" pad="9"/>
-<contactref element="ADDR_REG_PARAM_UPPER" pad="14"/>
+<contactref element="REG_PARAM_UPPER" pad="14"/>
 <contactref element="OUTPUT_BUFFER_PARAM_REG" pad="18"/>
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="18"/>
 <contactref element="INSTRUC_REGISTER_UPPER" pad="14"/>
 <contactref element="OUTPUT_BUFFER_RAM" pad="11"/>
 <contactref element="RAM_ADDR_UPPER" pad="11"/>
 <contactref element="EXTENSION" pad="8"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="19"/>
+<contactref element="FIFO_STACK" pad="19"/>
+<contactref element="FIFO_STACK" pad="24"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="9"/>
+<contactref element="OUT_REG_UPPER" pad="14"/>
 <wire x1="67.31" y1="156.21" x2="88.9" y2="144.78" width="0" layer="19" extent="1-1"/>
 <wire x1="91.44" y1="90.17" x2="88.9" y2="144.78" width="0" layer="19" extent="1-1"/>
 <wire x1="36.83" y1="96.52" x2="91.44" y2="90.17" width="0" layer="19" extent="1-1"/>
@@ -5184,7 +5417,6 @@ design rules under a new name.</description>
 <wire x1="43.18" y1="33.02" x2="36.83" y2="96.52" width="0" layer="19" extent="1-1"/>
 <wire x1="62.23" y1="13.97" x2="43.18" y2="33.02" width="0" layer="19" extent="1-1"/>
 <wire x1="92.71" y1="13.97" x2="62.23" y2="13.97" width="0" layer="19" extent="1-1"/>
-<wire x1="25.4" y1="-46.99" x2="62.23" y2="13.97" width="0" layer="19" extent="1-1"/>
 <wire x1="200.66" y1="271.78" x2="165.1" y2="205.74" width="0" layer="19" extent="1-1"/>
 <wire x1="175.26" y1="281.94" x2="200.66" y2="271.78" width="0" layer="19" extent="1-1"/>
 <wire x1="128.27" y1="308.61" x2="175.26" y2="281.94" width="0" layer="19" extent="1-1"/>
@@ -5193,6 +5425,10 @@ design rules under a new name.</description>
 <wire x1="26.67" y1="276.86" x2="83.82" y2="257.81" width="0" layer="19" extent="1-1"/>
 <wire x1="177.8" y1="52.07" x2="92.71" y2="13.97" width="0" layer="19" extent="1-1"/>
 <wire x1="222.25" y1="44.45" x2="177.8" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="25.4" y1="-128.27" x2="62.23" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="12.7" y1="-128.27" x2="25.4" y2="-128.27" width="0" layer="19" extent="1-1"/>
+<wire x1="22.86" y1="-158.75" x2="25.4" y2="-128.27" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="-203.2" x2="22.86" y2="-158.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="~DATA/PARAM">
 <contactref element="FLAG_REG_UPPER" pad="6"/>
@@ -5206,11 +5442,11 @@ design rules under a new name.</description>
 <wire x1="34.29" y1="259.08" x2="100.33" y2="29.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_A_IN">
-<contactref element="ADDR_REG_A_UPPER" pad="9"/>
-<contactref element="ADDR_REG_A_UPPER" pad="10"/>
-<contactref element="ADDR_REG_A_LOWER" pad="9"/>
-<contactref element="ADDR_REG_A_LOWER" pad="10"/>
-<contactref element="BRANCH_SELECTOR" pad="10"/>
+<contactref element="REG_A_UPPER" pad="9"/>
+<contactref element="REG_A_UPPER" pad="10"/>
+<contactref element="REG_A_LOWER" pad="9"/>
+<contactref element="REG_A_LOWER" pad="10"/>
+<contactref element="SELECTOR_BRANCH_" pad="10"/>
 <wire x1="196.85" y1="166.37" x2="205.74" y2="254" width="0" layer="19" extent="1-1"/>
 <wire x1="194.31" y1="166.37" x2="196.85" y2="166.37" width="0" layer="19" extent="1-1"/>
 <wire x1="173.99" y1="166.37" x2="194.31" y2="166.37" width="0" layer="19" extent="1-1"/>
@@ -5262,33 +5498,32 @@ design rules under a new name.</description>
 <wire x1="97.79" y1="290.83" x2="97.79" y2="295.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PC_LOAD_SIGNAL">
-<contactref element="NOT_GATE_" pad="11"/>
-<contactref element="SELECTOR_RAM_" pad="5"/>
-<wire x1="69.85" y1="52.07" x2="133.35" y2="255.27" width="0" layer="19" extent="1-1"/>
+<contactref element="SELECTOR_STACK_" pad="5"/>
+<contactref element="NOT_GATE_" pad="9"/>
+<wire x1="69.85" y1="52.07" x2="133.35" y2="250.19" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PC_OUT">
 <contactref element="OUTPUT_BUFFER_PC" pad="19"/>
-<contactref element="SELECTOR_RAM_" pad="6"/>
+<contactref element="SELECTOR_STACK_" pad="6"/>
 <wire x1="69.85" y1="49.53" x2="175.26" y2="284.48" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MEMORY_IN">
-<contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="12"/>
-<contactref element="NOT_GATE1" pad="5"/>
+<contactref element="SELECTOR_INSRUCTION_LOWER" pad="12"/>
+<contactref element="NOT_GATE1_" pad="5"/>
 <wire x1="125.73" y1="231.14" x2="46.99" y2="113.03" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="16_PLACE" class="1">
-<contactref element="ADDR_REG_CALC_UPPER" pad="11"/>
+<contactref element="REG_CALC_UPPER" pad="11"/>
 <contactref element="OUTPUT_BUFFER_CALC_REG" pad="15"/>
 <contactref element="ADDR_MEM_REG_UPPER" pad="11"/>
 <contactref element="OUTPUT_BUFFER_MEMORY" pad="15"/>
 <contactref element="OUTPUT_BUFFER_PC" pad="15"/>
 <contactref element="PROGRAM_COUNTER_UPPER" pad="3"/>
 <contactref element="DATABUS_5" pad="A"/>
-<contactref element="ADDR_REG_A_UPPER" pad="11"/>
 <contactref element="OUTPUT_BUFFER_REG_A" pad="15"/>
 <contactref element="OUTPUT_BUFFER_ALU" pad="6"/>
 <contactref element="OUTPUT_BUFFER_FLAGS" pad="6"/>
-<contactref element="ADDR_REG_PARAM_UPPER" pad="11"/>
+<contactref element="REG_PARAM_UPPER" pad="11"/>
 <contactref element="OUTPUT_BUFFER_PARAM_REG" pad="15"/>
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="15"/>
 <contactref element="INSTRUC_REGISTER_UPPER" pad="11"/>
@@ -5297,7 +5532,11 @@ design rules under a new name.</description>
 <contactref element="MICRO_COUNTER_UPPER" pad="3"/>
 <contactref element="EXTENSION" pad="5"/>
 <contactref element="XOR_GATE_2" pad="2"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="16"/>
+<contactref element="FIFO_STACK" pad="16"/>
+<contactref element="FIFO_STACK" pad="27"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="6"/>
+<contactref element="REG_A_UPPER" pad="11"/>
+<contactref element="OUT_REG_UPPER" pad="11"/>
 <wire x1="67.31" y1="148.59" x2="26.67" y2="205.74" width="0" layer="19" extent="1-1"/>
 <wire x1="88.9" y1="137.16" x2="67.31" y2="148.59" width="0" layer="19" extent="1-1"/>
 <wire x1="91.44" y1="82.55" x2="88.9" y2="137.16" width="0" layer="19" extent="1-1"/>
@@ -5317,29 +5556,35 @@ design rules under a new name.</description>
 <wire x1="34.29" y1="276.86" x2="83.82" y2="250.19" width="0" layer="19" extent="1-1"/>
 <wire x1="177.8" y1="44.45" x2="114.3" y2="11.43" width="0" layer="19" extent="1-1"/>
 <wire x1="214.63" y1="44.45" x2="177.8" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="33.02" y1="-46.99" x2="62.23" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="33.02" y1="-128.27" x2="62.23" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="-128.27" x2="33.02" y2="-128.27" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="-158.75" x2="5.08" y2="-128.27" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="-203.2" x2="15.24" y2="-158.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="64_PLACE" class="1">
 <contactref element="OUTPUT_BUFFER_CALC_REG" pad="17"/>
-<contactref element="ADDR_REG_CALC_UPPER" pad="13"/>
+<contactref element="REG_CALC_UPPER" pad="13"/>
 <contactref element="ADDR_MEM_REG_UPPER" pad="13"/>
 <contactref element="OUTPUT_BUFFER_MEMORY" pad="17"/>
 <contactref element="OUTPUT_BUFFER_PC" pad="17"/>
 <contactref element="PROGRAM_COUNTER_UPPER" pad="5"/>
 <contactref element="DATABUS_7" pad="A"/>
-<contactref element="ADDR_REG_A_UPPER" pad="13"/>
+<contactref element="REG_A_UPPER" pad="13"/>
 <contactref element="OUTPUT_BUFFER_REG_A" pad="17"/>
 <contactref element="OUTPUT_BUFFER_ALU" pad="8"/>
 <contactref element="OUTPUT_BUFFER_FLAGS" pad="8"/>
 <contactref element="OUTPUT_BUFFER_PARAM_REG" pad="17"/>
-<contactref element="ADDR_REG_PARAM_UPPER" pad="13"/>
+<contactref element="REG_PARAM_UPPER" pad="13"/>
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="17"/>
 <contactref element="INSTRUC_REGISTER_UPPER" pad="13"/>
 <contactref element="RAM_ADDR_UPPER" pad="12"/>
 <contactref element="OUTPUT_BUFFER_RAM" pad="12"/>
 <contactref element="EXTENSION" pad="7"/>
 <contactref element="XOR_GATE_2" pad="10"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="18"/>
+<contactref element="FIFO_STACK" pad="18"/>
+<contactref element="FIFO_STACK" pad="25"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="8"/>
+<contactref element="OUT_REG_UPPER" pad="13"/>
 <wire x1="67.31" y1="153.67" x2="88.9" y2="142.24" width="0" layer="19" extent="1-1"/>
 <wire x1="91.44" y1="87.63" x2="88.9" y2="142.24" width="0" layer="19" extent="1-1"/>
 <wire x1="39.37" y1="96.52" x2="91.44" y2="87.63" width="0" layer="19" extent="1-1"/>
@@ -5358,50 +5603,10 @@ design rules under a new name.</description>
 <wire x1="102.87" y1="295.91" x2="125.73" y2="308.61" width="0" layer="19" extent="1-1"/>
 <wire x1="83.82" y1="255.27" x2="102.87" y2="295.91" width="0" layer="19" extent="1-1"/>
 <wire x1="29.21" y1="276.86" x2="83.82" y2="255.27" width="0" layer="19" extent="1-1"/>
-<wire x1="27.94" y1="-46.99" x2="62.23" y2="16.51" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="1_PLACE" class="1">
-<contactref element="OUTPUT_BUFFER_CALC_REG" pad="11"/>
-<contactref element="ADDR_MEM_REG_LOWER" pad="11"/>
-<contactref element="OUTPUT_BUFFER_MEMORY" pad="11"/>
-<contactref element="OUTPUT_BUFFER_PC" pad="11"/>
-<contactref element="PROGRAM_COUNTER_LOWER" pad="3"/>
-<contactref element="DATABUS_1" pad="A"/>
-<contactref element="ADDR_REG_CALC_LOWER" pad="11"/>
-<contactref element="OUTPUT_BUFFER_REG_A" pad="11"/>
-<contactref element="ADDR_REG_A_LOWER" pad="11"/>
-<contactref element="OUTPUT_BUFFER_ALU" pad="2"/>
-<contactref element="OUTPUT_BUFFER_FLAGS" pad="2"/>
-<contactref element="OUTPUT_BUFFER_PARAM_REG" pad="11"/>
-<contactref element="ADDR_REG_PARAM_LOWER" pad="11"/>
-<contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="11"/>
-<contactref element="INSTRUC_REGISTER_LOWER" pad="11"/>
-<contactref element="RAM_ADDR_LOWER" pad="14"/>
-<contactref element="OUTPUT_BUFFER_RAM" pad="18"/>
-<contactref element="MICRO_COUNTER_LOWER" pad="3"/>
-<contactref element="EXTENSION" pad="1"/>
-<contactref element="XOR_GATE_1" pad="2"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="11"/>
-<wire x1="175.26" y1="264.16" x2="215.9" y2="271.78" width="0" layer="19" extent="1-1"/>
-<wire x1="148.59" y1="295.91" x2="175.26" y2="264.16" width="0" layer="19" extent="1-1"/>
-<wire x1="110.49" y1="308.61" x2="148.59" y2="295.91" width="0" layer="19" extent="1-1"/>
-<wire x1="165.1" y1="223.52" x2="175.26" y2="264.16" width="0" layer="19" extent="1-1"/>
-<wire x1="58.42" y1="276.86" x2="110.49" y2="308.61" width="0" layer="19" extent="1-1"/>
-<wire x1="83.82" y1="240.03" x2="58.42" y2="276.86" width="0" layer="19" extent="1-1"/>
-<wire x1="49.53" y1="205.74" x2="83.82" y2="240.03" width="0" layer="19" extent="1-1"/>
-<wire x1="191.77" y1="166.37" x2="165.1" y2="223.52" width="0" layer="19" extent="1-1"/>
-<wire x1="144.78" y1="151.13" x2="191.77" y2="166.37" width="0" layer="19" extent="1-1"/>
-<wire x1="88.9" y1="127" x2="144.78" y2="151.13" width="0" layer="19" extent="1-1"/>
-<wire x1="67.31" y1="124.46" x2="88.9" y2="127" width="0" layer="19" extent="1-1"/>
-<wire x1="68.58" y1="96.52" x2="67.31" y2="124.46" width="0" layer="19" extent="1-1"/>
-<wire x1="91.44" y1="72.39" x2="68.58" y2="96.52" width="0" layer="19" extent="1-1"/>
-<wire x1="92.71" y1="31.75" x2="91.44" y2="72.39" width="0" layer="19" extent="1-1"/>
-<wire x1="62.23" y1="31.75" x2="92.71" y2="31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="43.18" y1="16.51" x2="62.23" y2="31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="134.62" y1="11.43" x2="92.71" y2="31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="177.8" y1="34.29" x2="134.62" y2="11.43" width="0" layer="19" extent="1-1"/>
-<wire x1="191.77" y1="44.45" x2="177.8" y2="34.29" width="0" layer="19" extent="1-1"/>
-<wire x1="27.94" y1="-62.23" x2="43.18" y2="16.51" width="0" layer="19" extent="1-1"/>
+<wire x1="27.94" y1="-128.27" x2="62.23" y2="16.51" width="0" layer="19" extent="1-1"/>
+<wire x1="10.16" y1="-128.27" x2="27.94" y2="-128.27" width="0" layer="19" extent="1-1"/>
+<wire x1="20.32" y1="-158.75" x2="27.94" y2="-128.27" width="0" layer="19" extent="1-1"/>
+<wire x1="10.16" y1="-203.2" x2="20.32" y2="-158.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="4_PLACE" class="1">
 <contactref element="OUTPUT_BUFFER_CALC_REG" pad="13"/>
@@ -5410,13 +5615,13 @@ design rules under a new name.</description>
 <contactref element="OUTPUT_BUFFER_PC" pad="13"/>
 <contactref element="PROGRAM_COUNTER_LOWER" pad="5"/>
 <contactref element="DATABUS_3" pad="A"/>
-<contactref element="ADDR_REG_CALC_LOWER" pad="13"/>
+<contactref element="REG_CALC_LOWER" pad="13"/>
 <contactref element="OUTPUT_BUFFER_REG_A" pad="13"/>
-<contactref element="ADDR_REG_A_LOWER" pad="13"/>
+<contactref element="REG_A_LOWER" pad="13"/>
 <contactref element="OUTPUT_BUFFER_ALU" pad="4"/>
 <contactref element="OUTPUT_BUFFER_FLAGS" pad="4"/>
 <contactref element="OUTPUT_BUFFER_PARAM_REG" pad="13"/>
-<contactref element="ADDR_REG_PARAM_LOWER" pad="13"/>
+<contactref element="REG_PARAM_LOWER" pad="13"/>
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="13"/>
 <contactref element="INSTRUC_REGISTER_LOWER" pad="13"/>
 <contactref element="RAM_ADDR_LOWER" pad="12"/>
@@ -5424,7 +5629,10 @@ design rules under a new name.</description>
 <contactref element="MICRO_COUNTER_LOWER" pad="5"/>
 <contactref element="EXTENSION" pad="3"/>
 <contactref element="XOR_GATE_1" pad="10"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="13"/>
+<contactref element="FIFO_STACK" pad="4"/>
+<contactref element="FIFO_STACK" pad="11"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="4"/>
+<contactref element="OUT_REG_LOWER" pad="13"/>
 <wire x1="175.26" y1="269.24" x2="220.98" y2="271.78" width="0" layer="19" extent="1-1"/>
 <wire x1="133.35" y1="295.91" x2="175.26" y2="269.24" width="0" layer="19" extent="1-1"/>
 <wire x1="115.57" y1="308.61" x2="133.35" y2="295.91" width="0" layer="19" extent="1-1"/>
@@ -5444,21 +5652,24 @@ design rules under a new name.</description>
 <wire x1="53.34" y1="276.86" x2="115.57" y2="308.61" width="0" layer="19" extent="1-1"/>
 <wire x1="83.82" y1="245.11" x2="53.34" y2="276.86" width="0" layer="19" extent="1-1"/>
 <wire x1="54.61" y1="205.74" x2="83.82" y2="245.11" width="0" layer="19" extent="1-1"/>
-<wire x1="33.02" y1="-62.23" x2="43.18" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="27.94" y1="-135.89" x2="43.18" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="10.16" y1="-135.89" x2="27.94" y2="-135.89" width="0" layer="19" extent="1-1"/>
+<wire x1="10.16" y1="-158.75" x2="10.16" y2="-135.89" width="0" layer="19" extent="1-1"/>
+<wire x1="38.1" y1="-175.26" x2="10.16" y2="-158.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="2_PLACE" class="1">
-<contactref element="ADDR_REG_CALC_LOWER" pad="12"/>
+<contactref element="REG_CALC_LOWER" pad="12"/>
 <contactref element="OUTPUT_BUFFER_PC" pad="12"/>
 <contactref element="PROGRAM_COUNTER_LOWER" pad="4"/>
 <contactref element="ADDR_MEM_REG_LOWER" pad="12"/>
 <contactref element="OUTPUT_BUFFER_MEMORY" pad="12"/>
 <contactref element="DATABUS_2" pad="A"/>
 <contactref element="OUTPUT_BUFFER_CALC_REG" pad="12"/>
-<contactref element="ADDR_REG_A_LOWER" pad="12"/>
+<contactref element="REG_A_LOWER" pad="12"/>
 <contactref element="OUTPUT_BUFFER_REG_A" pad="12"/>
 <contactref element="OUTPUT_BUFFER_ALU" pad="3"/>
 <contactref element="OUTPUT_BUFFER_FLAGS" pad="3"/>
-<contactref element="ADDR_REG_PARAM_LOWER" pad="12"/>
+<contactref element="REG_PARAM_LOWER" pad="12"/>
 <contactref element="OUTPUT_BUFFER_PARAM_REG" pad="12"/>
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="12"/>
 <contactref element="INSTRUC_REGISTER_LOWER" pad="12"/>
@@ -5467,7 +5678,10 @@ design rules under a new name.</description>
 <contactref element="MICRO_COUNTER_LOWER" pad="4"/>
 <contactref element="EXTENSION" pad="2"/>
 <contactref element="XOR_GATE_1" pad="5"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="12"/>
+<contactref element="FIFO_STACK" pad="5"/>
+<contactref element="FIFO_STACK" pad="10"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="3"/>
+<contactref element="OUT_REG_LOWER" pad="12"/>
 <wire x1="177.8" y1="36.83" x2="194.31" y2="44.45" width="0" layer="19" extent="1-1"/>
 <wire x1="142.24" y1="11.43" x2="177.8" y2="36.83" width="0" layer="19" extent="1-1"/>
 <wire x1="92.71" y1="29.21" x2="142.24" y2="11.43" width="0" layer="19" extent="1-1"/>
@@ -5487,11 +5701,14 @@ design rules under a new name.</description>
 <wire x1="55.88" y1="276.86" x2="113.03" y2="308.61" width="0" layer="19" extent="1-1"/>
 <wire x1="83.82" y1="242.57" x2="55.88" y2="276.86" width="0" layer="19" extent="1-1"/>
 <wire x1="52.07" y1="205.74" x2="83.82" y2="242.57" width="0" layer="19" extent="1-1"/>
-<wire x1="30.48" y1="-62.23" x2="43.18" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="25.4" y1="-135.89" x2="43.18" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="12.7" y1="-135.89" x2="25.4" y2="-135.89" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="-158.75" x2="12.7" y2="-135.89" width="0" layer="19" extent="1-1"/>
+<wire x1="40.64" y1="-175.26" x2="7.62" y2="-158.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_A_16PLACE">
 <contactref element="OUTPUT_BUFFER_REG_A" pad="5"/>
-<contactref element="ADDR_REG_A_UPPER" pad="6"/>
+<contactref element="REG_A_UPPER" pad="6"/>
 <contactref element="ADDER_UPPER" pad="5"/>
 <contactref element="LED_A_REG_5" pad="A"/>
 <contactref element="ZERO_POS_FLAG_IDENTIFIER" pad="9"/>
@@ -5591,7 +5808,7 @@ design rules under a new name.</description>
 <wire x1="198.12" y1="204.47" x2="203.2" y2="231.14" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTRL_SIG_13">
-<contactref element="NOT_GATE1" pad="13"/>
+<contactref element="NOT_GATE1_" pad="13"/>
 <contactref element="INSTRUCTION_MEMORY_1" pad="16"/>
 <wire x1="133.35" y1="238.76" x2="43.18" y2="127" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -5742,71 +5959,71 @@ design rules under a new name.</description>
 <wire x1="5.715" y1="302.26" x2="25.4" y2="308.61" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTRL_SIG_17_(FLAG_OUT)">
-<contactref element="INSTRUCTION_MEMORY_2" pad="11"/>
 <contactref element="NOT_GATE_" pad="1"/>
-<wire x1="125.73" y1="262.89" x2="27.94" y2="170.18" width="0" layer="19" extent="1-1"/>
+<contactref element="SELECTOR_PARAM_" pad="10"/>
+<wire x1="17.78" y1="-139.7" x2="125.73" y2="262.89" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_P_128PLACE">
-<contactref element="ADDR_REG_PARAM_UPPER" pad="3"/>
+<contactref element="REG_PARAM_UPPER" pad="3"/>
 <contactref element="OUTPUT_BUFFER_PARAM_REG" pad="2"/>
 <contactref element="PARAM_LED_8" pad="A"/>
 <wire x1="36.83" y1="88.9" x2="83.82" y2="92.71" width="0" layer="19" extent="1-1"/>
 <wire x1="34.29" y1="81.28" x2="36.83" y2="88.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_P_64PLACE">
-<contactref element="ADDR_REG_PARAM_UPPER" pad="4"/>
+<contactref element="REG_PARAM_UPPER" pad="4"/>
 <contactref element="OUTPUT_BUFFER_PARAM_REG" pad="3"/>
 <contactref element="PARAM_LED_7" pad="A"/>
 <wire x1="39.37" y1="88.9" x2="83.82" y2="90.17" width="0" layer="19" extent="1-1"/>
 <wire x1="39.37" y1="81.28" x2="39.37" y2="88.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_P_32PLACE">
-<contactref element="ADDR_REG_PARAM_UPPER" pad="5"/>
+<contactref element="REG_PARAM_UPPER" pad="5"/>
 <contactref element="OUTPUT_BUFFER_PARAM_REG" pad="4"/>
 <contactref element="PARAM_LED_6" pad="A"/>
 <wire x1="44.45" y1="81.28" x2="83.82" y2="87.63" width="0" layer="19" extent="1-1"/>
 <wire x1="41.91" y1="88.9" x2="44.45" y2="81.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_P_16PLACE">
-<contactref element="ADDR_REG_PARAM_UPPER" pad="6"/>
+<contactref element="REG_PARAM_UPPER" pad="6"/>
 <contactref element="OUTPUT_BUFFER_PARAM_REG" pad="5"/>
 <contactref element="PARAM_LED_5" pad="A"/>
 <wire x1="49.53" y1="81.28" x2="83.82" y2="85.09" width="0" layer="19" extent="1-1"/>
 <wire x1="44.45" y1="88.9" x2="49.53" y2="81.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_P_8PLACE">
-<contactref element="ADDR_REG_PARAM_LOWER" pad="3"/>
+<contactref element="REG_PARAM_LOWER" pad="3"/>
 <contactref element="OUTPUT_BUFFER_PARAM_REG" pad="6"/>
 <contactref element="PARAM_LED_4" pad="A"/>
 <wire x1="60.96" y1="88.9" x2="83.82" y2="82.55" width="0" layer="19" extent="1-1"/>
 <wire x1="54.61" y1="81.28" x2="60.96" y2="88.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_P_4PLACE">
-<contactref element="ADDR_REG_PARAM_LOWER" pad="4"/>
+<contactref element="REG_PARAM_LOWER" pad="4"/>
 <contactref element="OUTPUT_BUFFER_PARAM_REG" pad="7"/>
 <contactref element="PARAM_LED_3" pad="A"/>
 <wire x1="63.5" y1="88.9" x2="83.82" y2="80.01" width="0" layer="19" extent="1-1"/>
 <wire x1="59.69" y1="81.28" x2="63.5" y2="88.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_P_2PLACE">
-<contactref element="ADDR_REG_PARAM_LOWER" pad="5"/>
+<contactref element="REG_PARAM_LOWER" pad="5"/>
 <contactref element="OUTPUT_BUFFER_PARAM_REG" pad="8"/>
 <contactref element="PARAM_LED_2" pad="A"/>
 <wire x1="64.77" y1="81.28" x2="83.82" y2="77.47" width="0" layer="19" extent="1-1"/>
 <wire x1="66.04" y1="88.9" x2="64.77" y2="81.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_P_1PLACE">
-<contactref element="ADDR_REG_PARAM_LOWER" pad="6"/>
+<contactref element="REG_PARAM_LOWER" pad="6"/>
 <contactref element="OUTPUT_BUFFER_PARAM_REG" pad="9"/>
 <contactref element="PARAM_LED_1" pad="A"/>
 <wire x1="69.85" y1="81.28" x2="68.58" y2="88.9" width="0" layer="19" extent="1-1"/>
 <wire x1="83.82" y1="74.93" x2="69.85" y2="81.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$111">
-<contactref element="ADDR_REG_PARAM_UPPER" pad="9"/>
-<contactref element="ADDR_REG_PARAM_UPPER" pad="10"/>
-<contactref element="ADDR_REG_PARAM_LOWER" pad="9"/>
-<contactref element="ADDR_REG_PARAM_LOWER" pad="10"/>
+<contactref element="REG_PARAM_UPPER" pad="9"/>
+<contactref element="REG_PARAM_UPPER" pad="10"/>
+<contactref element="REG_PARAM_LOWER" pad="9"/>
+<contactref element="REG_PARAM_LOWER" pad="10"/>
 <contactref element="NOT_GATE2_" pad="4"/>
 <wire x1="71.12" y1="96.52" x2="73.66" y2="96.52" width="0" layer="19" extent="1-1"/>
 <wire x1="49.53" y1="96.52" x2="71.12" y2="96.52" width="0" layer="19" extent="1-1"/>
@@ -5815,13 +6032,13 @@ design rules under a new name.</description>
 </signal>
 <signal name="CTRL_SIG_21_(P_REG_IN)">
 <contactref element="NOT_GATE2_" pad="3"/>
-<contactref element="INP_SELECTOR" pad="6"/>
-<wire x1="125.73" y1="214.63" x2="105.41" y2="102.87" width="0" layer="19" extent="1-1"/>
+<contactref element="SELECTOR_PARAM_" pad="6"/>
+<wire x1="125.73" y1="214.63" x2="15.24" y2="-147.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTRL_SIG_22_(P_REG_OUT)">
 <contactref element="NOT_GATE2_" pad="1"/>
-<contactref element="INP_SELECTOR" pad="5"/>
-<wire x1="125.73" y1="219.71" x2="105.41" y2="105.41" width="0" layer="19" extent="1-1"/>
+<contactref element="SELECTOR_PARAM_" pad="5"/>
+<wire x1="125.73" y1="219.71" x2="12.7" y2="-147.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$112">
 <contactref element="OUTPUT_BUFFER_PARAM_REG" pad="19"/>
@@ -5829,12 +6046,12 @@ design rules under a new name.</description>
 <wire x1="125.73" y1="217.17" x2="91.44" y2="92.71" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RAM_ADDR_IN">
-<contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="4"/>
+<contactref element="SELECTOR_INSRUCTION_UPPER" pad="4"/>
 <contactref element="NOT_GATE4_" pad="3"/>
 <wire x1="140.97" y1="224.79" x2="21.59" y2="105.41" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RAM_WRITE">
-<contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="7"/>
+<contactref element="SELECTOR_INSRUCTION_UPPER" pad="7"/>
 <contactref element="RAM" pad="22"/>
 <contactref element="NOT_GATE2_" pad="13"/>
 <wire x1="21.59" y1="26.67" x2="29.21" y2="105.41" width="0" layer="19" extent="1-1"/>
@@ -5842,12 +6059,12 @@ design rules under a new name.</description>
 </signal>
 <signal name="REG_A_OUT">
 <contactref element="OUTPUT_BUFFER_REG_A" pad="19"/>
-<contactref element="BRANCH_SELECTOR" pad="11"/>
+<contactref element="SELECTOR_BRANCH_" pad="11"/>
 <wire x1="144.78" y1="171.45" x2="203.2" y2="254" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="HLT_SIGNAL">
 <contactref element="AND_GATE_" pad="9"/>
-<contactref element="IC4" pad="4"/>
+<contactref element="NOR_GATE_" pad="4"/>
 <wire x1="10.16" y1="-106.68" x2="116.84" y2="250.19" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$119">
@@ -5973,53 +6190,53 @@ design rules under a new name.</description>
 <signal name="CTRL_SIG_8">
 <contactref element="INSTRUCTION_MEMORY_0" pad="19"/>
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="9"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="3"/>
+<contactref element="SELECTOR_INSRUCTION_UPPER" pad="3"/>
 <wire x1="22.86" y1="151.13" x2="81.28" y2="129.54" width="0" layer="19" extent="1-1"/>
 <wire x1="19.05" y1="105.41" x2="22.86" y2="151.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTRL_SIG_7">
 <contactref element="INSTRUCTION_MEMORY_0" pad="18"/>
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="8"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="6"/>
+<contactref element="SELECTOR_INSRUCTION_UPPER" pad="6"/>
 <wire x1="22.86" y1="148.59" x2="81.28" y2="132.08" width="0" layer="19" extent="1-1"/>
 <wire x1="26.67" y1="105.41" x2="22.86" y2="148.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$212">
-<contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="12"/>
-<contactref element="SELECTOR_RAM_" pad="3"/>
+<contactref element="SELECTOR_INSRUCTION_UPPER" pad="12"/>
+<contactref element="SELECTOR_STACK_" pad="3"/>
 <wire x1="69.85" y1="57.15" x2="24.13" y2="113.03" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTRL_SIG_4">
 <contactref element="INSTRUCTION_MEMORY_0" pad="15"/>
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="5"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="3"/>
+<contactref element="SELECTOR_INSRUCTION_LOWER" pad="3"/>
 <wire x1="41.91" y1="105.41" x2="81.28" y2="139.7" width="0" layer="19" extent="1-1"/>
 <wire x1="22.86" y1="140.97" x2="41.91" y2="105.41" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTRL_SIG_3">
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="4"/>
 <contactref element="INSTRUCTION_MEMORY_0" pad="13"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="6"/>
+<contactref element="SELECTOR_INSRUCTION_LOWER" pad="6"/>
 <wire x1="49.53" y1="105.41" x2="81.28" y2="142.24" width="0" layer="19" extent="1-1"/>
 <wire x1="7.62" y1="143.51" x2="49.53" y2="105.41" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTRL_SIG_2">
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="3"/>
 <contactref element="INSTRUCTION_MEMORY_0" pad="12"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="10"/>
+<contactref element="SELECTOR_INSRUCTION_LOWER" pad="10"/>
 <wire x1="52.07" y1="113.03" x2="81.28" y2="144.78" width="0" layer="19" extent="1-1"/>
 <wire x1="7.62" y1="146.05" x2="52.07" y2="113.03" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTRL_SIG_1">
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="2"/>
 <contactref element="INSTRUCTION_MEMORY_0" pad="11"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="13"/>
+<contactref element="SELECTOR_INSRUCTION_LOWER" pad="13"/>
 <wire x1="44.45" y1="113.03" x2="81.28" y2="147.32" width="0" layer="19" extent="1-1"/>
 <wire x1="7.62" y1="148.59" x2="44.45" y2="113.03" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="INSTRUCTION_OUTPUT">
-<contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="1"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="1"/>
+<contactref element="SELECTOR_INSRUCTION_UPPER" pad="1"/>
+<contactref element="SELECTOR_INSRUCTION_LOWER" pad="1"/>
 <contactref element="SELECTOR_LOGIC_" pad="6"/>
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="19"/>
 <wire x1="88.9" y1="147.32" x2="59.69" y2="179.07" width="0" layer="19" extent="1-1"/>
@@ -6062,29 +6279,24 @@ design rules under a new name.</description>
 <wire x1="54.61" y1="29.21" x2="35.56" y2="54.61" width="0" layer="19" extent="1-1"/>
 <wire x1="13.97" y1="11.43" x2="54.61" y2="29.21" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$37">
-<contactref element="NOT_GATE2_" pad="12"/>
-<contactref element="RAM" pad="27"/>
-<wire x1="21.59" y1="39.37" x2="133.35" y2="214.63" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$55">
-<contactref element="INSRUCTION_REGISTER_SELECTOR_UPPER" pad="9"/>
-<contactref element="SELECTOR_RAM_" pad="2"/>
+<contactref element="SELECTOR_INSRUCTION_UPPER" pad="9"/>
+<contactref element="SELECTOR_STACK_" pad="2"/>
 <wire x1="69.85" y1="59.69" x2="31.75" y2="113.03" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PC_LOAD">
 <contactref element="NOT_GATE4_" pad="5"/>
-<contactref element="AND_GATE3_" pad="8"/>
-<wire x1="116.84" y1="226.06" x2="140.97" y2="219.71" width="0" layer="19" extent="1-1"/>
+<contactref element="AND_GATE3_" pad="3"/>
+<wire x1="109.22" y1="236.22" x2="140.97" y2="219.71" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTRL_SIG_23_(LOOP_CONTROL_B)">
 <contactref element="INSTRUCTION_MEMORY_2" pad="18"/>
-<contactref element="BRANCH_SELECTOR" pad="3"/>
+<contactref element="SELECTOR_BRANCH_" pad="3"/>
 <wire x1="195.58" y1="246.38" x2="43.18" y2="170.18" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTRL_SIG_24_(LOOP_CONTROL_A)">
 <contactref element="INSTRUCTION_MEMORY_2" pad="19"/>
-<contactref element="BRANCH_SELECTOR" pad="2"/>
+<contactref element="SELECTOR_BRANCH_" pad="2"/>
 <wire x1="193.04" y1="246.38" x2="43.18" y2="172.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$62">
@@ -6139,27 +6351,27 @@ design rules under a new name.</description>
 <wire x1="100.33" y1="16.51" x2="119.38" y2="11.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$43">
-<contactref element="BRANCH_SELECTOR" pad="14"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="4"/>
+<contactref element="SELECTOR_BRANCH_" pad="14"/>
+<contactref element="SELECTOR_INSRUCTION_LOWER" pad="4"/>
 <wire x1="44.45" y1="105.41" x2="195.58" y2="254" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$48">
-<contactref element="BRANCH_SELECTOR" pad="13"/>
-<contactref element="INSRUCTION_REGISTER_SELECTOR_LOWER" pad="7"/>
+<contactref element="SELECTOR_BRANCH_" pad="13"/>
+<contactref element="SELECTOR_INSRUCTION_LOWER" pad="7"/>
 <wire x1="52.07" y1="105.41" x2="198.12" y2="254" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SUB_LOAD_SIGNAL">
-<contactref element="BRANCH_SELECTOR" pad="9"/>
+<contactref element="SELECTOR_BRANCH_" pad="9"/>
 <contactref element="NOT_GATE4_" pad="13"/>
 <wire x1="148.59" y1="227.33" x2="208.28" y2="254" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="UNCONDITIONAL_SELECTED">
-<contactref element="BRANCH_SELECTOR" pad="4"/>
+<contactref element="SELECTOR_BRANCH_" pad="4"/>
 <contactref element="NOT_GATE4_" pad="1"/>
 <wire x1="140.97" y1="229.87" x2="198.12" y2="246.38" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ZF_SELECTED">
-<contactref element="BRANCH_SELECTOR" pad="6"/>
+<contactref element="SELECTOR_BRANCH_" pad="6"/>
 <contactref element="NOT_GATE2_" pad="5"/>
 <wire x1="125.73" y1="209.55" x2="203.2" y2="246.38" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -6180,10 +6392,10 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$107">
 <contactref element="4_INP_OR_GATE" pad="1"/>
-<contactref element="AND_GATE3_" pad="9"/>
 <contactref element="AND_GATE3_" pad="4"/>
-<wire x1="116.84" y1="228.6" x2="180.34" y2="217.17" width="0" layer="19" extent="1-1"/>
-<wire x1="109.22" y1="233.68" x2="116.84" y2="228.6" width="0" layer="19" extent="1-1"/>
+<contactref element="AND_GATE3_" pad="1"/>
+<wire x1="109.22" y1="233.68" x2="180.34" y2="217.17" width="0" layer="19" extent="1-1"/>
+<wire x1="109.22" y1="241.3" x2="109.22" y2="233.68" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$209">
 <contactref element="4_INP_OR_GATE" pad="2"/>
@@ -6191,7 +6403,7 @@ design rules under a new name.</description>
 <wire x1="140.97" y1="227.33" x2="180.34" y2="214.63" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OF_SELECTED">
-<contactref element="BRANCH_SELECTOR" pad="5"/>
+<contactref element="SELECTOR_BRANCH_" pad="5"/>
 <contactref element="NOT_GATE2_" pad="9"/>
 <wire x1="133.35" y1="207.01" x2="200.66" y2="246.38" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -6255,12 +6467,12 @@ design rules under a new name.</description>
 <contactref element="OUTPUT_BUFFER_MEMORY" pad="14"/>
 <contactref element="DATABUS_4" pad="A"/>
 <contactref element="OUTPUT_BUFFER_CALC_REG" pad="14"/>
-<contactref element="ADDR_REG_CALC_LOWER" pad="14"/>
-<contactref element="ADDR_REG_A_LOWER" pad="14"/>
+<contactref element="REG_CALC_LOWER" pad="14"/>
+<contactref element="REG_A_LOWER" pad="14"/>
 <contactref element="OUTPUT_BUFFER_REG_A" pad="14"/>
 <contactref element="OUTPUT_BUFFER_ALU" pad="5"/>
 <contactref element="OUTPUT_BUFFER_FLAGS" pad="5"/>
-<contactref element="ADDR_REG_PARAM_LOWER" pad="14"/>
+<contactref element="REG_PARAM_LOWER" pad="14"/>
 <contactref element="OUTPUT_BUFFER_PARAM_REG" pad="14"/>
 <contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="14"/>
 <contactref element="INSTRUC_REGISTER_LOWER" pad="14"/>
@@ -6268,7 +6480,10 @@ design rules under a new name.</description>
 <contactref element="RAM_ADDR_LOWER" pad="11"/>
 <contactref element="MICRO_COUNTER_LOWER" pad="6"/>
 <contactref element="EXTENSION" pad="4"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="15"/>
+<contactref element="FIFO_STACK" pad="3"/>
+<contactref element="FIFO_STACK" pad="12"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="5"/>
+<contactref element="OUT_REG_LOWER" pad="14"/>
 <wire x1="175.26" y1="271.78" x2="223.52" y2="271.78" width="0" layer="19" extent="1-1"/>
 <wire x1="125.73" y1="295.91" x2="175.26" y2="271.78" width="0" layer="19" extent="1-1"/>
 <wire x1="118.11" y1="308.61" x2="125.73" y2="295.91" width="0" layer="19" extent="1-1"/>
@@ -6285,10 +6500,13 @@ design rules under a new name.</description>
 <wire x1="134.62" y1="19.05" x2="92.71" y2="24.13" width="0" layer="19" extent="1-1"/>
 <wire x1="177.8" y1="41.91" x2="134.62" y2="19.05" width="0" layer="19" extent="1-1"/>
 <wire x1="199.39" y1="44.45" x2="177.8" y2="41.91" width="0" layer="19" extent="1-1"/>
-<wire x1="35.56" y1="-46.99" x2="43.18" y2="8.89" width="0" layer="19" extent="1-1"/>
 <wire x1="83.82" y1="247.65" x2="125.73" y2="295.91" width="0" layer="19" extent="1-1"/>
 <wire x1="50.8" y1="276.86" x2="83.82" y2="247.65" width="0" layer="19" extent="1-1"/>
 <wire x1="57.15" y1="205.74" x2="83.82" y2="247.65" width="0" layer="19" extent="1-1"/>
+<wire x1="30.48" y1="-135.89" x2="43.18" y2="8.89" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="-135.89" x2="30.48" y2="-135.89" width="0" layer="19" extent="1-1"/>
+<wire x1="12.7" y1="-158.75" x2="7.62" y2="-135.89" width="0" layer="19" extent="1-1"/>
+<wire x1="35.56" y1="-175.26" x2="12.7" y2="-158.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$57">
 <contactref element="RAM_ADDR_UPPER" pad="10"/>
@@ -6312,9 +6530,9 @@ design rules under a new name.</description>
 <wire x1="109.22" y1="231.14" x2="148.59" y2="224.79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$226">
-<contactref element="AND_GATE3_" pad="10"/>
-<contactref element="NOT_GATE_" pad="10"/>
-<wire x1="116.84" y1="231.14" x2="133.35" y2="252.73" width="0" layer="19" extent="1-1"/>
+<contactref element="AND_GATE3_" pad="2"/>
+<contactref element="NOT_GATE_" pad="8"/>
+<wire x1="109.22" y1="238.76" x2="133.35" y2="247.65" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$227">
 <contactref element="FLAG_2" pad="K"/>
@@ -6347,50 +6565,52 @@ design rules under a new name.</description>
 <wire x1="109.22" y1="219.71" x2="125.73" y2="207.01" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PF_SELECTED">
-<contactref element="BRANCH_SELECTOR" pad="7"/>
-<contactref element="NOT_GATE1" pad="1"/>
+<contactref element="SELECTOR_BRANCH_" pad="7"/>
+<contactref element="NOT_GATE1_" pad="1"/>
 <wire x1="125.73" y1="241.3" x2="205.74" y2="246.38" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="END_CRNT_CMD&amp;&amp;BTN_PRESS">
 <contactref element="MICRO_COUNTER_UPPER" pad="1"/>
 <contactref element="MICRO_COUNTER_LOWER" pad="1"/>
-<contactref element="AND_GATE4_" pad="8"/>
+<contactref element="AND_GATE3_" pad="8"/>
 <wire x1="21.59" y1="205.74" x2="44.45" y2="205.74" width="0" layer="19" extent="1-1"/>
-<wire x1="116.84" y1="204.47" x2="44.45" y2="205.74" width="0" layer="19" extent="1-1"/>
+<wire x1="116.84" y1="226.06" x2="44.45" y2="205.74" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="COUNTERS_CLEAR">
 <contactref element="PROGRAM_COUNTER_LOWER" pad="1"/>
 <contactref element="PROGRAM_COUNTER_UPPER" pad="1"/>
 <contactref element="R80" pad="1"/>
 <contactref element="RESET_PC" pad="1"/>
-<contactref element="AND_GATE4_" pad="10"/>
+<contactref element="AND_GATE3_" pad="10"/>
 <wire x1="187.96" y1="271.78" x2="210.82" y2="271.78" width="0" layer="19" extent="1-1"/>
 <wire x1="166.9288" y1="303.2506" x2="187.96" y2="271.78" width="0" layer="19" extent="1-1"/>
 <wire x1="162.56" y1="303.53" x2="166.9288" y2="303.2506" width="0" layer="19" extent="1-1"/>
-<wire x1="116.84" y1="209.55" x2="187.96" y2="271.78" width="0" layer="19" extent="1-1"/>
+<wire x1="116.84" y1="231.14" x2="187.96" y2="271.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="END_CRNT_CMD">
 <contactref element="SELECTOR_LOGIC_" pad="9"/>
-<contactref element="AND_GATE4_" pad="9"/>
-<wire x1="116.84" y1="207.01" x2="67.31" y2="173.99" width="0" layer="19" extent="1-1"/>
+<contactref element="AND_GATE3_" pad="9"/>
+<wire x1="116.84" y1="228.6" x2="67.31" y2="173.99" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CLR_REG">
 <contactref element="FLAG_REG_LOWER" pad="15"/>
 <contactref element="FLAG_REG_UPPER" pad="15"/>
 <contactref element="INSTRUC_REGISTER_UPPER" pad="15"/>
 <contactref element="INSTRUC_REGISTER_LOWER" pad="15"/>
-<contactref element="ADDR_REG_CALC_UPPER" pad="15"/>
-<contactref element="ADDR_REG_CALC_LOWER" pad="15"/>
+<contactref element="REG_CALC_UPPER" pad="15"/>
+<contactref element="REG_CALC_LOWER" pad="15"/>
 <contactref element="ADDR_MEM_REG_UPPER" pad="15"/>
 <contactref element="ADDR_MEM_REG_LOWER" pad="15"/>
-<contactref element="ADDR_REG_A_UPPER" pad="15"/>
-<contactref element="ADDR_REG_A_LOWER" pad="15"/>
+<contactref element="REG_A_UPPER" pad="15"/>
+<contactref element="REG_A_LOWER" pad="15"/>
 <contactref element="RESET_REGS" pad="4"/>
+<contactref element="R81" pad="1"/>
 <contactref element="RAM_ADDR_LOWER" pad="15"/>
 <contactref element="RAM_ADDR_UPPER" pad="15"/>
-<contactref element="ADDR_REG_PARAM_UPPER" pad="15"/>
-<contactref element="ADDR_REG_PARAM_LOWER" pad="15"/>
-<contactref element="R81" pad="1"/>
+<contactref element="REG_PARAM_UPPER" pad="15"/>
+<contactref element="REG_PARAM_LOWER" pad="15"/>
+<contactref element="OUT_REG_UPPER" pad="15"/>
+<contactref element="OUT_REG_LOWER" pad="15"/>
 <wire x1="224.79" y1="44.45" x2="201.93" y2="44.45" width="0" layer="19" extent="1-1"/>
 <wire x1="147.32" y1="26.67" x2="201.93" y2="44.45" width="0" layer="19" extent="1-1"/>
 <wire x1="124.46" y1="26.67" x2="147.32" y2="26.67" width="0" layer="19" extent="1-1"/>
@@ -6406,11 +6626,13 @@ design rules under a new name.</description>
 <wire x1="181.61" y1="166.37" x2="158.75" y2="166.37" width="0" layer="19" extent="1-1"/>
 <wire x1="48.26" y1="276.86" x2="108.6612" y2="188.2394" width="0" layer="19" extent="1-1"/>
 <wire x1="24.13" y1="276.86" x2="48.26" y2="276.86" width="0" layer="19" extent="1-1"/>
+<wire x1="33.02" y1="-175.26" x2="43.18" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="-203.2" x2="33.02" y2="-175.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="INV_FLAG_TOGGLE_IN">
 <contactref element="FLAG_REG_UPPER" pad="10"/>
 <contactref element="FLAG_REG_UPPER" pad="9"/>
-<contactref element="NOT_GATE1" pad="12"/>
+<contactref element="NOT_GATE1_" pad="12"/>
 <contactref element="FLAG_REG_LOWER" pad="10"/>
 <contactref element="FLAG_REG_LOWER" pad="9"/>
 <wire x1="132.08" y1="26.67" x2="134.62" y2="26.67" width="0" layer="19" extent="1-1"/>
@@ -6420,52 +6642,52 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$53">
 <contactref element="AND_GATE4_" pad="4"/>
-<contactref element="NOT_GATE1" pad="2"/>
+<contactref element="NOT_GATE1_" pad="2"/>
 <wire x1="109.22" y1="212.09" x2="125.73" y2="238.76" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$10">
+<signal name="CTRL_SIG_19_(STACK_POP)">
 <contactref element="INSTRUCTION_MEMORY_2" pad="13"/>
-<contactref element="SELECTOR_RAM_" pad="14"/>
+<contactref element="SELECTOR_STACK_" pad="14"/>
 <wire x1="77.47" y1="57.15" x2="27.94" y2="165.1" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$26">
+<signal name="CTRL_SIG_18_(STACK_PUSH)">
 <contactref element="INSTRUCTION_MEMORY_2" pad="12"/>
-<contactref element="SELECTOR_RAM_" pad="13"/>
+<contactref element="SELECTOR_STACK_" pad="13"/>
+<contactref element="SELECTOR_PARAM_" pad="14"/>
 <wire x1="77.47" y1="54.61" x2="27.94" y2="167.64" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="-139.7" x2="77.47" y2="54.61" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$5">
+<signal name="RAW_INP_MODE">
 <contactref element="OUTPUT_BUFFER_RAM" pad="1"/>
-<contactref element="SELECTOR_RAM_" pad="9"/>
+<contactref element="SELECTOR_STACK_" pad="9"/>
 <wire x1="54.61" y1="36.83" x2="77.47" y2="44.45" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$40">
-<contactref element="INP_SELECTOR" pad="3"/>
+<signal name="CTRL_SIG_21_(PARAM_IN)">
 <contactref element="INSTRUCTION_MEMORY_2" pad="16"/>
-<wire x1="43.18" y1="165.1" x2="105.41" y2="110.49" width="0" layer="19" extent="1-1"/>
+<contactref element="SELECTOR_PARAM_" pad="3"/>
+<wire x1="7.62" y1="-147.32" x2="43.18" y2="165.1" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$56">
+<signal name="CTRL_SIG_22_(PARAM_OUT)">
 <contactref element="INSTRUCTION_MEMORY_2" pad="17"/>
-<contactref element="INP_SELECTOR" pad="2"/>
-<wire x1="43.18" y1="167.64" x2="105.41" y2="113.03" width="0" layer="19" extent="1-1"/>
+<contactref element="SELECTOR_PARAM_" pad="2"/>
+<wire x1="5.08" y1="-147.32" x2="43.18" y2="167.64" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="INPUT_CTRL">
-<contactref element="INP_SELECTOR" pad="7"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="22"/>
-<contactref element="IC5" pad="2"/>
 <contactref element="AND_GATE_" pad="13"/>
-<wire x1="116.84" y1="260.35" x2="105.41" y2="100.33" width="0" layer="19" extent="1-1"/>
-<wire x1="17.78" y1="-46.99" x2="105.41" y2="100.33" width="0" layer="19" extent="1-1"/>
-<wire x1="5.08" y1="-118.11" x2="17.78" y2="-46.99" width="0" layer="19" extent="1-1"/>
+<contactref element="XOR_GATE_2" pad="13"/>
+<contactref element="SELECTOR_PARAM_" pad="7"/>
+<wire x1="17.78" y1="-147.32" x2="114.3" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="116.84" y1="260.35" x2="114.3" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$61">
-<contactref element="IC1" pad="14"/>
+<contactref element="KEYBOARD_SHIFT_UPPER" pad="14"/>
 <contactref element="KEYBOARD" pad="2"/>
 <wire x1="7.62" y1="-24.13" x2="5.08" y2="-69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$63">
 <contactref element="NOT_GATE3_" pad="2"/>
-<contactref element="IC2" pad="11"/>
-<contactref element="IC1" pad="11"/>
+<contactref element="KEYBOARD_SHIFT_LOWER" pad="11"/>
+<contactref element="KEYBOARD_SHIFT_UPPER" pad="11"/>
 <contactref element="NOT_GATE3_" pad="5"/>
 <contactref element="R6" pad="1"/>
 <contactref element="D1" pad="A"/>
@@ -6476,8 +6698,8 @@ design rules under a new name.</description>
 <wire x1="10.16" y1="-123.19" x2="0" y2="-88.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$81">
-<contactref element="IC1" pad="9"/>
-<contactref element="IC2" pad="14"/>
+<contactref element="KEYBOARD_SHIFT_UPPER" pad="9"/>
+<contactref element="KEYBOARD_SHIFT_LOWER" pad="14"/>
 <wire x1="20.32" y1="-24.13" x2="7.62" y2="-35.56" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$74">
@@ -6486,97 +6708,82 @@ design rules under a new name.</description>
 <wire x1="7.62" y1="-69.85" x2="140.97" y2="252.73" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$75">
-<contactref element="IC1" pad="12"/>
+<contactref element="KEYBOARD_SHIFT_UPPER" pad="12"/>
 <contactref element="NOT_GATE3_" pad="6"/>
-<contactref element="IC2" pad="12"/>
+<contactref element="KEYBOARD_SHIFT_LOWER" pad="12"/>
 <wire x1="12.7" y1="-24.13" x2="140.97" y2="240.03" width="0" layer="19" extent="1-1"/>
 <wire x1="12.7" y1="-35.56" x2="12.7" y2="-24.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$80">
-<contactref element="IC1" pad="2"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="3"/>
+<contactref element="KEYBOARD_SHIFT_UPPER" pad="2"/>
+<contactref element="KEYBOARD_ASCII_TABLE" pad="3"/>
 <wire x1="5.08" y1="-31.75" x2="7.62" y2="-62.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$82">
-<contactref element="INSTRUCTION_MEMORY_3" pad="4"/>
-<contactref element="IC1" pad="3"/>
+<contactref element="KEYBOARD_ASCII_TABLE" pad="4"/>
+<contactref element="KEYBOARD_SHIFT_UPPER" pad="3"/>
 <wire x1="7.62" y1="-31.75" x2="10.16" y2="-62.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$84">
-<contactref element="IC1" pad="4"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="5"/>
+<contactref element="KEYBOARD_SHIFT_UPPER" pad="4"/>
+<contactref element="KEYBOARD_ASCII_TABLE" pad="5"/>
 <wire x1="10.16" y1="-31.75" x2="12.7" y2="-62.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$85">
-<contactref element="INSTRUCTION_MEMORY_3" pad="6"/>
-<contactref element="IC1" pad="5"/>
+<contactref element="KEYBOARD_ASCII_TABLE" pad="6"/>
+<contactref element="KEYBOARD_SHIFT_UPPER" pad="5"/>
 <wire x1="12.7" y1="-31.75" x2="15.24" y2="-62.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$86">
-<contactref element="IC1" pad="6"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="7"/>
+<contactref element="KEYBOARD_SHIFT_UPPER" pad="6"/>
+<contactref element="KEYBOARD_ASCII_TABLE" pad="7"/>
 <wire x1="15.24" y1="-31.75" x2="17.78" y2="-62.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$95">
-<contactref element="INSTRUCTION_MEMORY_3" pad="8"/>
-<contactref element="IC1" pad="7"/>
+<contactref element="KEYBOARD_ASCII_TABLE" pad="8"/>
+<contactref element="KEYBOARD_SHIFT_UPPER" pad="7"/>
 <wire x1="17.78" y1="-31.75" x2="20.32" y2="-62.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$96">
-<contactref element="IC2" pad="15"/>
-<contactref element="INSTRUCTION_MEMORY_3" pad="9"/>
+<contactref element="KEYBOARD_SHIFT_LOWER" pad="15"/>
+<contactref element="KEYBOARD_ASCII_TABLE" pad="9"/>
 <wire x1="5.08" y1="-35.56" x2="22.86" y2="-62.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$97">
-<contactref element="INSTRUCTION_MEMORY_3" pad="10"/>
-<contactref element="IC2" pad="1"/>
+<contactref element="KEYBOARD_ASCII_TABLE" pad="10"/>
+<contactref element="KEYBOARD_SHIFT_LOWER" pad="1"/>
 <wire x1="25.4" y1="-62.23" x2="2.54" y2="-43.18" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$106">
 <contactref element="C4" pad="+"/>
 <contactref element="R6" pad="2"/>
 <contactref element="NOT_GATE_" pad="3"/>
-<contactref element="IC4" pad="3"/>
+<contactref element="NOR_GATE_" pad="3"/>
 <contactref element="D1" pad="C"/>
 <wire x1="7.62" y1="-88.9" x2="125.73" y2="257.81" width="0" layer="19" extent="1-1"/>
 <wire x1="1.524" y1="-93.98" x2="7.62" y2="-88.9" width="0" layer="19" extent="1-1"/>
 <wire x1="7.62" y1="-106.68" x2="1.524" y2="-93.98" width="0" layer="19" extent="1-1"/>
 <wire x1="0" y1="-123.19" x2="7.62" y2="-106.68" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$108">
-<contactref element="NOT_GATE3_" pad="8"/>
-<contactref element="NOT_GATE3_" pad="11"/>
-<wire x1="148.59" y1="237.49" x2="148.59" y2="245.11" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$109">
-<contactref element="NOT_GATE3_" pad="10"/>
-<contactref element="NOT_GATE3_" pad="13"/>
-<wire x1="148.59" y1="242.57" x2="148.59" y2="250.19" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$125">
 <contactref element="SELECTOR_LOGIC_" pad="7"/>
-<contactref element="IC4" pad="5"/>
+<contactref element="NOR_GATE_" pad="5"/>
 <wire x1="12.7" y1="-106.68" x2="59.69" y2="176.53" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$127">
-<contactref element="IC5" pad="3"/>
-<contactref element="IC4" pad="6"/>
-<wire x1="15.24" y1="-106.68" x2="7.62" y2="-118.11" width="0" layer="19" extent="1-1"/>
+<contactref element="NOR_GATE_" pad="6"/>
+<contactref element="XOR_GATE_2" pad="11"/>
+<wire x1="15.24" y1="-106.68" x2="119.38" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$113">
 <contactref element="AND_GATE_" pad="11"/>
-<contactref element="IC5" pad="1"/>
-<wire x1="2.54" y1="-118.11" x2="116.84" y2="255.27" width="0" layer="19" extent="1-1"/>
+<contactref element="XOR_GATE_2" pad="12"/>
+<wire x1="116.84" y1="255.27" x2="116.84" y2="19.05" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$126">
 <contactref element="AND_GATE_" pad="12"/>
-<contactref element="IC4" pad="1"/>
+<contactref element="NOR_GATE_" pad="1"/>
 <wire x1="2.54" y1="-106.68" x2="116.84" y2="257.81" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$98">
-<contactref element="NOT_GATE3_" pad="12"/>
-<contactref element="NOT_GATE_" pad="5"/>
-<wire x1="125.73" y1="252.73" x2="148.59" y2="247.65" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$99">
 <contactref element="NOT_GATE_" pad="4"/>
@@ -6584,9 +6791,269 @@ design rules under a new name.</description>
 <wire x1="125.73" y1="255.27" x2="148.59" y2="240.03" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$100">
+<contactref element="NOR_GATE_" pad="2"/>
 <contactref element="NOT_GATE_" pad="6"/>
-<contactref element="IC4" pad="2"/>
 <wire x1="5.08" y1="-106.68" x2="125.73" y2="250.19" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$40">
+<contactref element="SELECTOR_STACK_" pad="10"/>
+<contactref element="FIFO_STACK" pad="1"/>
+<wire x1="77.47" y1="46.99" x2="2.54" y2="-135.89" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$56">
+<contactref element="SELECTOR_STACK_" pad="11"/>
+<contactref element="FIFO_STACK" pad="15"/>
+<wire x1="35.56" y1="-128.27" x2="77.47" y2="49.53" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$5">
+<contactref element="INSTRUCTION_MEMORY_2" pad="11"/>
+<contactref element="SELECTOR_PARAM_" pad="13"/>
+<wire x1="10.16" y1="-139.7" x2="27.94" y2="170.18" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$10">
+<contactref element="SELECTOR_PARAM_" pad="9"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="19"/>
+<wire x1="20.32" y1="-139.7" x2="5.08" y2="-151.13" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$26" class="1">
+<contactref element="KEYBOARD_ASCII_TABLE" pad="17"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="13"/>
+<wire x1="30.48" y1="-46.99" x2="20.32" y2="-151.13" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$101" class="1">
+<contactref element="KEYBOARD_ASCII_TABLE" pad="19"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="11"/>
+<wire x1="25.4" y1="-46.99" x2="25.4" y2="-151.13" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$102" class="1">
+<contactref element="KEYBOARD_ASCII_TABLE" pad="16"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="14"/>
+<wire x1="33.02" y1="-46.99" x2="17.78" y2="-151.13" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$103" class="1">
+<contactref element="KEYBOARD_ASCII_TABLE" pad="18"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="12"/>
+<wire x1="27.94" y1="-46.99" x2="22.86" y2="-151.13" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$104" class="1">
+<contactref element="KEYBOARD_ASCII_TABLE" pad="11"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="18"/>
+<wire x1="27.94" y1="-62.23" x2="7.62" y2="-151.13" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$105" class="1">
+<contactref element="KEYBOARD_ASCII_TABLE" pad="13"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="16"/>
+<wire x1="33.02" y1="-62.23" x2="12.7" y2="-151.13" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$110" class="1">
+<contactref element="KEYBOARD_ASCII_TABLE" pad="12"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="17"/>
+<wire x1="30.48" y1="-62.23" x2="10.16" y2="-151.13" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$128" class="1">
+<contactref element="KEYBOARD_ASCII_TABLE" pad="15"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="15"/>
+<wire x1="35.56" y1="-46.99" x2="15.24" y2="-151.13" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$37">
+<contactref element="NOT_GATE2_" pad="12"/>
+<contactref element="RAM" pad="27"/>
+<wire x1="21.59" y1="39.37" x2="133.35" y2="214.63" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$98">
+<contactref element="NOT_GATE3_" pad="8"/>
+<contactref element="NOT_GATE3_" pad="11"/>
+<wire x1="148.59" y1="237.49" x2="148.59" y2="245.11" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$108">
+<contactref element="NOT_GATE3_" pad="10"/>
+<contactref element="NOT_GATE3_" pad="13"/>
+<wire x1="148.59" y1="242.57" x2="148.59" y2="250.19" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$109">
+<contactref element="NOT_GATE3_" pad="12"/>
+<contactref element="NOT_GATE_" pad="5"/>
+<wire x1="125.73" y1="252.73" x2="148.59" y2="247.65" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="1_PLACE1" class="1">
+<contactref element="OUT_REG_LOWER" pad="11"/>
+<contactref element="OUTPUT_BUFFER_CALC_REG" pad="11"/>
+<contactref element="ADDR_MEM_REG_LOWER" pad="11"/>
+<contactref element="OUTPUT_BUFFER_MEMORY" pad="11"/>
+<contactref element="OUTPUT_BUFFER_PC" pad="11"/>
+<contactref element="PROGRAM_COUNTER_LOWER" pad="3"/>
+<contactref element="DATABUS_1" pad="A"/>
+<contactref element="REG_CALC_LOWER" pad="11"/>
+<contactref element="OUTPUT_BUFFER_REG_A" pad="11"/>
+<contactref element="REG_A_LOWER" pad="11"/>
+<contactref element="OUTPUT_BUFFER_ALU" pad="2"/>
+<contactref element="OUTPUT_BUFFER_FLAGS" pad="2"/>
+<contactref element="OUTPUT_BUFFER_PARAM_REG" pad="11"/>
+<contactref element="REG_PARAM_LOWER" pad="11"/>
+<contactref element="OUTPUT_BUFFER_INSTRUCTION" pad="11"/>
+<contactref element="INSTRUC_REGISTER_LOWER" pad="11"/>
+<contactref element="RAM_ADDR_LOWER" pad="14"/>
+<contactref element="OUTPUT_BUFFER_RAM" pad="18"/>
+<contactref element="MICRO_COUNTER_LOWER" pad="3"/>
+<contactref element="EXTENSION" pad="1"/>
+<contactref element="XOR_GATE_1" pad="2"/>
+<contactref element="FIFO_STACK" pad="6"/>
+<contactref element="FIFO_STACK" pad="9"/>
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="2"/>
+<wire x1="175.26" y1="264.16" x2="215.9" y2="271.78" width="0" layer="19" extent="1-1"/>
+<wire x1="148.59" y1="295.91" x2="175.26" y2="264.16" width="0" layer="19" extent="1-1"/>
+<wire x1="110.49" y1="308.61" x2="148.59" y2="295.91" width="0" layer="19" extent="1-1"/>
+<wire x1="165.1" y1="223.52" x2="175.26" y2="264.16" width="0" layer="19" extent="1-1"/>
+<wire x1="58.42" y1="276.86" x2="110.49" y2="308.61" width="0" layer="19" extent="1-1"/>
+<wire x1="83.82" y1="240.03" x2="58.42" y2="276.86" width="0" layer="19" extent="1-1"/>
+<wire x1="49.53" y1="205.74" x2="83.82" y2="240.03" width="0" layer="19" extent="1-1"/>
+<wire x1="191.77" y1="166.37" x2="165.1" y2="223.52" width="0" layer="19" extent="1-1"/>
+<wire x1="144.78" y1="151.13" x2="191.77" y2="166.37" width="0" layer="19" extent="1-1"/>
+<wire x1="88.9" y1="127" x2="144.78" y2="151.13" width="0" layer="19" extent="1-1"/>
+<wire x1="67.31" y1="124.46" x2="88.9" y2="127" width="0" layer="19" extent="1-1"/>
+<wire x1="68.58" y1="96.52" x2="67.31" y2="124.46" width="0" layer="19" extent="1-1"/>
+<wire x1="91.44" y1="72.39" x2="68.58" y2="96.52" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="31.75" x2="91.44" y2="72.39" width="0" layer="19" extent="1-1"/>
+<wire x1="62.23" y1="31.75" x2="92.71" y2="31.75" width="0" layer="19" extent="1-1"/>
+<wire x1="43.18" y1="16.51" x2="62.23" y2="31.75" width="0" layer="19" extent="1-1"/>
+<wire x1="134.62" y1="11.43" x2="92.71" y2="31.75" width="0" layer="19" extent="1-1"/>
+<wire x1="177.8" y1="34.29" x2="134.62" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="191.77" y1="44.45" x2="177.8" y2="34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="22.86" y1="-135.89" x2="43.18" y2="16.51" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="-135.89" x2="22.86" y2="-135.89" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="-158.75" x2="15.24" y2="-135.89" width="0" layer="19" extent="1-1"/>
+<wire x1="43.18" y1="-175.26" x2="5.08" y2="-158.75" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="CTRL_SIG_20_(OUT_REG)">
+<contactref element="OUT_REG_UPPER" pad="9"/>
+<contactref element="OUT_REG_UPPER" pad="10"/>
+<contactref element="OUT_REG_LOWER" pad="9"/>
+<contactref element="OUT_REG_LOWER" pad="10"/>
+<contactref element="INSTRUCTION_MEMORY_2" pad="15"/>
+<wire x1="45.72" y1="-175.26" x2="43.18" y2="162.56" width="0" layer="19" extent="1-1"/>
+<wire x1="48.26" y1="-175.26" x2="45.72" y2="-175.26" width="0" layer="19" extent="1-1"/>
+<wire x1="20.32" y1="-203.2" x2="45.72" y2="-175.26" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="-203.2" x2="20.32" y2="-203.2" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$129">
+<contactref element="OUT_ROM_UPPER" pad="11"/>
+<contactref element="OUT_SEGMENT_UPPER" pad="4"/>
+<wire x1="27.94" y1="-247.65" x2="-5.08" y2="-245.11" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$130">
+<contactref element="OUT_ROM_UPPER" pad="12"/>
+<contactref element="OUT_SEGMENT_UPPER" pad="2"/>
+<wire x1="-10.16" y1="-245.11" x2="30.48" y2="-247.65" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$139">
+<contactref element="OUT_ROM_UPPER" pad="13"/>
+<contactref element="OUT_SEGMENT_UPPER" pad="1"/>
+<wire x1="-12.7" y1="-245.11" x2="33.02" y2="-247.65" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$141">
+<contactref element="OUT_REG_UPPER" pad="3"/>
+<contactref element="OUT_ROM_UPPER" pad="7"/>
+<wire x1="7.62" y1="-210.82" x2="17.78" y2="-247.65" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$142">
+<contactref element="OUT_ROM_UPPER" pad="8"/>
+<contactref element="OUT_REG_UPPER" pad="4"/>
+<wire x1="10.16" y1="-210.82" x2="20.32" y2="-247.65" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$143">
+<contactref element="OUT_REG_UPPER" pad="5"/>
+<contactref element="OUT_ROM_UPPER" pad="9"/>
+<wire x1="12.7" y1="-210.82" x2="22.86" y2="-247.65" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$144">
+<contactref element="OUT_ROM_UPPER" pad="10"/>
+<contactref element="OUT_REG_UPPER" pad="6"/>
+<wire x1="15.24" y1="-210.82" x2="25.4" y2="-247.65" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$145">
+<contactref element="OUT_ROM_LOWER" pad="10"/>
+<contactref element="OUT_REG_LOWER" pad="6"/>
+<wire x1="-1.27" y1="-284.48" x2="43.18" y2="-182.88" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$146">
+<contactref element="OUT_REG_LOWER" pad="5"/>
+<contactref element="OUT_ROM_LOWER" pad="9"/>
+<wire x1="-3.81" y1="-284.48" x2="40.64" y2="-182.88" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$147">
+<contactref element="OUT_ROM_LOWER" pad="8"/>
+<contactref element="OUT_REG_LOWER" pad="4"/>
+<wire x1="-6.35" y1="-284.48" x2="38.1" y2="-182.88" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$148">
+<contactref element="OUT_REG_LOWER" pad="3"/>
+<contactref element="OUT_ROM_LOWER" pad="7"/>
+<wire x1="-8.89" y1="-284.48" x2="35.56" y2="-182.88" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$165">
+<contactref element="OUT_ROM_LOWER" pad="13"/>
+<contactref element="OUT_SEGMENT_LOWER" pad="4"/>
+<wire x1="-19.05" y1="-245.11" x2="6.35" y2="-284.48" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$166">
+<contactref element="OUT_SEGMENT_LOWER" pad="2"/>
+<contactref element="OUT_ROM_LOWER" pad="12"/>
+<wire x1="-24.13" y1="-245.11" x2="3.81" y2="-284.48" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$167">
+<contactref element="OUT_ROM_LOWER" pad="11"/>
+<contactref element="OUT_SEGMENT_LOWER" pad="1"/>
+<wire x1="-26.67" y1="-245.11" x2="1.27" y2="-284.48" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$168">
+<contactref element="OUT_ROM_LOWER" pad="15"/>
+<contactref element="OUT_SEGMENT_LOWER" pad="6"/>
+<wire x1="8.89" y1="-269.24" x2="-16.51" y2="-229.87" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$190">
+<contactref element="OUT_ROM_LOWER" pad="16"/>
+<contactref element="OUT_SEGMENT_LOWER" pad="7"/>
+<wire x1="6.35" y1="-269.24" x2="-19.05" y2="-229.87" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$192">
+<contactref element="OUT_ROM_LOWER" pad="17"/>
+<contactref element="OUT_SEGMENT_LOWER" pad="9"/>
+<wire x1="3.81" y1="-269.24" x2="-24.13" y2="-229.87" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$193">
+<contactref element="OUT_SEGMENT_LOWER" pad="10"/>
+<contactref element="OUT_ROM_LOWER" pad="18"/>
+<wire x1="-26.67" y1="-229.87" x2="1.27" y2="-269.24" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$197">
+<contactref element="OUT_ROM_LOWER" pad="19"/>
+<contactref element="OUT_SEGMENT_LOWER" pad="5"/>
+<wire x1="-16.51" y1="-245.11" x2="-1.27" y2="-269.24" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$198">
+<contactref element="OUT_SEGMENT_UPPER" pad="7"/>
+<contactref element="OUT_ROM_UPPER" pad="16"/>
+<wire x1="33.02" y1="-232.41" x2="-5.08" y2="-229.87" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$199">
+<contactref element="OUT_SEGMENT_UPPER" pad="6"/>
+<contactref element="OUT_ROM_UPPER" pad="15"/>
+<wire x1="35.56" y1="-232.41" x2="-2.54" y2="-229.87" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$200">
+<contactref element="OUT_ROM_UPPER" pad="19"/>
+<contactref element="OUT_SEGMENT_UPPER" pad="9"/>
+<wire x1="25.4" y1="-232.41" x2="-10.16" y2="-229.87" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$201">
+<contactref element="OUT_SEGMENT_UPPER" pad="10"/>
+<contactref element="OUT_ROM_UPPER" pad="18"/>
+<wire x1="27.94" y1="-232.41" x2="-12.7" y2="-229.87" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$208">
+<contactref element="OUT_ROM_UPPER" pad="17"/>
+<contactref element="OUT_SEGMENT_UPPER" pad="5"/>
+<wire x1="30.48" y1="-232.41" x2="-2.54" y2="-245.11" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
