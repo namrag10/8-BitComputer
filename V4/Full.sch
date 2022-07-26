@@ -23394,8 +23394,8 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <text x="-43.18" y="81.28" size="1.778" layer="91" rot="R270">SUBTRACT</text>
 <text x="27.94" y="45.72" size="1.778" layer="91">Reg A OUT</text>
 <text x="27.94" y="40.64" size="1.778" layer="91">Reg A IN</text>
-<text x="27.94" y="35.56" size="1.778" layer="91">Memory OUT</text>
-<text x="27.94" y="30.48" size="1.778" layer="91">Memory IN</text>
+<text x="63.5" y="33.02" size="1.778" layer="91" rot="R90">Memory OUT</text>
+<text x="66.04" y="33.02" size="1.778" layer="91" rot="R90">Memory IN</text>
 <text x="27.94" y="81.28" size="1.778" layer="91">RAM_WRITE</text>
 <text x="27.94" y="86.36" size="1.778" layer="91">RAM_ADDR_IN</text>
 <text x="-63.5" y="-5.08" size="1.778" layer="91">RAM_IO</text>
@@ -24072,7 +24072,6 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <instance part="NOT_GATE1_" gate="A" x="302.26" y="-30.48" smashed="yes" rot="R270"/>
 <instance part="SELECTOR_STACK_" gate="A" x="38.1" y="71.12" smashed="yes">
 <attribute name="NAME" x="30.48" y="76.835" size="1.778" layer="95"/>
-<attribute name="VALUE" x="30.48" y="60.96" size="1.778" layer="96"/>
 </instance>
 <instance part="SELECTOR_STACK_" gate="B" x="-132.08" y="-177.8" smashed="yes"/>
 <instance part="GND45" gate="1" x="-147.32" y="-182.88" smashed="yes" rot="R270"/>
@@ -24118,8 +24117,8 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <instance part="SELECTOR_PARAM_" gate="A" x="50.8" y="-124.46" smashed="yes">
 <attribute name="NAME" x="43.18" y="-118.745" size="1.778" layer="95"/>
 </instance>
-<instance part="SELECTOR_PARAM_" gate="B" x="-132.08" y="-193.04" smashed="yes"/>
-<instance part="GND88" gate="1" x="-147.32" y="-198.12" smashed="yes" rot="R270"/>
+<instance part="SELECTOR_PARAM_" gate="B" x="43.18" y="30.48" smashed="yes"/>
+<instance part="GND88" gate="1" x="30.48" y="22.86" smashed="yes"/>
 <instance part="GND89" gate="1" x="373.38" y="160.02" smashed="yes" rot="R90"/>
 <instance part="OUTPUT_BUFFER_KEYBOARD" gate="A" x="330.2" y="71.12" smashed="yes"/>
 <instance part="GND90" gate="1" x="314.96" y="60.96" smashed="yes" rot="R270"/>
@@ -26122,13 +26121,13 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <net name="MEMORY_OUT" class="0">
 <segment>
 <pinref part="NOT_GATE1_" gate="D" pin="I"/>
-<pinref part="SELECTOR_INSRUCTION_LOWER" gate="A" pin="3Y"/>
-<wire x1="63.5" y1="127" x2="63.5" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="35.56" x2="63.5" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="127" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="208.28" x2="-12.7" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="129.54" x2="22.86" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="129.54" x2="22.86" y2="127" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="127" x2="63.5" y2="127" width="0.1524" layer="91"/>
+<pinref part="SELECTOR_PARAM_" gate="B" pin="Y1"/>
+<wire x1="55.88" y1="30.48" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="~MEMORY_OUT" class="0">
@@ -26977,12 +26976,12 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <net name="MEMORY_IN" class="0">
 <segment>
 <wire x1="-10.16" y1="340.36" x2="66.04" y2="340.36" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="340.36" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="SELECTOR_INSRUCTION_LOWER" gate="A" pin="4Y"/>
-<wire x1="22.86" y1="30.48" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="340.36" x2="66.04" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="340.36" x2="-10.16" y2="350.52" width="0.1524" layer="91"/>
 <pinref part="NOT_GATE1_" gate="C" pin="I"/>
 <wire x1="-10.16" y1="350.52" x2="-17.78" y2="350.52" width="0.1524" layer="91"/>
+<pinref part="SELECTOR_PARAM_" gate="B" pin="Y2"/>
+<wire x1="55.88" y1="27.94" x2="66.04" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="16_PLACE" class="1">
@@ -27971,17 +27970,17 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 </net>
 <net name="CTRL_SIG_17_(FLAG_OUT)" class="0">
 <segment>
-<wire x1="-114.3" y1="-170.18" x2="-58.42" y2="-170.18" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="-170.18" x2="-58.42" y2="-142.24" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="-142.24" x2="-7.62" y2="-142.24" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="-142.24" x2="-7.62" y2="-45.72" width="0.1524" layer="91"/>
 <pinref part="NOT_GATE_" gate="A" pin="I"/>
-<pinref part="SELECTOR_PARAM_" gate="B" pin="Y2"/>
-<wire x1="-119.38" y1="-195.58" x2="-114.3" y2="-195.58" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="-195.58" x2="-114.3" y2="-170.18" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="-45.72" x2="109.22" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="-38.1" x2="109.22" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="-38.1" x2="109.22" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="-170.18" y1="-157.48" x2="-170.18" y2="-170.18" width="0.1524" layer="91"/>
+<pinref part="INSTRUCTION_MEMORY_2" gate="G$1" pin="11"/>
+<wire x1="-162.56" y1="-157.48" x2="-170.18" y2="-157.48" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="-170.18" x2="-170.18" y2="-170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="REG_P_128PLACE" class="0">
@@ -29334,13 +29333,8 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <pinref part="INSTRUCTION_MEMORY_2" gate="G$1" pin="12"/>
 <wire x1="-162.56" y1="-160.02" x2="-167.64" y2="-160.02" width="0.1524" layer="91"/>
 <pinref part="SELECTOR_STACK_" gate="B" pin="B"/>
-<wire x1="-144.78" y1="-177.8" x2="-149.86" y2="-177.8" width="0.1524" layer="91"/>
-<wire x1="-149.86" y1="-177.8" x2="-167.64" y2="-177.8" width="0.1524" layer="91"/>
+<wire x1="-144.78" y1="-177.8" x2="-167.64" y2="-177.8" width="0.1524" layer="91"/>
 <wire x1="-167.64" y1="-177.8" x2="-167.64" y2="-160.02" width="0.1524" layer="91"/>
-<pinref part="SELECTOR_PARAM_" gate="B" pin="A"/>
-<wire x1="-149.86" y1="-190.5" x2="-144.78" y2="-190.5" width="0.1524" layer="91"/>
-<wire x1="-149.86" y1="-177.8" x2="-149.86" y2="-190.5" width="0.1524" layer="91"/>
-<junction x="-149.86" y="-177.8"/>
 </segment>
 </net>
 <net name="RAW_INP_MODE" class="0">
@@ -29619,44 +29613,6 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <wire x1="-66.04" y1="-203.2" x2="-66.04" y2="-241.3" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="-241.3" x2="-78.74" y2="-241.3" width="0.1524" layer="91"/>
 <pinref part="FIFO_STACK" gate="G$1" pin="15"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="SELECTOR_PARAM_" gate="B" pin="B"/>
-<wire x1="-152.4" y1="-193.04" x2="-144.78" y2="-193.04" width="0.1524" layer="91"/>
-<wire x1="-152.4" y1="-180.34" x2="-152.4" y2="-193.04" width="0.1524" layer="91"/>
-<wire x1="-170.18" y1="-180.34" x2="-152.4" y2="-180.34" width="0.1524" layer="91"/>
-<wire x1="-170.18" y1="-157.48" x2="-170.18" y2="-180.34" width="0.1524" layer="91"/>
-<pinref part="INSTRUCTION_MEMORY_2" gate="G$1" pin="11"/>
-<wire x1="-162.56" y1="-157.48" x2="-170.18" y2="-157.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="SELECTOR_PARAM_" gate="B" pin="Y3"/>
-<wire x1="-60.96" y1="-175.26" x2="-40.64" y2="-175.26" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="-175.26" x2="-40.64" y2="-154.94" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="-154.94" x2="-50.8" y2="-154.94" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="-154.94" x2="-50.8" y2="-147.32" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="-147.32" x2="-2.54" y2="-147.32" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="63.5" x2="73.66" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="25.4" x2="71.12" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="25.4" x2="71.12" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="-30.48" x2="68.58" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="-30.48" x2="68.58" y2="-114.3" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="-114.3" x2="22.86" y2="-114.3" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="-114.3" x2="22.86" y2="-124.46" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="-124.46" x2="-2.54" y2="-124.46" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="-124.46" x2="-2.54" y2="-147.32" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="63.5" x2="312.42" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="63.5" x2="312.42" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="OUTPUT_BUFFER_KEYBOARD" gate="A" pin="G"/>
-<wire x1="312.42" y1="58.42" x2="317.5" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-119.38" y1="-198.12" x2="-93.98" y2="-198.12" width="0.1524" layer="91"/>
-<wire x1="-60.96" y1="-185.42" x2="-60.96" y2="-175.26" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="-198.12" x2="-93.98" y2="-185.42" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="-185.42" x2="-60.96" y2="-185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="1">
@@ -30135,6 +30091,32 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <wire x1="322.58" y1="-137.16" x2="322.58" y2="-96.52" width="0.1524" layer="91"/>
 <pinref part="OUT_SEGMENT_UPPER" gate="G$1" pin="DP"/>
 <wire x1="322.58" y1="-96.52" x2="307.34" y2="-96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="SELECTOR_PARAM_" gate="B" pin="B"/>
+<pinref part="SELECTOR_INSRUCTION_LOWER" gate="A" pin="4Y"/>
+<wire x1="30.48" y1="30.48" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="SELECTOR_INSRUCTION_LOWER" gate="A" pin="3Y"/>
+<pinref part="SELECTOR_PARAM_" gate="B" pin="A"/>
+<wire x1="22.86" y1="35.56" x2="22.86" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="33.02" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$210" class="0">
+<segment>
+<pinref part="OUTPUT_BUFFER_KEYBOARD" gate="A" pin="G"/>
+<wire x1="312.42" y1="58.42" x2="317.5" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="63.5" x2="312.42" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="63.5" x2="312.42" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="63.5" x2="73.66" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="SELECTOR_PARAM_" gate="B" pin="Y3"/>
+<wire x1="55.88" y1="25.4" x2="73.66" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

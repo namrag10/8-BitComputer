@@ -5096,8 +5096,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="MEMORY_OUT">
 <contactref element="NOT_GATE1_" pad="9"/>
-<contactref element="SELECTOR_INSRUCTION_LOWER" pad="9"/>
-<wire x1="133.35" y1="228.6" x2="54.61" y2="113.03" width="0" layer="19" extent="1-1"/>
+<contactref element="SELECTOR_PARAM_" pad="11"/>
+<wire x1="133.35" y1="228.6" x2="15.24" y2="-139.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="~MEMORY_OUT">
 <contactref element="OUTPUT_BUFFER_MEMORY" pad="19"/>
@@ -5508,9 +5508,9 @@ design rules under a new name.</description>
 <wire x1="69.85" y1="49.53" x2="175.26" y2="284.48" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MEMORY_IN">
-<contactref element="SELECTOR_INSRUCTION_LOWER" pad="12"/>
 <contactref element="NOT_GATE1_" pad="5"/>
-<wire x1="125.73" y1="231.14" x2="46.99" y2="113.03" width="0" layer="19" extent="1-1"/>
+<contactref element="SELECTOR_PARAM_" pad="10"/>
+<wire x1="125.73" y1="231.14" x2="17.78" y2="-139.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="16_PLACE" class="1">
 <contactref element="REG_CALC_UPPER" pad="11"/>
@@ -5960,8 +5960,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="CTRL_SIG_17_(FLAG_OUT)">
 <contactref element="NOT_GATE_" pad="1"/>
-<contactref element="SELECTOR_PARAM_" pad="10"/>
-<wire x1="17.78" y1="-139.7" x2="125.73" y2="262.89" width="0" layer="19" extent="1-1"/>
+<contactref element="INSTRUCTION_MEMORY_2" pad="11"/>
+<wire x1="125.73" y1="262.89" x2="27.94" y2="170.18" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_P_128PLACE">
 <contactref element="REG_PARAM_UPPER" pad="3"/>
@@ -6653,9 +6653,7 @@ design rules under a new name.</description>
 <signal name="CTRL_SIG_18_(STACK_PUSH)">
 <contactref element="INSTRUCTION_MEMORY_2" pad="12"/>
 <contactref element="SELECTOR_STACK_" pad="13"/>
-<contactref element="SELECTOR_PARAM_" pad="14"/>
 <wire x1="77.47" y1="54.61" x2="27.94" y2="167.64" width="0" layer="19" extent="1-1"/>
-<wire x1="7.62" y1="-139.7" x2="77.47" y2="54.61" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RAW_INP_MODE">
 <contactref element="OUTPUT_BUFFER_RAM" pad="1"/>
@@ -6804,16 +6802,6 @@ design rules under a new name.</description>
 <contactref element="SELECTOR_STACK_" pad="11"/>
 <contactref element="FIFO_STACK" pad="15"/>
 <wire x1="35.56" y1="-128.27" x2="77.47" y2="49.53" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$5">
-<contactref element="INSTRUCTION_MEMORY_2" pad="11"/>
-<contactref element="SELECTOR_PARAM_" pad="13"/>
-<wire x1="10.16" y1="-139.7" x2="27.94" y2="170.18" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$10">
-<contactref element="SELECTOR_PARAM_" pad="9"/>
-<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="19"/>
-<wire x1="20.32" y1="-139.7" x2="5.08" y2="-151.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$26" class="1">
 <contactref element="KEYBOARD_ASCII_TABLE" pad="17"/>
@@ -7054,6 +7042,21 @@ design rules under a new name.</description>
 <contactref element="OUT_ROM_UPPER" pad="17"/>
 <contactref element="OUT_SEGMENT_UPPER" pad="5"/>
 <wire x1="30.48" y1="-232.41" x2="-2.54" y2="-245.11" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$5">
+<contactref element="SELECTOR_PARAM_" pad="13"/>
+<contactref element="SELECTOR_INSRUCTION_LOWER" pad="12"/>
+<wire x1="10.16" y1="-139.7" x2="46.99" y2="113.03" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$10">
+<contactref element="SELECTOR_INSRUCTION_LOWER" pad="9"/>
+<contactref element="SELECTOR_PARAM_" pad="14"/>
+<wire x1="7.62" y1="-139.7" x2="54.61" y2="113.03" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$210">
+<contactref element="OUTPUT_BUFFER_KEYBOARD" pad="19"/>
+<contactref element="SELECTOR_PARAM_" pad="9"/>
+<wire x1="20.32" y1="-139.7" x2="5.08" y2="-151.13" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
