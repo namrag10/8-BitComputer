@@ -1,8 +1,9 @@
 import math
 import os
+import time
+
 import matrix
 import serial
-import time
 
 Instructions = []
 asm = open("assembly.asm", "r")

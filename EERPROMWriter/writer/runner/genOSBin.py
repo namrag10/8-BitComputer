@@ -1,7 +1,8 @@
 
 import os
-import serial
 import time
+
+import serial
 
 # 0 = 1 etc.
 whichEEPROM = 1
