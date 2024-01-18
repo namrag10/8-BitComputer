@@ -1,0 +1,33 @@
+
+Key
+-----
+
+~~ XX ~~ = Active LOW
+** XX **   = Active HIGH
+
+
+12 Pin Connector Pinout
+----------------------------------
+
+1	- 128 Place
+2	- VCC
+3	- 64 Place
+4	- NC
+5	- 32 Place
+6	- GND
+7	- 16 Place
+8	- CLK
+9	- 8 Place
+10	- 4 Place
+11	- 2 Place
+12	- 1 Place
+
+
+
+
+Register Modules
+----------------
+
+**IN**  - Active LOW
+**OUT** - Active LOW
+

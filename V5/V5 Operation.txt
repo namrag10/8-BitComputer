@@ -1,0 +1,176 @@
+
+Adjusted to work with Breadboard, and adding stack for function calls and general use
+
+Flags
+--------
+
+Flag 1 - Memory Mode	(10000000)
+	> Low  - Data
+	> High - Parameter
+
+Flag 2 -		(01000000)
+	> General Purpose
+
+Flag 3 -		(00100000)
+	> General Purpose
+
+Flag 4 -		(00010000)
+	> General Purpose
+
+Flag 5 -		(00001000)
+	> General Purpose
+
+Flag 6 -		(00000100)
+	> General Purpose
+
+Flag 7 -		(00000010)
+	> General Purpose
+
+Flag 8 -		(00000001) ** CANNOT BE ALTERED MANUALLY **
+	> OVERFLOW FLAG
+
+
+Control Lines
+------------------
+
+
+ROM 1: -- MEM -- A Reg -- C Reg -- P Reg -- ALU -- Stack
+*****************************************************
+
+Line 1: Memory (Address)	**IN**
+v
+--> Stack Push			**IN**
+^
+Line 2: Memory 				**OUT**
+v
+--> ALU 				**OUT**
+^
+Line 3: 'A' Register 		**OUT**
+Line 4: 'A' Register  		**IN**
+
+Line 5: 'CALC' Register		**IN**
+v
+--> Stack Pop			**OUT**
+^
+Line 6: 'CALC' Register		**OUT**
+
+Line 7: Parameter Register	**OUT**
+v
+--> ALU Subtract Mode
+^
+Line 8: Parameter Register 	**IN**
+
+
+ROM 2: -- Flag Reg -- PC -- RAM --
+*****************************************************
+
+Line 9: Flag Toggle 		**IN**
+v
+--> PC Increment
+^
+Line 10: Flag Register 		**OUT**
+
+Line 11: Program Counter	**IN**
+Line 12: Program Counter	**OUT**
+
+Line 13: RAM (Address)		**IN**
+Line 14: RAM R/W Mode		(HIGH = Write, LOW = Read)
+Line 15: RAM I/O 			(245 Enable)
+Line 16: RAM INPUT Mode		(245 Direction HIGH = A->B)
+
+
+ROM 3: -- Input -- Output -- Control -- Branching -- CLK
+*****************************************************
+
+Line 17: INP Out			**OUT**
+v
+--> Output Reg			**IN**
+^
+Line 18: INP				**TEMP HLT**
+v
+--> END COMMAND
+^
+Line 19: Instruction Reg	**IN**
+v
+--> HLT - CLK
+^
+Line 20: Instruction Reg	**OUT**
+
+Line 21: Sub Counter Load	**IN**
+
+Line 22: Branch Selector B
+Line 23: Branch Selector A
+
+*****************************************************
+
+
+RAM Write Procedure
+------------------------------
+(Assuming Address is already set)
+
+Requires 2 clock cycles!
+	> First Cycle =
+		put data on the databus, set HIGH:
+			RAM Write 		(RAW - Line 7	   : ROM 1)
+			RAM IO		(RIO - Line 14	   : ROM 2)
+			RAM OUTPUT Mode 	(Line 18 and 19 : ROM 3)
+
+	> Second Cycle = KEEP DATA ON DATABUS, KEEP RIO=HIGH, KEEP RAM in OUTPUT Mode, set RAW=LOW
+
+
+
+
+
+Branching Truth Table
+------------------------------
+
++---+---+---+
+| A | B | Q |
++---+---+---+--+
+| 0 | 0 | Unconditional	BRA
+| 0 | 1 | Branch when 0	BRZ
+| 1 | 0 | Branch on carry	BRC
+| 1 | 1 | Branch if > 0	BRP
++---+---+---+--+
+
+
+PC_IN && Branching condition met will branch to the address on the databus
+
+
+Hard Reset Flag Register
+------------------------------
+
+Set FRT(13) && FRO(17) HIGH (Uses Databus)
+
+
+
+Naming Conventions
+----------------------------
+
+> Bits are - 1:15
+
+> Power  - VCC & GND
+
+
+
+
+Backplate Interface
+--------------------------
+
+Data:  	16 Bits
+Addr:	16 Bits 
+CLK:	01 Bit
+
+IN:	01 Bit
+OUT:	01 Bit
+CLR:	01 Bit
+
+5x GP Input	06 Bits
+
+
+GND
+VCC
+
+
+
+

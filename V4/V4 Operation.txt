@@ -103,7 +103,12 @@ RAM Write Procedure
 (Assuming Address is already set)
 
 Requires 2 clock cycles!
-	> First Cycle = put data on the databus, set RAM Write (RAW - Line 7:ROM 1) && RAM IO (RIO - Line 14:ROM 2) HIGH && RAM OUTPUT Mode (Line 18 and 19:ROM 3)
+	> First Cycle =
+		put data on the databus, set HIGH:
+			RAM Write 		(RAW - Line 7	   : ROM 1)
+			RAM IO		(RIO - Line 14	   : ROM 2)
+			RAM OUTPUT Mode 	(Line 18 and 19 : ROM 3)
+
 	> Second Cycle = KEEP DATA ON DATABUS, KEEP RIO=HIGH, KEEP RAM in OUTPUT Mode, set RAW=LOW
 
 
@@ -133,37 +138,25 @@ Set FRT(13) && FRO(17) HIGH (Uses Databus)
 
 
 
-Function pseudo
-------------------------------
 
-take:
+Backplate Interface
+--------------------------
 
-$i = 0;
-if($i == 0){
-test;
-}
-out $i; // outputs 1
+Data:  	08 Bits x2
+Addr:	16 Bits x2
+CLK:	01 Bit
 
-function test{
+IN:	01 Bit
+OUT:	01 Bit
+CLR:	01 Bit
 
-$i++;
+5x GP Input	05 Bits
 
-}
+Logic Flags	03 Bits
 
+GND
+VCC
 
-=====
-Registers all functions 
-
-00: LDA &00
-00: STO 0x01
-00: ISP
-00: BRA 0x05
-00: 
-00: HLT
-00: LDA 0x01
-00: INC
-00: STO 0x01
-00: BRA 0x00
 
 
 

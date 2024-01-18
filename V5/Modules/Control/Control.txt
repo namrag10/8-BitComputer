@@ -1,0 +1,46 @@
+
+The Board
+=======
+
+Each board should have its own power sourse
+
+
+
+
+Address
+=====
+
+This board is designed to be daisychained one after the other.
+This is to keep manufacturing cost low, and so I can use the free version of Eagle!
+
+Only 13 bits are used, as the AT28C64B's only take 13bits
+	> A re-design will be needed to add bits here
+2^13 op codes is loads though, so heavy doubt I'll need more for a while
+
+
+
+
+Signals
+=====
+
+Signal outs are from the 74xx157 selectors, so the EEPROM's can output direct
+to the databus via the output 245's buffers
+
+
+
+
+Decoding
+======
+
+139's can be stacked on this, and screwed in
+
+
+
+
+Device I/O
+=======
+
+These are the ribbon cables to go to the modules.
+Very generic, need to assign the signals outside of the PCB
+
+
