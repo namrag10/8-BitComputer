@@ -75,7 +75,7 @@ Line 12: Program Counter	**OUT**
 
 Line 13: RAM (Address)		**IN**
 Line 14: RAM R/W Mode		(HIGH = Write, LOW = Read)
-Line 15: RAM I/O 			(245 Enable)
+Line 15: RAM I/O 		(245 Enable)
 Line 16: RAM INPUT Mode		(245 Direction HIGH = A->B)
 
 
