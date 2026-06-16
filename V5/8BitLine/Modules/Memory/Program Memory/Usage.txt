@@ -1,0 +1,4 @@
+
+DB OUT is active LOW
+
+GP0 is the parameter toggle for flag register

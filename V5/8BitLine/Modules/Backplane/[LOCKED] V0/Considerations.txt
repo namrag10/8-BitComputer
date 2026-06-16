@@ -1,0 +1,6 @@
+--- * ---
+  V - 0
+--- * ---
+
+CLK line is not propagated out to rest of backplane *TEMP FIX WILL BE NEEDED*
+	-> Does this need to be on the connector to the control logic?

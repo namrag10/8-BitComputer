@@ -1,0 +1,28 @@
+Issues:
+=======
+
+Cannot provide register as second parameter:
+ADD r1 8 	; Valid
+ADD r1 [5] 	; Valid
+ADD r1 r2	; Invalid
+
+# Requires register mapping hardware to decode the register enum to physical signal
+
+
+Branch Condition Types:
+===============
+
+Unconditional:	GP 3
+Carry:	CLR
+Positive:	ADDR_IN
+Zero:	ADDR_OUT
+
+Outcome:	BO 0
+
+
+Input Ctrl
+======
+GP 0: Lower byte context selected
+GP 1: Upper byte context selected
+(BOTH CAN BE SELECTED AT ONCE)
+GP 2: Subtract Mode

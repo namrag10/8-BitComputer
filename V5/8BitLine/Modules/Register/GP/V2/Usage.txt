@@ -1,0 +1,13 @@
+
+** MODE SELECT **
+
+GP0 - Lower Byte Selected
+GP1 - Upper Byte Selected
+
+
+** OPERATIONS **
+
+DB_IN     	- Accepts data from DB to selected Byte
+DB_OUT  	- Sends data from selected byte to DB
+ADDR_IN	- Cannot accept data in from Address Bus at TN
+ADDR_OUT	- Outputs 16-Bits to Addr Bus

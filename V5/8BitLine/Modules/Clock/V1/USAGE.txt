@@ -1,0 +1,5 @@
+PIN	DIR	Notes
+
+CLK	OUT	N/A
+
+GP0 	IN	HLT

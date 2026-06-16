@@ -1,0 +1,36 @@
+Program Counter
+Clock
+Memory
+	- Program Memory
+	- RAM
+ALU - (Might need to split 
+Registers
+	- Reg A
+	- Reg B
+	- Reg C
+	- Reg P
+	- Flag Reg
+Control (Instructions)
+Onboard 2x 7seg
+Branch Logic (should this be in another module?)
+Backplane
+
+
+
+
+mov al, 0x34
+mov ah, 0x12
+mov [ah], 0x56
+; moves 0x56 into location 0x1234
+
+
+
+
+
+[al]
+[ah]
+[ax]
+
+
+
+

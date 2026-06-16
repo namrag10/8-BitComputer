@@ -1,0 +1,30 @@
+Route PC
+Route Program Memory
+
+
+
+Checks:
+ProgramMemory feeds into Instruction MicroCounter
+
+
+
+
+
+Success:
+Transfer literal data from one register to another
+
+Infrastructure
+-----------------
+PATH:
+Backplane
+Instruction MicroCounter
+Instruction Memory (Switchboard)
+
+DISCRETE:
+Program Memory
+Clock
+Program Counter
+
+Situation
+-----------
+Register

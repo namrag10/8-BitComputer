@@ -1,0 +1,6 @@
+--- * ---
+  V - 0
+--- * ---
+
+GP 0: Count on next CLK
+GP 1: [FROM: Branch Logic] confirm branch request
